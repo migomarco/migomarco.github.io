@@ -1,0 +1,214 @@
+
+.background{
+	position: fixed;
+	width: 1279px;
+	left:0.5px;
+	top: -50px;
+	z-index: -1px;
+}
+
+.button{
+	z-index: 4;
+	position: fixed;
+	border: 2px solid;
+	text-align: center;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	background-color: red;
+	font-weight: bold;
+}
+
+.comic{
+	width: 635px;
+	z-index: 1;
+	position: relative;
+	left:320px;
+	/*left:317.5px;
+	right:317.5px;*/
+
+}
+
+.text1{
+	position: absolute;
+	z-index: 2;
+	left: 580px;
+	top: 175px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border: 0px solid;
+    background: transparent;
+    text-align: center;
+    resize: none;
+
+}
+
+.text2{
+	position: absolute;
+	z-index: 2;
+	left: 405px;
+	top: 174px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border: 0px solid;
+    background: transparent;
+    text-align: center;
+    resize: none;
+
+}
+
+.text3{
+	position: absolute;
+	z-index: 2;
+	left: 605px;
+	top: 445px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border: 0px solid;
+    background: transparent;
+    text-align: center;
+    resize: none;
+
+}
+
+.text4{
+	position: absolute;
+	z-index: 2;
+	left: 605px;
+	top: 535px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border: 0px solid;
+    background: transparent;
+    text-align: center;
+    resize: none;
+
+}
+
+.text5{
+	position: absolute;
+	z-index: 2;
+	left: 579px;
+	top: 645px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border: 0px solid;
+    background: transparent;
+    text-align: center;
+    resize: none;
+
+}
+
+.text6{
+	position: absolute;
+	z-index: 2;
+	left: 688px;
+	top: 735px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border: 0px solid;
+    background: transparent;
+    text-align: center;
+    resize: none;
+
+}
+
+.text7{
+	position: absolute;
+	z-index: 2;
+	left: 755px;
+	top: 765px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border: 0px solid;
+    background: transparent;
+    text-align: center;
+    resize: none;
+
+}
+
+
+.text8{
+	position: absolute;
+	z-index: 2;
+	left: 675px;
+	top: 1247px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border: 0px solid;
+    background: transparent;
+    text-align: center;
+    resize: none;
+
+}
+
+
+.text9{
+	position: absolute;
+	z-index: 2;
+	left: 525px;
+	top: 1349px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border: 0px solid;
+    background: transparent;
+    text-align: center;
+    resize: none;
+
+}
+
+
+.text10{
+	position: absolute;
+	z-index: 2;
+	left: 807px;
+	top: 1349px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border: 0px solid;
+    background: transparent;
+    text-align: center;
+    resize: none;
+
+}
+
+
+.text11{
+	position: absolute;
+	z-index: 2;
+	left: 769px;
+	top: 1420px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border: 0px solid;
+    background: transparent;
+    text-align: center;
+    resize: none;
+
+}
+
+
+/*.text11{
+	position: fixed;
+	z-index: 2;
+	left: 669px;
+	top: 1820px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border: 1px solid;
+    background: transparent;
+    text-align: center;
+    resize: none;
+
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
