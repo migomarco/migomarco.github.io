@@ -1,0 +1,39 @@
+html{
+
+	font-family: 'VT323', monospace;
+	color: #39FF14;
+	background-color: black;
+}
+
+a {
+	color: #39FF14;
+	margin-left: 40px;
+	font-size: 50px;
+}
+
+h1 {
+	font-size: 50px;
+}
+
+.error {
+
+	font-size: 50px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 14px;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    width: 232px;
+}
+
+li a {
+    display: block;
+    /*padding: 14px 16px;*/
+    text-decoration: none;
+}
