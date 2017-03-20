@@ -6,14 +6,146 @@
 		<title>Project 3</title>
 		<link href="styles.css" rel="stylesheet">
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-		<script src="scripts.js"></script>
+		
 
 		<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
 
 	</head>
 	<body>
 
-	<h1>miguel_marcos_portfolio</h1>
+	
+
+	<!-- 	<form>
+  			<input class="textbox" type="text" id="enteredText">
+  			<input type="submit" value="getvalue" id="textSubmit">
+  			
+  			
+  			
+		</form>
+ -->
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<script type="text/javascript">
+
+
+
+
+
+
+
+
+
+				
+
+
+
+
+
+
+			
+
+		</script>
+
+		
+
+		<style type="text/css">
+
+			body {
+
+				margin: 0px;
+
+				padding: 0px;
+
+				height: 99%;
+
+			}
+
+			
+
+			input#setter {
+
+				left: -1000px;
+
+				position: absolute;
+
+			}
+
+			
+
+			.cursor {
+
+				font-size: 50px;
+
+				background-color: #39FF14;
+
+				color: #39FF14;
+
+				position: relative;
+
+				font-family: 'VT323', monospace;
+
+				
+
+			}
+
+			
+
+			#terminal {
+
+				margin: 8px;
+
+				cursor: text;
+
+				height: 500px;
+
+                                border: 1px solid black;
+
+                                overflow: auto;
+
+			}
+
+			
+
+			#writer {
+
+				font-family: 'VT323', monospace;
+				font-size: 50px;
+
+				font-weight: bold;
+
+			}
+
+                        #getter {
+
+                                 margin: 5px;
+
+                        }
+
+
+
+		</style>
+
+
+
+
+
+<h1>miguel_marcos_portfolio</h1>
 
 		<ul>
 		<li><a href="comic/page1.html">comics</a></li>
@@ -23,19 +155,52 @@
 		<li><a href="filmex/page1.html">in_class_film</a></li>
 		</ul>
 		
-		<form>
-  			First name: <input id="input" class="input" type="text" name="fname">
-  			
-  			
-  			
-		</form>
+
+		<div class="error">
+			
+		</div>
 
 
 
-		<div class="error"></div>
 
 
-		
+
+
+	<div id="terminal" onclick="$('setter').focus();">
+
+	<div class="user-panel main">
+	<form>
+		<input name="login" type="text" id="setter" onkeydown="writeit(this, event);moveIt(this.value.length, event)" onkeyup="writeit(this, event)" onkeypress="writeit(this, event);"></input>
+		<input type="submit" value="getvalue" id="textSubmit" onkeypress="myFunction(e);">
+	</form>
+	</div>
+
+		<div id="getter">
+
+			<span id="writer"></span><b class="cursor" id="cursor">B</b>
+
+		</div>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	
+
+
+		<script src="scripts.js"></script>
 
 	</body>
 </html>
+
+
+
+
+
+
