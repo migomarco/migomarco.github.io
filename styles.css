@@ -21,6 +21,8 @@ h1 {
 
 	font-size: 50px;
     margin:12px;
+    margin: left;
+    color: green;
 }
 
 ul {
@@ -28,11 +30,11 @@ ul {
     margin: 0;
     padding: 14px;
     overflow: hidden;
+    
 }
 
 li {
     float: left;
-    width: 232px;
 }
 
 li a {
