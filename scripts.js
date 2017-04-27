@@ -33,10 +33,24 @@ else if (link == "in_class_film") {
 
 else {
 
-	$(".error").append("<p>error</p>");
+	//$("error").append("error");
 
+	// document.getElementById("error").innerText = "error";
+
+	var para = document.createElement('p');
+	para.textContent = "error";
+	document.getElementById("error").appendChild(para);
+	
+	// var para = document.getElementById("error").createElement("p");
+	// para.appendChild("error");
+
+	
 
 }
+
+
+
+
 
 
 }
