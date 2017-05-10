@@ -31,6 +31,16 @@ else if (link == "in_class_film") {
 	window.open("filmex/page1.html");
 }
 
+else if (link == "toilet_time") {
+
+	window.open("final/index.html");
+}
+
+else if (link == "world_map") {
+
+	window.open("worldmap/page1.html");
+}
+
 else {
 
 	//$("error").append("error");
@@ -53,7 +63,6 @@ else {
 
 
 
-}
 
 
 
