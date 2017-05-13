@@ -41,6 +41,21 @@ else if (link == "world_map") {
 	window.open("worldmap/page1.html");
 }
 
+else if (link == "trump_presentation") {
+
+	window.open("trump.pdf");
+}
+
+else if (link == "cinema_wireframes") {
+
+	window.open("cinema.pdf");
+}
+
+else if (link == "toilet_wireframes") {
+
+	window.open("toilet.pdf");
+}
+
 else {
 
 	//$("error").append("error");

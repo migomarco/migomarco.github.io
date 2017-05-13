@@ -20,11 +20,12 @@ h1 {
 
 
 ul {
+    display: block;
     list-style-type: none;
     margin: 0;
     padding: 14px;
     overflow: hidden;
-    
+    width:100%;
 }
 
 li {
