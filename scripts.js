@@ -28,7 +28,7 @@ else if (link == "doors") {
 
 else if (link == "hell_for_liberals") {
 
-	window.open("hell_for_liberals/index.html");
+	window.open("hell/index.html");
 }
 
 else if (link == "toilet_time") {
