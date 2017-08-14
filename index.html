@@ -1,224 +1,480 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-
-		<meta charset="utf-8">
-		<title>Project 3</title>
-		<link href="styles.css" rel="stylesheet">
-		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-		
-
-		<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
-
-	</head>
-	<body>
-
-	
-
-	<!-- 	<form>
-  			<input class="textbox" type="text" id="enteredText">
-  			<input type="submit" value="getvalue" id="textSubmit">
-  			
-  			
-  			
-		</form>
- -->
-
-
-	
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		<script type="text/javascript">	
-
-		</script>
-
-
-
-
-
-
-
-
-
-
-		
-
-		<style type="text/css">
-
-			body {
-
-				margin: 0px;
-
-				padding: 0px;
-
-				height: 99%;
-
-			}
-
-			
-
-			input#setter {
-
-				left: -1000px;
-
-				position: absolute;
-
-			}
-
-			
-
-			.cursor {
-
-				
-
-				font-size: 50px;
-
-				background-color: #39FF14;
-
-				color: #39FF14;
-
-				position: relative;
-
-				font-family: 'VT323', monospace;
-
-				
-
-			}
-
-			
-
-			#terminal {
-
-				margin: 8px;
-
-				cursor: text;
-
-				height: 500px;
-
-                                border: 1px solid black;
-
-                                overflow: auto;
-
-			}
-
-			
-
-			#writer {
-
-				font-family: 'VT323', monospace;
-				font-size: 50px;
-
-				font-weight: bold;
-
-			}
-
-                        #getter {
-
-                                 margin: 5px;
-
-                        }
-
-
-             #error {
-
-				font-size: 50px;
-    			margin:12px;
-    			margin: left;
-    			color: #39FF14;
-}
-
-
-
-		</style>
-
-
-
-
-
-<h1>$- miguel_marcos_websites:</h1>
-<h1>$- best_with_chrome</h1>
-
-		<ul>
-		<li><a href="doors/index.html">doors</a></li>
-
-		<li><a href="hell/index.html">hell_for_liberals</a></li>
-
-		<li><a href="comic/page1.html">comics</a></li>
-
-		<li><a href="patience/index.html">patience</a></li>
-
-		<!-- <li><a href="typo/index.html">test</a></li> -->
-
-		</ul>
-
-		<ul>
-		
-		<li><a href="splendid_bacon/index.html">splendid_bacon</a></li>
-
-		<li><a href="worldmap/page1.html">world_map</a></li>
-
-		<li><a href="final/index.html">toilet_time</a></li>
-
-		<!-- <li><a href="toilet.pdf">toilet_wireframes</a></li> -->
-
-		</ul>
-		
-
-		
-		<div id="error"></div>
-		
-
-
-
-
-
-
-
-	<div id="terminal" onclick="$('setter').focus();">
-
-	<div class="user-panel main">
-	<form>
-		<input name="login" type="text" id="setter" onkeydown="writeit(this, event);moveIt(this.value.length, event)" onkeyup="writeit(this, event)" onkeypress="writeit(this, event);"></input>
-		<input type="submit" value="getvalue" id="textSubmit" onkeypress="myFunction(e);">
-	</form>
-	</div>
-
-		<div id="getter">
-
-			<span id="writer"></span><b class="cursor" id="cursor">B</b>
-
-		</div>
-
-	</div>
-
-
-
-
-
-
-
-
-
-	
-
-
-		<script src="scripts.js"></script>
-
-	</body>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+<link href="font-awesome-4.3.0/css/font-awesome.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<link  href="css/style-2.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.singlefull.css">
+<link href="css/new.css" rel="stylesheet"  type="text/css">
+<title>Miguel Marcos</title>
+<!-- Resource jQuery -->
+</head>
+<body>
+<div id="single">
+  <div data-target="home" id="home" class="home">
+    <div class="banner-outer">
+      <div class="banner larg-banner">
+        <div class="cd-background-wrapper">
+          <figure class="cd-floating-background"> <img src="images/banner.jpg" alt="image-1" class="lg-img"> </figure>
+        </div>
+      </div>
+      <div class="banner mob-banner"> <img src="images/mob-banner.jpg"> </div>
+      <div class="top-head">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-sm-6 col-xs-6">
+              <h6 class="t1"><a href="#contact5" >Contact me</a></h6>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-xs-6">
+              <h6 class="t2"> <a href="images/cv.docx" target="_blank">My Resume</a></h6>
+            </div>
+            <!--12-->
+          </div>
+          <!--row-->
+        </div>
+        <!--container-->
+      </div>
+      <div class="banner-caption">
+        <h1>Miguel</h1>
+      </div>
+    </div>
+    <div class="icon-container"> <a href="#about" class="cd-scroll-down">
+      <p class="morph"><img src="images/mouse.png" /></p>
+      </a></div>
+  </div>
+  <!---home-->
+  <div data-target="about" id="about" class="uffya1">
+    <div class="content-resizer">
+      <div class="section-uffy">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-sm-6 col-xs-12 cnt">
+              <div class="content-C">
+                <p><span>UFFY</span> is a social media video series on instagram that advertises a made-up product without showing the product in the videos. </p>
+                
+                 
+                <a  href="#modal"class="border-btn">see more</a>
+                
+                 </div>
+            </div>
+            <!--4-->
+            <div class="col-lg-8 col-sm-6 col-xs-12">
+              <div class="uffy-img"><img src="images/uffy.png"></div>
+            </div>
+          </div>
+          <!--row-->
+        </div>
+        <!--container-->
+      </div>
+    </div>
+  </div>
+  <div data-target="examples" id="examples" class="cracoa1">
+    <div class="content-resizer">
+      <div class="craco">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-sm-6 col-xs-12 cnt">
+              <div class="content-C">
+                <p><span>craco</span> is an advertising campaign of a created company called craco. This project consists of 4 advertisments. </p>
+               <a  href="#modal2"class="border-btn">see more</a>
+                <!--4-->
+              </div>
+              <!--row-->
+            </div>
+            <!--container-->
+          </div>
+          <div class="middle-img"><img src="images/craco.png"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-target="contact" id="contact" class="simpsona1">
+    <div class="content-resizer">
+      <div class="simpsons">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-sm-6 col-xs-12 cnt">
+              <div class="content-C">
+                <p><span>Simpsons</span> is a campaign peoject that constisted of designing a book and making other forms of advertising. </p>
+              <a  href="#modal3"class="border-btn">see more</a>
+                
+                 </div>
+              <!--4-->
+            </div>
+            <!--row-->
+          </div>
+          <!--container-->
+        </div>
+        <div class="middle-img-right"><img src="images/sim-img.jpg"></div>
+      </div>
+    </div>
+  </div>
+  <div data-target="contact2" id="contact2" class="funa1">
+    <div class="content-resizer">
+      <div class="fun-web">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-sm-6 col-xs-12 cnt">
+              <div class="content-C">
+                <p><span>fun_web</span> is a class project that consists of small fun websites that I have coded to for no real purpose. </p>
+              <a  href="comp/index.html"class="border-btn">see more</a>
+              <!-- <a  href="#modal4"class="border-btn">see more</a> -->
+                
+                 </div>
+              <!--4-->
+            </div>
+            <!--row-->
+          </div>
+          <!--container-->
+        </div>
+        <div class="middle-img"><img src="images/fun.png"></div>
+      </div>
+    </div>
+  </div>
+  <div data-target="contact3" id="contact3" class="pana1">
+    <div class="content-resizer">
+      <div class="pan-web">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-sm-6 col-xs-12 cnt">
+              <div class="content-C">
+                <p><span>PAN</span> is a promotional video that I created for a talent comeptition that takes place in my highschool every year. </p>
+             <a  href="#modal5"class="border-btn">see more</a>
+                
+                </div>
+              <!--4-->
+            </div>
+            <!--row-->
+          </div>
+          <!--container-->
+        </div>
+        <div class="middle-img"><img src="images/pan-web.png"></div>
+      </div>
+    </div>
+  </div>
+  <div data-target="contact4" id="contact4" class="agnostica1">
+    <div class="content-resizer">
+      <div class="agnostic">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-sm-6 col-xs-12 cnt">
+              <div class="content-C">
+                <p><span>Agnostic</span> is a film project about how an worried and scared agnostic turns into a comfortable agnostic. </p>
+              <a  href="#modal6"class="border-btn">see more</a>
+                </div>
+                
+              <!--4-->
+            </div>
+            <!--row-->
+          </div>
+          <!--container-->
+        </div>
+        <div class="middle-img-lady"><img src="images/lady.png"></div>
+      </div>
+    </div>
+  </div>
+  <div data-target="contact5" id="contact5" class="contacta1">
+    <div class="content-resizer">
+      <div class="contact-C">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <h2>Get in touch with me</h2>
+              <div class="contact-txt">
+                <p>If you have any questions or concerns at all, do not hesitate to contact me. </p>
+                <h5>+1 267 3238863 <span>/</span> +971 50 4828254 <span>/</span> <a href="mailto:marcm518@newschool.edu">marcm518@newschool.edu</a></h5>
+              </div>
+            </div>
+            <!--12-->
+            <div class="col-lg-12">
+              <h3>Follow me -</h3>
+              <ul class="social-media">
+                <li><a href="#"><img src="images/fb.png"></a></li>
+                <li><a href="https://www.linkedin.com/in/miguel-marcos-a2a93865/"><img src="images/linke.png"></a></li>
+                <li><a href="#"><img src="images/insta.png"></a></li>
+                <li><a href="#"><img src="images/you-tube.png"></a></li>
+              </ul>
+            </div>
+            <!--12-->
+          </div>
+          <!--row-->	
+
+
+
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="copyright">
+                <p>Copyright © 2017 Miguel Marcos. All rights reserved.</p>
+                </a></div>
+            </div>
+            <!--row-->
+          </div>
+          <!--container-->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- vertical nav -->
+  <div id="fp-nav" class="right">
+    <ul>
+      <li><a href="#" class="active" data-anchor="home"><span></span></a>
+        <div class="fp-tooltip right">Home</div>
+      </li>
+      <li><a href="#"  data-anchor="about"><span></span></a>
+        <div class="fp-tooltip right">Uffy</div>
+      </li>
+      <li><a href="#"  data-anchor="examples"><span></span></a>
+        <div class="fp-tooltip right">Craco</div>
+      </li>
+      <li><a href="#"  data-anchor="contact"><span></span></a>
+        <div class="fp-tooltip right">Simpsons</div>
+      </li>
+      <li><a href="#"  data-anchor="contact2"><span></span></a>
+        <div class="fp-tooltip right">Fun_web</div>
+      </li>
+      <li><a href="#"  data-anchor="contact3"><span></span></a>
+        <div class="fp-tooltip right">Pan_web</div>
+      </li>
+      <li><a href="#"  data-anchor="contact4"><span></span></a>
+        <div class="fp-tooltip right">Agnostic</div>
+      </li>
+      <li><a href="#"  data-anchor="contact5"><span></span></a>
+        <div class="fp-tooltip right">Contact</div>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- Page loads faster -->
+<script src="js/jquery.easing.js"></script>
+<script src="js/jquery.singlefull.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#single").singlefull({
+            speed: 1000,
+            loopScroll:true,
+            loopTop:false,
+            loopBottom:true
+        });
+        // Just a javascript alignment to the content
+        function alignContent() {
+            var windowHeight = $(window).height();
+
+            $('.content-resizer').each(function() {
+                contentHeight = $(this).height();
+                $(this).css('top', (windowHeight / 2) - (contentHeight / 2));
+            });
+
+            $('.alt-img').html($("#img-example").attr('src'));
+        }
+
+        // Execute the function
+        alignContent();
+
+        // Bind the function to the window.onresize
+        $(window).bind("resize", function() {
+            alignContent();
+        });
+
+
+    });
+    </script>
+</body>
 </html>
+<script>
+	$(function() {
+	  $('.top-head a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top -1
+	        }, 1000);
+	        return false;
+	      }
+	    }
+	  });
+	});
+	</script>
+<script>
+	$(function() {
+	  $('.icon-container a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top -1
+	        }, 1000);
+	        return false;
+	      }
+	    }
+	  });
+	});
+	</script>
+<link  href="css/style-2.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript"  src="js/main2.js"></script>
+
+
+<link rel="stylesheet" href="css/remodal.css">
+  <link rel="stylesheet" href="css/remodal-default-theme.css">
+  <style>
+    .remodal-bg.with-red-theme.remodal-is-opening,
+    .remodal-bg.with-red-theme.remodal-is-opened {
+      filter: none;
+    }
+
+    .remodal-overlay.with-red-theme {
+      background-color: #f44336;
+    }
+
+    .remodal.with-red-theme {
+      background: #fff;
+    }
+  </style>
+
+	
+
+
+
+
+	
+	
+	
+    <script>window.jQuery || document.write('<script src="../libs/jquery/dist/jquery.min.js"><\/script>')</script>
+<script src="js/remodal.js"></script>
+
+<!-- Events -->
+<script>
+  $(document).on('opening', '.remodal', function () {
+    console.log('opening');
+  });
+
+  $(document).on('opened', '.remodal', function () {
+    console.log('opened');
+  });
+
+  $(document).on('closing', '.remodal', function (e) {
+    console.log('closing' + (e.reason ? ', reason: ' + e.reason : ''));
+  });
+
+  $(document).on('closed', '.remodal', function (e) {
+    console.log('closed' + (e.reason ? ', reason: ' + e.reason : ''));
+  });
+
+  $(document).on('confirmation', '.remodal', function () {
+    console.log('confirmation');
+  });
+
+  $(document).on('cancellation', '.remodal', function () {
+    console.log('cancellation');
+  });
+
+//  Usage:
+//  $(function() {
+//
+//    // In this case the initialization function returns the already created instance
+//    var inst = $('[data-remodal-id=modal]').remodal();
+//
+//    inst.open();
+//    inst.close();
+//    inst.getState();
+//    inst.destroy();
+//  });
+
+  //  The second way to initialize:
+  $('[data-remodal-id=modal2]').remodal({
+    modifier: 'with-red-theme'
+  });
+</script>
+
+
+<style>
+.remodal{ top:50px; left:0; right:0; position:absolute; margin:10px auto;}
+
+
+
+
+
+</style>
+
+<div class="remodal modal-cnt" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+  <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+  <div>
+       <h2>UFFY</h2>
+    <div class="modal-txt">
+<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+</div>
+  </div>
+ 
+</div>
+
+
+<div class="remodal modal-cnt" data-remodal-id="modal2" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+  <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+  <div>
+       <h2>craco</h2>
+    <div class="modal-txt">
+<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+</div>
+  </div>
+ 
+</div>
+
+<div class="remodal modal-cnt" data-remodal-id="modal3" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+  <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+  <div>
+       <h2>Simpsons</h2>
+    <div class="modal-txt">
+<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+</div>
+  </div>
+ 
+</div>
+
+
+<div class="remodal modal-cnt" data-remodal-id="modal4" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+  <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+  <div>
+       <h2>fun_web</h2>
+    <div class="modal-txt">
+<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+</div>
+  </div>
+ 
+</div>
+
+
+
+
+<div class="remodal modal-cnt" data-remodal-id="modal5" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+  <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+  <div>
+       <h2>Pan</h2>
+    <div class="modal-txt">
+<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+</div>
+  </div>
+ 
+</div>
+
+<div class="remodal modal-cnt" data-remodal-id="modal6" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+  <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+  <div>
+       <h2>Agnostic</h2>
+    <div class="modal-txt">
+<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+</div>
+  </div>
+ 
+</div>
 
 
 
