@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'aqua_grotesqueregular';
+    src: url('../font/aqua-webfont.woff2') format('woff2'),
+         url('../font/aqua-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{ font-family: 'aqua_grotesqueregular';}
+
+
+
