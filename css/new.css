@@ -37,6 +37,7 @@ body{ font-family: 'aqua_grotesqueregular';}
   text-align: center;*/
 }
 
+
 .cd-section:nth-of-type(1){ background:none;}
 .cd-section:nth-of-type(2){ background:#87abc3;}
 .cd-section:nth-of-type(3){ background:#ed7f4d;}
@@ -54,6 +55,142 @@ body{ font-family: 'aqua_grotesqueregular';}
 
 .content-C{ margin-top:60%;}
 .border-btn{ font-size:25px; border:3px solid #ffffff; padding:11px 20px; color:#FFFFFF; display:table; border-radius:7px; margin-top:20px; cursor:pointer;}
+
+
+.link {
+  color: #87abc3;
+  font-size: 24px;
+
+}
+.link a:hover{
+  color: blue;
+  
+      
+
+}
+
+
+a {
+  color: white;
+  font-size: 24px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+
+}
+a:hover{
+  color: #87abc3;
+  text-decoration: none;
+  -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+      
+
+}
+
+
+.button1:hover {
+  background-color: white; 
+  color: #87abc3; 
+  border: 3px solid white;
+
+}
+
+.button1 {
+  padding: 11px 20px;
+  background-color: #87abc3;
+  color: white;
+  border: 3px solid white;
+  border-radius:7px;
+}
+
+.button2:hover {
+  background-color: white; 
+  color: #ed7f4d; 
+  border: 3px solid white;
+
+}
+
+.button2 {
+  padding: 11px 20px;
+  background-color: #ed7f4d;
+  color: white;
+  border: 3px solid white;
+  border-radius:7px;
+}
+
+.button3:hover {
+  background-color: white; 
+  color: #bcbcbc; 
+  border: 3px solid white;
+
+}
+
+.button3 {
+  padding: 11px 20px;
+  background-color: #bcbcbc;
+  color: white;
+  border: 3px solid white;
+  border-radius:7px;
+}
+
+.button4:hover {
+  background-color: white; 
+  color: #3d5494; 
+  border: 3px solid white;
+
+}
+
+.button4 {
+  padding: 11px 20px;
+  background-color: #3d5494;
+  color: white;
+  border: 3px solid white;
+  border-radius:7px;
+}
+
+.button5:hover {
+  background-color: white; 
+  color: #000; 
+  border: 3px solid white;
+
+}
+
+.button5 {
+  padding: 11px 20px;
+  background-color: #000;
+  color: white;
+  border: 3px solid white;
+  border-radius:7px;
+}
+
+.button6:hover {
+  background-color: white; 
+  color: #ffb800; 
+  border: 3px solid white;
+
+}
+
+.button6 {
+  padding: 11px 20px;
+  background-color: #ffb800;
+  color: white;
+  border: 3px solid white;
+  border-radius:7px;
+}
+
+.button7:hover {
+  background-color: white; 
+  color: #83B169; 
+  border: 3px solid white;
+
+}
+
+.button7 {
+  padding: 11px 20px;
+  background-color: #83B169;
+  color: white;
+  border: 3px solid white;
+  border-radius:7px;
+}
 
 
 .content-C .middle-img{ top:40%;}
@@ -109,6 +246,8 @@ body{ font-family: 'aqua_grotesqueregular';}
 .copyright   a{ color:#FFFFFF;}
 a:hover{ color:#FFFFFF; text-decoration:none;}
 a:focus{ outline:none;}
+
+
 
 .cd-scroll-down{ bottom:2%; background:none; position:fixed}
 .top-head{ position:absolute; top:0; left:0; right:0; margin:0pa auto; padding-top:35px;}
