@@ -10,12 +10,12 @@
 
 }
 
-body{ font-family: 'aqua_grotesqueregular';}
+body{ font-family: 'Avenir Next';}
 .banner{ width:100%; overflow:hidden;}
 .banner img{ overflow:hidden; width:100%;}
 .cd-section{ padding:0px 0px;}
 
-.banner-caption{ position:absolute; top:30%; text-align:center; left:0; right:0;}
+.banner-caption{ position:absolute; top:20%; text-align:left; left:5%; right:0;}
 .banner-caption h1{ font-size:120px; letter-spacing:38px;opacity:0.7; text-transform:uppercase;}
 
 
@@ -72,7 +72,7 @@ body{ font-family: 'aqua_grotesqueregular';}
 
 a {
   color: white;
-  font-size: 24px;
+  font-size: 17px;
   -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
 
@@ -90,7 +90,7 @@ a:hover{
 .button1:hover {
   background-color: white; 
   color: #87abc3; 
-  border: 3px solid white;
+  border: 2px solid white;
 
 }
 
@@ -98,14 +98,14 @@ a:hover{
   padding: 11px 20px;
   background-color: #87abc3;
   color: white;
-  border: 3px solid white;
-  border-radius:7px;
+  border: 2px solid white;
+  border-radius:2px;
 }
 
 .button2:hover {
   background-color: white; 
   color: #ed7f4d; 
-  border: 3px solid white;
+  border: 2px solid white;
 
 }
 
@@ -113,14 +113,14 @@ a:hover{
   padding: 11px 20px;
   background-color: #ed7f4d;
   color: white;
-  border: 3px solid white;
-  border-radius:7px;
+  border: 2px solid white;
+  border-radius:2px;
 }
 
 .button3:hover {
   background-color: white; 
   color: #bcbcbc; 
-  border: 3px solid white;
+  border: 2px solid white;
 
 }
 
@@ -128,14 +128,14 @@ a:hover{
   padding: 11px 20px;
   background-color: #bcbcbc;
   color: white;
-  border: 3px solid white;
-  border-radius:7px;
+  border: 2px solid white;
+  border-radius:2px;
 }
 
 .button4:hover {
   background-color: white; 
   color: #3d5494; 
-  border: 3px solid white;
+  border: 2px solid white;
 
 }
 
@@ -143,53 +143,53 @@ a:hover{
   padding: 11px 20px;
   background-color: #3d5494;
   color: white;
-  border: 3px solid white;
-  border-radius:7px;
+  border: 2px solid white;
+  border-radius:2px;
 }
 
 .button5:hover {
   background-color: white; 
-  color: #000; 
-  border: 3px solid white;
+  color: #8d744b; 
+  border: 2px solid white;
 
 }
 
 .button5 {
   padding: 11px 20px;
-  background-color: #000;
+  background-color: #8d744b;
   color: white;
-  border: 3px solid white;
-  border-radius:7px;
+  border: 2px solid white;
+  border-radius:2px;
 }
 
 .button6:hover {
   background-color: white; 
-  color: #ffb800; 
-  border: 3px solid white;
+  color: #dd1021; 
+  border: 2px solid white;
 
 }
 
 .button6 {
   padding: 11px 20px;
-  background-color: #ffb800;
+  background-color: #dd1021;
   color: white;
-  border: 3px solid white;
-  border-radius:7px;
+  border: 2px solid white;
+  border-radius:2px;
 }
 
 .button7:hover {
   background-color: white; 
-  color: #83B169; 
-  border: 3px solid white;
+  color: #FCC555; 
+  border: 2px solid white;
 
 }
 
 .button7 {
   padding: 11px 20px;
-  background-color: #83B169;
+  background-color: #FCC555;
   color: white;
-  border: 3px solid white;
-  border-radius:7px;
+  border: 2px solid white;
+  border-radius:2px;
 }
 
 
@@ -276,9 +276,9 @@ a:focus{ color:#FFFFFF; text-decoration:none;}
 
 .modal-cnt{ text-align:left;}
 .modal-content{ background:none;}
-.modal-txt p{ font-size:17px!important; line-height:25px!important; text-align:left;}
+.modal-txt p{ font-size:14px!important; line-height:25px!important; text-align:left;}
 .modal-header{ border:none;}
-.modal-cnt h2{ font-size:100px; text-transform:uppercase;}
+.modal-cnt h2{ font-size:50px; text-transform:uppercase;}
 body.modal-open {
 overflow: inherit;padding-right: 0 !important;}
 
@@ -312,10 +312,10 @@ body {padding-right:0px !important;margin-right:0px !important;}
 .uffya1{ background:#87abc3!important;}
 .cracoa1{ background:#ed7f4d!important;}
 .simpsona1{background:#3d5494!important;}
-.funa1{ background:#000;}
+.funa1{ background:#8d744b;}
 .pana1{ background:#bcbcbc;}
-.agnostica1{ background:#ffb800;}
-.agnostica2{ background:#83B169;}
+.agnostica1{ background:#dd1021;}
+.agnostica2{ background:#FCC555;}
 .contacta1{ background:#696969;}
 body{ overflow:hidden;}
 
