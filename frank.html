@@ -1,0 +1,387 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+<link href="font-awesome-4.3.0/css/font-awesome.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<link  href="css/style-2.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.singlefull.css">
+<link href="css/new1.css" rel="stylesheet"  type="text/css">
+<title>Frank's Red Hot</title>
+<link rel="shortcut icon" href="images/M.ico" />
+<!-- google ana -->
+<!-- Resource jQuery -->
+</head>
+
+
+<style>
+html {
+	height: 100%;
+	width: 100%;
+}
+
+
+.cat {
+	color: black;
+	text-align: left;
+	display: block;
+  	margin-left: 5%;
+  	margin-right: auto;
+	width: 500px;
+	padding: 2%;
+	font-family: Avenir;
+}
+
+.cat1 {
+	z-index: 1;
+
+	color: black;
+	text-align: left;
+	/*text-align: none;*/
+	
+  	margin-left: 0%;
+  	margin-right: auto;
+	width: 30%;
+	padding: 2%;
+	/*padding-bottom: 20%;*/
+	padding-top: 0%;
+	font-family: Avenir;
+}
+
+.cat1l {
+
+	
+	position: absolute;
+	left: 7%;
+	color: black;
+	text-align: left;
+	text-align: justify;
+	display: block;
+  	margin-left: 0%;
+  	margin-right: auto;
+	width: 500px;
+	padding-top: 2%;
+	padding-left: 0%;
+	font-family: Avenir;
+}
+
+.cat2 {
+	color: black;
+	text-align: left;
+	display: block;
+  	margin-left: 5%;
+  	margin-right: auto;
+	width: 500px;
+	padding: 2%;
+	padding-top: 15%;
+	font-family: Avenir;
+}
+
+.cat3 {
+	color: black;
+	font-family: Avenir;
+	font-weight: bold;
+}
+
+.center {
+	display: block;
+  	margin-left: 7%;
+  	margin-top: 3%;
+  	margin-right: 0%;
+  	padding: 2%
+  	width: 50%;
+  	height: auto;
+  	padding-bottom: 5%;
+}
+
+.cracobg {
+	/*background-color: #fcc555;*/
+	background-color: white;
+}
+
+.hi {
+	height: 200px;
+	width: auto;
+}
+
+.titlec img{
+	display: block;
+  	margin-left: auto;
+  	margin-right: 0%;
+  	width: 70%;
+	height: auto;
+	padding: 5%;
+	padding-top: 11%;
+	padding-bottom: 0%;
+}
+
+.column {
+	float: left;
+	width: 33.33%;
+  	padding-left: 0%; 
+  	padding-right: 0%;
+  	padding-bottom: 15%;
+}
+
+.column1 {
+	float: left;
+	width: 50%;
+  	padding-left: 8%; 
+  	padding-right: 8%;
+  	padding-bottom: 5%; 
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+audio{
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 600px;
+  	padding: 2%;
+}
+
+.header {
+	content: "";
+  	clear: both;
+  	display: table;
+	position: fixed;
+	/*background-image: url("images/bannerhead.jpg");*/
+	background-color: black;
+	width: 100%;
+	height: 10%;
+	z-index: 2;
+	top: 0%;
+}
+
+.miguel {
+	color: white;
+	text-align: center;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	width: 59.33%;
+	padding: 0%;
+	float: left;
+}
+
+.cv{
+	color: white;
+	text-align: right;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	width: 20.33%;
+	padding-right: 0%;
+	float: left;
+}
+
+.contact {
+	color: white;
+	text-align: left;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	width: 20.33%;
+	padding-right: 0%;
+	float: left;
+}
+
+a {
+	color: white;
+	-webkit-transition-duration: 0.4s; /* Safari */
+  	transition-duration: 0.4s;
+}
+
+a:hover{
+	color: #ed1b24;
+	text-decoration: none;
+	-webkit-transition-duration: 0.4s; /* Safari */
+  	transition-duration: 0.4s;
+}
+
+.button {
+  background-color: grey; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1:hover {
+  background-color: white; 
+  color: #ed1b24; 
+  border: 2px solid white;
+}
+
+.button1 {
+  background-color: #ed1b24;
+  color: white;
+  border: 2px solid white;
+}
+
+</style>
+
+<div class="header">
+
+<h3 class="cv" style="font-size: 12px; padding-top: 0.5%; font-family: 'Avenir Next';"><a href="images/CV.pdf" target="_blank">Résumé</a>
+</h3>
+<h3 class="miguel"><a href="index.html" style="letter-spacing: 5px; opacity: 100%; font-family: 'Avenir Next';">HOME</a> </h3>
+<h3 class="contact" style="font-size: 12px; padding-top: 0.5%; font-family: 'Avenir Next';"><a href="/#contact5">Contact</a></h3>
+</div>
+
+<body class="cracobg">
+	<p>
+	<div class="titlec">
+	<h4 style="color: black; text-align: center; margin-left: 30%; margin-top: 20%; font-family: avenir; letter-spacing: 3px;" class="hi"> MAKE RELATIONSHIPS HOTTER WITH FRANK’S,<br><br>THE NATURAL APHRODISIAC </h1>
+	<img  class="hi" src="images/frank_hero.jpg">
+	<h4 style="color: black; text-align: center; margin-left: 30%; margin-top: 20%; font-family: avenir; letter-spacing: 3px;" class="hi"> SPICE UP YOUR AWKWARD TINDER DATES,  <br> <br>HIT THAT FRANK RED HOT BUTTON </h1>
+	<img  class="hi" src="images/Tinder.png">
+	<h4 style="color: black; text-align: center; margin-left: 30%; margin-top: 20%; font-family: avenir; letter-spacing: 3px;" class="hi"> THE BACHELOR IS FUN AND ALL, <br> <br> BUT WHAT IF WE TURNED UP THE HEAT</h1>
+	<img  class="hi" src="images/FrankTV.png">
+	<h4 style="color: black; text-align: center; margin-left: 30%; margin-top: 20%; font-family: avenir; letter-spacing: 3px;" class="hi"> FRANK'S RED HOT CAN HIJACK A VARIETY OF PLATFORMS  <BR><BR> BRINGING IN A WHOLE NEW WAY OF LOOKING AT HOT SAUCE <BR><BR>AS YOUR SEX AND DATING GUIDE</h1>
+	<img  class="hi" src="images/BLANK.png">
+	</div>
+<!-- 	<div class="cat1">
+	<p>This project contains a promotion, book design, and merchandise of the simpsons. I use the simpsons because it is one of my favourites. The colours used in the series is very unique to what have been seen before. It has a giant array of characters, yet they are all extremely unique in their own way.  </p>
+	</div> -->
+	
+	
+
+	<div style="position: fixed; left:0px; top: 13%; color: black;">
+	<p class="cat1" style="font-weight: bold; color: #ed1b24;">ENDORPHINS IN OVERDRIVE</p>
+	<p class="cat1">Capsaicin is the active component in cayenne peppers, the ingredient that
+makes Frank’s Red Hot so hot. It’s also a natural aphrodisiac that boosts
+testosterone and increases libido.  
+<br>
+<br>
+Everything we associate with sexual arousal is kicked into high gear with
+Frank’s—the pleasurable surge of endorphins, rising heart rate, and flush,
+sweaty skin.
+<br>
+<br>
+Make people feel closer and life more delicious by spicing up intimate
+moments with red hot sex and relationship advice. To do this, Frank’s
+commentary will pop up in dating apps, reality dating shows, sex and dating
+podcasts, social media blasts, live speed-dating events, and right on the
+bottle itself to bring the heat when it’s needed most.</p>
+	</div>
+
+	<!-- <br>
+	<br>
+
+	<h3 class="cat"> Toilet Paper: </h3>
+
+		<div class="row">
+			<div class="column1">
+		<img src="images/toiletpaper.gif" style="width:100%">
+			</div>
+		<div class="column1">
+		<p style="width:100%; color: black; font-family: 'Avenir Next';"> The toilet paper has one of the most compliacted histories. It is used world wide by most of us. How it came to be is complicated. However, through this interactive toilet paper it will take the user through an experience by wiping with various "surfaces" and smelling different sheets depending on the history, leading to a basic understanding of the toilet paper.</p>
+			</div>
+		</div>
+		<br>
+
+	<h3 class="cat"> Sticky Notes: </h3>
+
+	
+
+		<div class="row">
+		<div class="column1">
+		<p style="width:100%; color: black; font-family: 'Avenir Next';"> Sticky Notes were created by two people that worked together. They ended up the founders of the post-it. The story of how the sticky notes came to be is an interesting story. Through these sticky notes people will go through the adventure of how it came to be by tearing pieces, sticking them to various surfaces, drawing, and many more interactive features that immerse you into the story.</p>
+			</div>
+			<div class="column1">
+		<img src="images/sticky.gif" style="width:100%">
+			</div>
+		</div>
+		<br>
+	<h3 class="cat"> Pencils: </h3>
+		
+
+		
+		<div class="row">
+		<div class="column1">
+		<p style="width:100%; color: black; font-family: 'Avenir Next';"> The pencil is one of those items which is made by multiple people. No one is really sure who inveneted the pencil, as graphite is one of the natural elements of this world. As the user writes and sharpens the penicl, the older information gets lost and becomes no longer visible. Graphite was first discovered by framers in England and was used to mark sheep. The first mass produced pencil was through Staedtler. Henry Thomas then made them more efficient by using clay with the graphite, thus being responsible for the HB2 pencils that we know today. Finally, the iconic yellow of the pencil was first seen in the Paris World Fair to represent Chinese Respect.  </p>
+			</div>
+			<div class="column1">
+		<img src="images/pencil1.jpg" style="width:100%">
+			</div>
+			<div class="column1">
+		<img src="images/pencil2.jpg" style="width:100%">
+			</div>
+			<div class="column1">
+		<img src="images/pencil3.jpg" style="width:100%">
+			</div>
+		</div>
+		<br>
+	<h3 class="cat"> Coffee Cup: </h3>
+		
+
+		<p style="width:35%; color: black; font-family: 'Avenir Next'; position: relative; left:7%; margin-bottom: 5%; "> The takeaway coffee cup is not due to a result of one inventor's work, but to many. It took sixty years and three people for the modern cup to come to life. Through this cup, each time the user drinks the coffee information about the inventors will be revealed. Lawrence Luellen created the "heath cup" in 1907. However, people did not use it until the Spanish Flu spread through the sharing of cups. Leslie Buck was reponsible for the famous greek anthora cup in New York City. It was one of the first designs on a coffee cup, thus popularising the idea of taking coffee to-go. Shorty after, Alan Frank made the tearable coffee lid as a solution to walking and drinking coffee.</p>
+			
+		<div class="row">
+			<div class="column1">
+		<img src="images/coffeecup0.jpg" style="width:100%">
+			</div>
+			<div class="column1">
+		<img src="images/coffeecup1.jpg" style="width:100%">
+			</div>
+		</div>
+
+		<br>
+	<h3 class="cat"> Pizza Box: </h3>
+		
+
+		<div class="row">
+			<div class="column1">
+		<p style="width:100%; color: black; font-family: 'Avenir Next';"> The delivery pizza box was originally invented by the founder of Dominos, Tom Monaghan. However, this idea is challenged, as many people falsely credit Elemer L. Winkler. The box is made to let heat circulate, so that the pizza will not turn soggy through delivery. The element of surpise comes in when the user starts consuming and using the product. Every slice eaten will reveal information, thus leading to a learning experience of finding the inventors and origins through each slice. </p>
+			</div>
+			<div class="column1">
+		<img src="images/pizzabox0.jpg" style="width:100%">
+			</div>
+			<div class="column1">
+		<img src="images/pizzabox1.jpg" style="width:100%">
+			</div>
+			<div class="column1">
+		<img src="images/pizzabox2.jpg" style="width:100%">
+			</div>
+		
+		</div>
+		<br>
+		<br>
+
+	
+
+
+
+	</p> -->
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+</html>
