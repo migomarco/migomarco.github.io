@@ -135,14 +135,14 @@ a:hover{
 
 .button4:hover {
   background-color: white; 
-  color: #3d5494; 
+  color: #ed1b24; 
   border: 2px solid white;
 
 }
 
 .button4 {
   padding: 11px 20px;
-  background-color: #3d5494;
+  background-color: #ed1b24;
   color: white;
   border: 2px solid white;
   border-radius:2px;
@@ -216,7 +216,7 @@ a:hover{
 
 
 
-.simpsons{ background:#3d5494; position:relative; padding-top:150px; padding-bottom:100px; }
+.simpsons{ background:#ed1b24; position:relative; padding-top:150px; padding-bottom:100px; }
 .simpsons .middle-img{ position:absolute; top:45%; left:0; right:0; display:table; margin:0px auto; text-align:center;}
 .middle-img img{ text-align:center;}
 
@@ -327,7 +327,7 @@ body {padding-right:0px !important;margin-right:0px !important;}
 
 .uffya1{ background:#87abc3!important;}
 .cracoa1{ background:#ed7f4d!important;}
-.simpsona1{background:#3d5494!important;}
+.simpsona1{background:#ed1b24!important;}
 .funa1{ background:#8d744b;}
 .pana1{ background:#bcbcbc;}
 .agnostica1{ background:#dd1021;}
