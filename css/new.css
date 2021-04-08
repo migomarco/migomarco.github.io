@@ -491,7 +491,7 @@ body{ overflow:hidden;}
   .touch .cd-nav-trigger, .touch #cd-vertical-nav {  z-index:250;}
   
   .content-C{ margin-bottom:30px;}
- .section-uffy .content-C{ margin-bottom:30px; margin-top:23%;}
+ .section-uffy .content-C{ top:30%;}
   .cd-section p{ font-size:15px; line-height:23px;}
   .border-btn{ font-size:12px; border:2px solid #FFFFFF;}
   
@@ -501,7 +501,7 @@ body{ overflow:hidden;}
  
  .fun-web .content-C{ margin-top:40%;}
   .fun-web .middle-img{ top:23%;}
-  .section-uffy{ padding-top:30px; padding-bottom:20px;}
+  .section-uffy{ top:30%;}
   .uffy-img{ text-align:center;}
   .uffy-img img{ max-width:300px; text-align:center;}
   
