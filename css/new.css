@@ -496,6 +496,9 @@ body{ overflow:hidden;}
  .touch .cd-nav-trigger, .touch #cd-vertical-nav {
     bottom: 40px;
   }
+  .cursor {
+    visibility: hidden;
+  }
   
   .scrollToTop{ display:none!important;}
   
