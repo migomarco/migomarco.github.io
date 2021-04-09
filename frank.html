@@ -20,6 +20,29 @@
 
 <style>
 
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('../font/avenir-next-bold.woff') format('woff');
+    font-weight: bold;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('../font/avenir-next-medium.woff') format('woff');
+    font-weight: 550;
+}
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('../font/avenir-next-regular.woff') format('woff');
+    font-weight: normal;
+    font-weight: 400;
+}
+
 head{
 	background-color: white;
 }
@@ -115,7 +138,7 @@ body{
   	margin-right: auto;
 	width: 500px;
 	padding: 2%;
-	font-family: Avenir;
+	font-family: Avenir Next;
 }
 
 .cat1 {
@@ -131,7 +154,7 @@ body{
 	padding: 2%;
 	/*padding-bottom: 20%;*/
 	padding-top: 0%;
-	font-family: Avenir;
+	font-family: Avenir Next;
 }
 
 .cat1l {
@@ -148,7 +171,7 @@ body{
 	width: 500px;
 	padding-top: 2%;
 	padding-left: 0%;
-	font-family: Avenir;
+	font-family: Avenir Next;
 }
 
 .cat2 {
@@ -160,12 +183,12 @@ body{
 	width: 500px;
 	padding: 2%;
 	padding-top: 15%;
-	font-family: Avenir;
+	font-family: Avenir Next;
 }
 
 .cat3 {
 	color: black;
-	font-family: Avenir;
+	font-family: Avenir Next;
 	font-weight: bold;
 }
 
@@ -333,6 +356,81 @@ a:hover{
 	-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-o-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)
 }
 
+.info {
+	position: fixed; 
+	left:0px; 
+	top: 13%; 
+	color: black;
+}
+
+.hi{
+	color: black; 
+	text-align: center; 
+	margin-left: 30%; 
+	margin-top: 20%; 
+	font-family: Avenir Next; 
+	letter-spacing: 3px;
+	line-height: 200%;
+}
+
+@media screen and (max-width: 800px) {
+
+.hi {
+	margin-top: 200px;
+	width: 100%;
+	height: auto;
+}
+
+
+.leftright{
+	width: 30px;
+	height: 30px;
+	margin-left: 0px;
+	margin-right: 0px;
+	-webkit-transition:all .5s ease;-moz-transition:all .5s ease;-o-transition:all .5s ease;
+    -ms-transition:all .5s ease;
+   
+}
+
+.leftright:hover{
+	-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-o-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)
+	
+}
+
+.info{
+	visibility: hidden;
+	width: 0px;
+	height: 0px;
+}
+
+.hi{
+	color: black; 
+	text-align: center; 
+	margin-left: 0%;  
+	font-family: Avenir Next; 
+	letter-spacing: 3px;
+	font-size: 11pt;
+	line-height: 200%;
+
+}
+
+.titlec img{
+	display: block;
+  	margin-left: auto;
+  	margin-right: 0%;
+  	width: 100%;
+	height: auto;
+	padding: 5%;
+	padding-top: 11%;
+	padding-bottom: 0%;
+}
+
+.cursor {
+    visibility: hidden;
+  }
+
+}
+
 </style>
 
 <div class="header">
@@ -350,14 +448,14 @@ a:hover{
 <body class="cracobg">
 	<p>
 	<div class="titlec">
-	<h4 style="color: black; text-align: center; margin-left: 30%;  font-family: avenir; letter-spacing: 3px;"> TOP TOP TOP TOP<br><br>TOP TOP TOP TOP </h1>
-	<h4 style="color: black; text-align: center; margin-left: 30%;  font-family: avenir; letter-spacing: 3px;" class="hi"> MAKE RELATIONSHIPS HOTTER WITH FRANK’S,<br><br>THE NATURAL APHRODISIAC </h1>
+	<h4 class="type"> TOP TOP TOP TOP<br>TOP TOP TOP TOP </h1>
+	<h4 class="hi"> MAKE RELATIONSHIPS HOTTER WITH FRANK’S, <br>THE NATURAL APHRODISIAC </h1>
 	<img  class="hi" src="images/frank_hero.jpg">
-	<h4 style="color: black; text-align: center; margin-left: 30%; margin-top: 20%; font-family: avenir; letter-spacing: 3px;" class="hi"> SPICE UP YOUR AWKWARD TINDER DATES,  <br> <br>HIT THAT FRANK RED HOT BUTTON </h1>
+	<h4 class="hi"> SPICE UP YOUR AWKWARD TINDER DATES, <br>HIT THAT FRANK RED HOT BUTTON </h1>
 	<img  class="hi" src="images/Tinder.png">
-	<h4 style="color: black; text-align: center; margin-left: 30%; margin-top: 20%; font-family: avenir; letter-spacing: 3px;" class="hi"> THE BACHELOR IS FUN AND ALL, <br> <br> BUT WHAT IF WE TURNED UP THE HEAT</h1>
+	<h4 class="hi"> THE BACHELOR IS FUN AND ALL, <br>BUT WHAT IF WE TURNED UP THE HEAT</h1>
 	<img  class="hi" src="images/FrankTV.png">
-	<h4 style="color: black; text-align: center; margin-left: 30%; margin-top: 20%; font-family: avenir; letter-spacing: 3px;" class="hi"> FRANK'S RED HOT CAN HIJACK A VARIETY OF PLATFORMS  <BR><BR> BRINGING IN A WHOLE NEW WAY OF LOOKING AT HOT SAUCE <BR><BR>AS YOUR SEX AND DATING GUIDE</h1>
+	<h4 class="hi"> FRANK'S RED HOT CAN HIJACK A VARIETY OF PLATFORMS BRINGING IN A WHOLE NEW WAY OF LOOKING AT HOT SAUCE AS YOUR SEX AND DATING GUIDE</h1>
 	<img  class="hi" src="images/BLANK.png">
 	</div>
 <!-- 	<div class="cat1">
@@ -366,7 +464,7 @@ a:hover{
 	
 	
 
-	<div style="position: fixed; left:0px; top: 13%; color: black;">
+	<div class="info">
 	<p class="cat1" style="font-weight: bold; color: #ed1b24;">ENDORPHINS IN OVERDRIVE</p>
 	<p class="cat1">Capsaicin is the active component in cayenne peppers, the ingredient that
 makes Frank’s Red Hot so hot. It’s also a natural aphrodisiac that boosts

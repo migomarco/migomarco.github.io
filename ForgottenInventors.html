@@ -20,6 +20,29 @@
 
 <style>
 
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('../font/avenir-next-bold.woff') format('woff');
+    font-weight: bold;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('../font/avenir-next-medium.woff') format('woff');
+    font-weight: 550;
+}
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('../font/avenir-next-regular.woff') format('woff');
+    font-weight: normal;
+    font-weight: 400;
+}
+
 head{
 	background-color: white;
 }
@@ -115,7 +138,7 @@ body{
   	margin-right: auto;
 	width: 500px;
 	padding: 2%;
-	font-family: Avenir;
+	font-family: Avenir Next;
 }
 
 .cat1 {
@@ -131,7 +154,7 @@ body{
 	padding: 2%;
 	/*padding-bottom: 20%;*/
 	padding-top: 0%;
-	font-family: Avenir;
+	font-family: Avenir Next;
 }
 
 .cat1l {
@@ -148,7 +171,7 @@ body{
 	width: 500px;
 	padding-top: 2%;
 	padding-left: 0%;
-	font-family: Avenir;
+	font-family: Avenir Next;
 }
 
 .cat2 {
@@ -160,12 +183,12 @@ body{
 	width: 500px;
 	padding: 2%;
 	padding-top: 15%;
-	font-family: Avenir;
+	font-family: Avenir Next;
 }
 
 .cat3 {
 	color: black;
-	font-family: Avenir;
+	font-family: Avenir Next;
 	font-weight: bold;
 }
 
@@ -287,7 +310,7 @@ a {
 
 a:hover{
 	cursor: none;
-	color: #fcc555;
+	color: #FCC555;
 	text-decoration: none;
 	-webkit-transition-duration: 0.4s; /* Safari */
   	transition-duration: 0.4s;
@@ -333,6 +356,80 @@ a:hover{
 	-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-o-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)
 }
 
+.info {
+	position: fixed; 
+	left:0px; 
+	top: 13%; 
+	color: black;
+}
+
+.hi{
+	color: black; 
+	text-align: center; 
+	margin-left: 30%; 
+	margin-top: 20%; 
+	font-family: Avenir Next; 
+	letter-spacing: 3px;
+	line-height: 200%;
+}
+
+@media screen and (max-width: 800px) {
+
+.hi {
+	margin-top: 200px;
+	width: 100%;
+	height: auto;
+}
+
+
+.leftright{
+	width: 30px;
+	height: 30px;
+	margin-left: 0px;
+	margin-right: 0px;
+	-webkit-transition:all .5s ease;-moz-transition:all .5s ease;-o-transition:all .5s ease;
+    -ms-transition:all .5s ease;
+   
+}
+
+.leftright:hover{
+	-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-o-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)
+	
+}
+
+.info{
+	visibility: hidden;
+	width: 0px;
+	height: 0px;
+}
+
+.hi{
+	color: black; 
+	text-align: center; 
+	margin-left: 0%;  
+	font-family: Avenir Next; 
+	letter-spacing: 3px;
+	font-size: 11pt;
+	line-height: 200%;
+
+}
+
+.titlec img{
+	display: block;
+  	margin-left: auto;
+  	margin-right: 0%;
+  	width: 100%;
+	height: auto;
+	padding: 5%;
+	padding-top: 11%;
+	padding-bottom: 0%;
+}
+
+.cursor {
+    visibility: hidden;
+  }
+
+}
 </style>
 
 <div class="header">
@@ -350,18 +447,18 @@ a:hover{
 <body class="cracobg">
 	<p>
 	<div class="titlec">
-	<h4 style="color: black; text-align: center; margin-left: 30%;  font-family: avenir; letter-spacing: 3px;"> TOP TOP TOP TOP<br><br>TOP TOP TOP TOP </h1>
-	<h4 style="color: black; text-align: center; margin-left: 30%; margin-top: 20%; font-family: avenir; letter-spacing: 3px;" class="hi"> TAKEN FOR GRANTED, EVERYDAY DISPOSABLE ITEMS <BR> <BR> ORIGINATE FROM SOMWHERE WITH A STORY</h4>
+	<h4 class="type"> TOP TOP TOP TOP<br>TOP TOP TOP TOP </h1>
+	<h4 class="hi"> TAKEN FOR GRANTED, <BR> EVERYDAY DISPOSABLE ITEMS HAVE  <BR> INVENTORS WITH A STORY TO TELL</h4>
 	<img  class="hi" src="images/pencil1.jpg">
 	<img  class="hi" src="images/pencil3.jpg">
-	<h4 style="color: black; text-align: center; margin-left: 30%; margin-top: 20%; font-family: avenir; letter-spacing: 3px;" class="hi"> EVEN WIPING YOUR ASS IS DUE TO <BR><BR>A HISTORY OF INVENTORS FIXING SHIT</h4>
+	<h4 class="hi"> EVEN WIPING YOUR ASS IS DUE TO <BR>A HISTORY OF INVENTORS FIXING SHIT</h4>
 	<img  class="hi" src="images/toiletpaper.gif">
-	<h4 style="color: black; text-align: center; margin-left: 30%; margin-top: 20%; font-family: avenir; letter-spacing: 3px;" class="hi"> BY USING EVERY ITEMS, YOU LEARN ABOUT <BR><BR>THESE FORGOTTEN INVENTORS</h4>
+	<h4 class="hi"> BY USING EVERY ITEMS, YOU LEARN ABOUT <BR>THESE FORGOTTEN INVENTORS</h4>
 	<img  class="hi" src="images/sticky.gif">
-	<h4 style="color: black; text-align: center; margin-left: 30%; margin-top: 20%; font-family: avenir; letter-spacing: 3px;" class="hi"> DRINK YOUR COFFEE! IT'S TIME TO LEARN</h4>
+	<h4 class="hi"> DRINK YOUR COFFEE! IT'S TIME TO LEARN</h4>
 	<img  class="hi" src="images/coffeecup0.jpg">
 	<img  class="hi" src="images/coffeecup1.jpg">
-	<h4 style="color: black; text-align: center; margin-left: 30%; margin-top: 20%; font-family: avenir; letter-spacing: 3px;" class="hi"> INSPIRE PEOPLE TO INVENT <BR><BR>WITH SLICES OF KNOWLEGE</h4>
+	<h4 class="hi"> INSPIRE PEOPLE TO INVENT <BR>WITH SLICES OF KNOWLEGE</h4>
 	<img  class="hi" src="images/pizzabox1.jpg">
 	<img  style="padding-bottom: 4%" class="hi" src="images/pizzabox2.jpg">
 	</div>
@@ -371,7 +468,7 @@ a:hover{
 	
 	
 
-	<div style="position: fixed; left:0px; top: 13%; color: black;">
+	<div class="info">
 	<p class="cat1" style="font-weight: bold; color: #fcc555;">FORGOTTEN INVENTORS</p>
 	<p class="cat1">We all use everyday items without appreciating the people behind them. These basic inventions are essential to our daily lives. Inventors like these, who defined the way we live today, are often forgotten and taken for granted. More precisely, we forget them for inventing disposable items that we have become so used to, not realising that there were specific people responsible for their creation. The great minds and history behind such important inventions deserve our recognition. Unfortunately, that knowledge is not passed on to the students of today.
 <br>

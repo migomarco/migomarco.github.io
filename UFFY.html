@@ -20,6 +20,29 @@
 
 <style>
 
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('../font/avenir-next-bold.woff') format('woff');
+    font-weight: bold;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('../font/avenir-next-medium.woff') format('woff');
+    font-weight: 550;
+}
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('../font/avenir-next-regular.woff') format('woff');
+    font-weight: normal;
+    font-weight: 400;
+}
+
 head{
 	background-color: white;
 }
@@ -115,7 +138,7 @@ body{
   	margin-right: auto;
 	width: 500px;
 	padding: 2%;
-	font-family: Avenir;
+	font-family: Avenir Next;
 }
 
 .cat1 {
@@ -127,11 +150,11 @@ body{
 	
   	margin-left: 0%;
   	margin-right: auto;
-	width: 100%;
+	width: 30%;
 	padding: 2%;
 	/*padding-bottom: 20%;*/
 	padding-top: 0%;
-	font-family: Avenir;
+	font-family: Avenir Next;
 }
 
 .cat1l {
@@ -148,7 +171,7 @@ body{
 	width: 500px;
 	padding-top: 2%;
 	padding-left: 0%;
-	font-family: Avenir;
+	font-family: Avenir Next;
 }
 
 .cat2 {
@@ -160,12 +183,12 @@ body{
 	width: 500px;
 	padding: 2%;
 	padding-top: 15%;
-	font-family: Avenir;
+	font-family: Avenir Next;
 }
 
 .cat3 {
 	color: black;
-	font-family: Avenir;
+	font-family: Avenir Next;
 	font-weight: bold;
 }
 
@@ -186,7 +209,7 @@ body{
 }
 
 .hi {
-	height: 200px;
+	margin-top: 200px;
 	width: auto;
 }
 
@@ -196,17 +219,6 @@ body{
   	margin-right: 0%;
   	width: 70%;
 	height: auto;
-	padding: 5%;
-	padding-top: 11%;
-	padding-bottom: 0%;
-}
-
-iframe{
-	display: block;
-  	margin-left: auto;
-  	margin-right: 0%;
-  	width: 70%;
-	max-height: 100%;
 	padding: 5%;
 	padding-top: 11%;
 	padding-bottom: 0%;
@@ -237,11 +249,9 @@ iframe{
 audio{
 	display: block;
   	margin-left: auto;
-  	margin-right: 5%;
-  	margin-top: 11%;
-  	width: 50%;
-  	padding: 0%;
-  	/*color: orange;*/
+  	margin-right: auto;
+  	width: 600px;
+  	padding: 2%;
 }
 
 .header {
@@ -300,14 +310,14 @@ a {
 
 a:hover{
 	cursor: none;
-	color: #87abc3;
+	color: #87acc3;
 	text-decoration: none;
 	-webkit-transition-duration: 0.4s; /* Safari */
   	transition-duration: 0.4s;
 }
 
 .button {
-  background-color: #ed7f4d; /* Green */
+  background-color: grey; /* Green */
   border: none;
   color: white;
   padding: 16px 32px;
@@ -323,12 +333,12 @@ a:hover{
 
 .button1:hover {
   background-color: white; 
-  color: #ed7f4d; 
+  color: #ed1b24; 
   border: 2px solid white;
 }
 
 .button1 {
-  background-color: #ed7f4d;
+  background-color: #ed1b24;
   color: white;
   border: 2px solid white;
 }
@@ -346,7 +356,107 @@ a:hover{
 	-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-o-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)
 }
 
+.info {
+	position: fixed; 
+	left:0px; 
+	top: 13%; 
+	color: black;
+}
+
+.hi{
+	color: black; 
+	text-align: center; 
+	margin-left: 30%; 
+	margin-top: 20%; 
+	font-family: Avenir Next; 
+	letter-spacing: 3px;
+	line-height: 200%;
+}
+
+iframe{
+	display: block;
+  	margin-left: auto;
+  	margin-right: 0%;
+  	width: 70%;
+	
+	padding: 5%;
+	margin-top: 15%;
+	padding-bottom: 0%;
+	/*height: 1000;*/
+}
+
+@media screen and (max-width: 800px) {
+
+.hi {
+	margin-top: 200px;
+	width: 100%;
+	height: auto;
+}
+
+
+.leftright{
+	width: 30px;
+	height: 30px;
+	margin-left: 0px;
+	margin-right: 0px;
+	-webkit-transition:all .5s ease;-moz-transition:all .5s ease;-o-transition:all .5s ease;
+    -ms-transition:all .5s ease;
+   
+}
+
+.leftright:hover{
+	-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-o-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)
+	
+}
+
+.info{
+	visibility: hidden;
+	width: 0px;
+	height: 0px;
+}
+
+.hi{
+	color: black; 
+	text-align: center; 
+	margin-left: 0%;  
+	font-family: Avenir Next; 
+	letter-spacing: 3px;
+	font-size: 11pt;
+	line-height: 200%;
+
+}
+
+.titlec img{
+	display: block;
+  	margin-left: auto;
+  	margin-right: 0%;
+  	width: 100%;
+	height: auto;
+	padding: 5%;
+	padding-top: 11%;
+	padding-bottom: 0%;
+}
+
+iframe{
+	display: block;
+  	margin-left: auto;
+  	margin-right: 0%;
+  	width: 100%;
+  	/*height: 100;*/
+	max-height: 100%;
+	padding: 5%;
+	margin-top: 30%;
+	margin-bottom: -40%;
+}
+
+.cursor {
+    visibility: hidden;
+  }
+
+}
 </style>
+
+
 
 <div class="header">
 
@@ -363,13 +473,13 @@ a:hover{
 <body class="cracobg">
 	<p>
 	<div  class="titlec">
-	<h4 style="color: black; text-align: center; margin-left: 30%;  font-family: avenir; letter-spacing: 3px;"> TOP TOP TOP TOP<br><br>TOP TOP TOP TOP </h1>
-	<h4 style="color: black; text-align: center; margin-left: 30%; margin-top: 20%; font-family: avenir; letter-spacing: 3px;" class="hi"> CAN YOU BE AS CONFIDENT AS THESE ADS PORTRAY?</h4>
-	<iframe height="800" src="https://www.instagram.com/p/BQvyPhxAzW5/embed" width="400" height="480" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-	<h4 style="color: black; text-align: center; margin-left: 30%; margin-top: 20%; font-family: avenir; letter-spacing: 3px;" class="hi"> DON'T PRETEND YOUR SHOES DON'T HURT</h4>
-	<iframe height="800" src="https://www.instagram.com/p/BQvyAcugWko/embed" width="400" height="480" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-	<h4 style="color: black; text-align: center; margin-left: 30%; margin-top: 20%; font-family: avenir; letter-spacing: 3px;" class="hi"> WITH UFFY THEY DON'T HAVE TO HURT</h4>
-	<iframe style="padding-bottom: 4%" height="800" src="https://www.instagram.com/p/BQvyJrwAzbG/embed" width="400" height="480" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+	<h4 class="type"> TOP TOP TOP TOP<br>TOP TOP TOP TOP </h1>
+	<h4 class="hi"> CAN YOU BE AS CONFIDENT <br>AS THESE ADS PORTRAY?</h4>
+	<iframe height="600" src="https://www.instagram.com/p/BQvyPhxAzW5/embed" width="400" height="480" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+	<h4 class="hi"> DON'T PRETEND YOUR SHOES DON'T HURT</h4>
+	<iframe height="600" src="https://www.instagram.com/p/BQvyAcugWko/embed" width="400" height="480" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+	<h4 class="hi"> WITH UFFY THEY DON'T HAVE TO HURT</h4>
+	<iframe height="600" style="padding-bottom: 4%" src="https://www.instagram.com/p/BQvyJrwAzbG/embed" width="400" height="480" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
 	</div>
 <!-- 	<div class="cat1">
 	<p>This project contains a promotion, book design, and merchandise of the simpsons. I use the simpsons because it is one of my favourites. The colours used in the series is very unique to what have been seen before. It has a giant array of characters, yet they are all extremely unique in their own way.  </p>
@@ -377,7 +487,7 @@ a:hover{
 	
 	
 
-	<div style="padding-left: 1%; width: 30%; position: fixed; left:0px; top: 13%; color: black;">
+	<div class="info">
 	<p class="cat1" style="font-weight: bold; color: #87abc3;">UFFY</p>
 	<p class="cat1">This project is for a made up shoe company. it's aim is to advertise a product without showing the product itself.
 <br>

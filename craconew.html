@@ -20,6 +20,29 @@
 
 <style>
 
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('../font/avenir-next-bold.woff') format('woff');
+    font-weight: bold;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('../font/avenir-next-medium.woff') format('woff');
+    font-weight: 550;
+}
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('../font/avenir-next-regular.woff') format('woff');
+    font-weight: normal;
+    font-weight: 400;
+}
+
 head{
 	background-color: white;
 }
@@ -115,7 +138,7 @@ body{
   	margin-right: auto;
 	width: 500px;
 	padding: 2%;
-	font-family: Avenir;
+	font-family: Avenir Next;
 }
 
 .cat1 {
@@ -127,11 +150,11 @@ body{
 	
   	margin-left: 0%;
   	margin-right: auto;
-	width: 100%;
+	width: 30%;
 	padding: 2%;
 	/*padding-bottom: 20%;*/
 	padding-top: 0%;
-	font-family: Avenir;
+	font-family: Avenir Next;
 }
 
 .cat1l {
@@ -148,7 +171,7 @@ body{
 	width: 500px;
 	padding-top: 2%;
 	padding-left: 0%;
-	font-family: Avenir;
+	font-family: Avenir Next;
 }
 
 .cat2 {
@@ -160,12 +183,12 @@ body{
 	width: 500px;
 	padding: 2%;
 	padding-top: 15%;
-	font-family: Avenir;
+	font-family: Avenir Next;
 }
 
 .cat3 {
 	color: black;
-	font-family: Avenir;
+	font-family: Avenir Next;
 	font-weight: bold;
 }
 
@@ -186,7 +209,7 @@ body{
 }
 
 .hi {
-	height: 200px;
+	margin-top: 200px;
 	width: auto;
 }
 
@@ -196,17 +219,6 @@ body{
   	margin-right: 0%;
   	width: 70%;
 	height: auto;
-	padding: 5%;
-	padding-top: 11%;
-	padding-bottom: 0%;
-}
-
-iframe{
-	display: block;
-  	margin-left: auto;
-  	margin-right: 0%;
-  	width: 70%;
-	max-height: 100%;
 	padding: 5%;
 	padding-top: 11%;
 	padding-bottom: 0%;
@@ -232,16 +244,6 @@ iframe{
   content: "";
   clear: both;
   display: table;
-}
-
-audio{
-	display: block;
-  	margin-left: auto;
-  	margin-right: 5%;
-  	margin-top: 11%;
-  	width: 50%;
-  	padding: 0%;
-  	/*color: orange;*/
 }
 
 .header {
@@ -307,7 +309,7 @@ a:hover{
 }
 
 .button {
-  background-color: #ed7f4d; /* Green */
+  background-color: grey; /* Green */
   border: none;
   color: white;
   padding: 16px 32px;
@@ -323,12 +325,12 @@ a:hover{
 
 .button1:hover {
   background-color: white; 
-  color: #ed7f4d; 
+  color: #ed1b24; 
   border: 2px solid white;
 }
 
 .button1 {
-  background-color: #ed7f4d;
+  background-color: #ed1b24;
   color: white;
   border: 2px solid white;
 }
@@ -346,6 +348,124 @@ a:hover{
 	-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-o-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)
 }
 
+.info {
+	position: fixed; 
+	left:0px; 
+	top: 13%; 
+	color: black;
+}
+
+.hi{
+	color: black; 
+	text-align: center; 
+	margin-left: 30%; 
+	margin-top: 20%; 
+	font-family: Avenir Next; 
+	letter-spacing: 3px;
+	line-height: 200%;
+}
+
+iframe{
+	display: block;
+  	margin-left: auto;
+  	margin-right: 0%;
+  	width: 70%;
+  	height: 600px;
+	padding: 5%;
+	margin-top: 20%;
+	padding-bottom: 0%;
+	/*height: 1000;*/
+}
+
+audio{
+	display: block;
+  	margin-left: auto;
+  	margin-right: 5%;
+  	margin-top: 20%;
+  	width: 60%;
+  	padding: 0%;
+  	/*color: orange;*/
+}
+
+@media screen and (max-width: 800px) {
+
+.hi {
+	margin-top: 200px;
+	width: 100%;
+	height: auto;
+}
+
+
+.leftright{
+	width: 30px;
+	height: 30px;
+	margin-left: 0px;
+	margin-right: 0px;
+	-webkit-transition:all .5s ease;-moz-transition:all .5s ease;-o-transition:all .5s ease;
+    -ms-transition:all .5s ease;
+   
+}
+
+.leftright:hover{
+	-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-o-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)
+	
+}
+
+.info{
+	visibility: hidden;
+	width: 0px;
+	height: 0px;
+}
+
+.hi{
+	color: black; 
+	text-align: center; 
+	margin-left: 0%;  
+	font-family: Avenir Next; 
+	letter-spacing: 3px;
+	font-size: 11pt;
+	line-height: 200%;
+
+}
+
+.titlec img{
+	display: block;
+  	margin-left: auto;
+  	margin-right: 0%;
+  	width: 100%;
+	height: auto;
+	padding: 5%;
+	padding-top: 11%;
+	padding-bottom: 0%;
+}
+
+iframe{
+	display: block;
+  	margin-left: auto;
+  	margin-right: 0%;
+  	width: 100%;
+  	height: 400px;
+	max-height: 100%;
+	padding: 5%;
+	margin-top: 45%;
+	margin-bottom: 45%;
+}
+
+audio{
+	display: block;
+  	margin-left: auto;
+  	margin-right: 5%;
+  	width: 90%;
+  	padding: 0%;
+  	margin-top: 40%;
+  	/*color: orange;*/
+}
+
+.cursor {
+    visibility: hidden;
+  }
+
+}
 </style>
 
 <div class="header">
@@ -363,18 +483,18 @@ a:hover{
 <body class="cracobg">
 	<p>
 	<div  class="titlec">
-	<h4 style="color: black; text-align: center; margin-left: 30%;  font-family: avenir; letter-spacing: 3px;"> TOP TOP TOP TOP<br><br>TOP TOP TOP TOP </h1>
-	<h4 style="color: black; text-align: center; margin-left: 30%; margin-top: 20%; font-family: avenir; letter-spacing: 3px;" class="hi"> A REALLY CHEAP CAR RENTAL...<BR><BR> SERIOUSLY! VERY CHEAP</h4>
+	<h4 class="type"> TOP TOP TOP TOP<br>TOP TOP TOP TOP </h1>
+	<h4 class="hi"> A REALLY CHEAP CAR RENTAL...<BR>SERIOUSLY! VERY CHEAP</h4>
 	<img  class="hi" src="images/itcar.jpg">
-	<h4 style="color: black; text-align: center; margin-left: 30%; margin-top: 20%; font-family: avenir; letter-spacing: 3px;" class="hi"> IT'S NOT CLEAN</h4>
+	<h4 class="hi"> IT'S NOT CLEAN</h4>
 	<img  class="hi" src="images/itbike.jpg">
-	<h4 style="color: black; text-align: center; margin-left: 30%; margin-top: 20%; font-family: avenir; letter-spacing: 3px;" class="hi"> IT'S NOT FAST</h4>
+	<h4 class="hi"> IT'S NOT FAST</h4>
 	<img  class="hi" src="images/itvan.jpg">
-	<h4 style="color: black; text-align: center; margin-left: 30%; margin-top: 20%; font-family: avenir; letter-spacing: 3px;" class="hi"> BUT IT GETS YOU PLACES</h4>
-	<iframe  height="650" src="https://www.youtube.com/embed/fu2t-CSX5LE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	<h4 style="color: black; text-align: center; margin-left: 30%; margin-top: 20%; font-family: avenir; letter-spacing: 3px;" class="hi"> DOES IT DRIVE? <BR><BR>THAT'S ALL IT DOES</h4>
+	<h4 class="hi"> BUT IT GETS YOU PLACES</h4>
+	<iframe  height="400" src="https://www.youtube.com/embed/fu2t-CSX5LE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<h4 class="hi"> DOES IT DRIVE? <BR>THAT'S ALL IT DOES</h4>
 	<audio controls> <source src="images/itradio.mp3" type="audio/mpeg"> </audio>
-	<h4 style="color: black; text-align: center; margin-left: 30%; margin-top: 20%; font-family: avenir; letter-spacing: 3px;" class="hi"> 100% RUNNING ENGINE <BR><BR>VERIFIED BY INSPECTORS </h4>
+	<h4 class="hi"> 100% RUNNING ENGINE <BR>VERIFIED BY INSPECTORS </h4>
 	<img  style="padding-bottom: 4%" class="hi" src="images/itform.jpg">
 	</div>
 <!-- 	<div class="cat1">
@@ -383,7 +503,7 @@ a:hover{
 	
 	
 
-	<div style="padding-left: 1%; width: 30%; position: fixed; left:0px; top: 13%; color: black;">
+	<div class="info">
 	<p class="cat1" style="font-weight: bold; color: #ed7f4d;">CRACO</p>
 	<p class="cat1">Craco is a car rental company that is about low cost and bad quality cars. This campaign is targeted towards college students or the lower-income community who don’t give priority to clean or nice cars and would rather pay less.
 <br>
