@@ -2,12 +2,23 @@
 /* CSS Document */
 
 @font-face {
-    font-family: 'aqua_grotesqueregular';
-    src: url('../font/aqua-webfont.woff2') format('woff2'),
-         url('../font/aqua-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'Avenir Next';
+    src: url('../font/avenir-next-bold.woff') format('woff');
+    font-weight: bold;
+    font-weight: 700;
+}
 
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('../font/avenir-next-medium.woff') format('woff');
+    font-weight: 550;
+}
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('../font/avenir-next-regular.woff') format('woff');
+    font-weight: normal;
+    font-weight: 400;
 }
 
 body{ font-family: 'Avenir Next';}
