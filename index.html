@@ -22,6 +22,53 @@
 
 </head>
 
+<script type="text/javascript">
+	$(document).ready(function () {
+    setTimeout(function(){
+        $('#delayload').fadeIn(500);
+    }, 4500);
+});
+
+	$(document).ready(function () {
+    setTimeout(function(){
+        $('#delayload2').fadeIn(500);
+    }, 4500);
+});
+
+	$(document).ready(function () {
+    setTimeout(function(){
+        $('#delayload3').fadeIn(500);
+    }, 4500);
+});
+
+	$(document).ready(function () {
+    setTimeout(function(){
+        $('#delayload4').fadeIn(500);
+    }, 4500);
+});
+
+</script>
+
+<style type="text/css">
+@media screen and (min-width: 800px) {
+	#delayload {
+		display: none;
+	}
+
+	#delayload2 {
+		display: none;
+	}
+
+	#delayload3 {
+		display: none;
+	}
+
+	#delayload4 {
+		display: none;
+	}
+}
+</style>
+
 
 
 <body style="background-color: black;">
@@ -43,7 +90,7 @@
   				<source src="images/ani.mp4" type="video/mp4">
 			</video>  -->
       </div>
-      <div class="top-head">
+      <div id="delayload" class="top-head">
         <div class="container">
           <div class="row">
             <div class="col-lg-6 col-sm-6 col-xs-6">
@@ -59,24 +106,28 @@
         <!--container-->
       </div>
 
-      <div class="banner-caption" style="cursor: none;">
-        <div><h2 style="font-weight: 550;">Miguel Marcos</h2></div>
-        <div><a>Projects</a></div>
-        <br>
-        <br>
-        <div class="t3"><a href="#"  data-anchor="contact"> Advertising - Frank's Red Hot </a></div> 
-        <div class="t3"><a href="#"  data-anchor="contact7"> Branding - JohnJohnLAB </a></div>
-        <div class="t3"><a href="#"  data-anchor="contact6"> Branding - Forgotten Inventors </a></div>
-        <div class="t3"><a href="#"  data-anchor="about"> Advertising - UFFY </a></div>
-        <div class="t3"><a href="#"  data-anchor="examples"> Advertising - Craco </a></div>
-        <div class="t3"><a href="#"  data-anchor="contact3"> Branding - Blanc </a></div>
-        <div class="t3"><a href="#"  data-anchor="contact2"> Web Design - Solida Bridal Fashion </a></div>
-        <div class="t3"><a href="#"  data-anchor="contact4"> Game Design - McDonald's </a></div>
+      <div id="delayload2">
+	      <div class="banner-caption" style="cursor: none;">
+	        <div><h2 style="font-weight: 550;">Miguel Marcos</h2></div>
+	        <div><a>Projects</a></div>
+	        <br>
+	        <br>
+	        <div class="t3"><a href="#"  data-anchor="contact"> Advertising - Frank's Red Hot </a></div> 
+	        <div class="t3"><a href="#"  data-anchor="contact7"> Branding - JohnJohnLAB </a></div>
+	        <div class="t3"><a href="#"  data-anchor="contact6"> Branding - Forgotten Inventors </a></div>
+	        <div class="t3"><a href="#"  data-anchor="about"> Advertising - UFFY </a></div>
+	        <div class="t3"><a href="#"  data-anchor="examples"> Advertising - Craco </a></div>
+	        <div class="t3"><a href="#"  data-anchor="contact3"> Branding - Blanc </a></div>
+	        <div class="t3"><a href="#"  data-anchor="contact2"> Web Design - Solida Bridal Fashion </a></div>
+	        <div class="t3"><a href="#"  data-anchor="contact4"> Game Design - McDonald's </a></div>
+	      </div>
       </div>
     </div>
+    <div id="delayload4">
     <div class="icon-container"> <a href="#"  data-anchor="contact" class="cd-scroll-down">
       <p class="morph"><img src="images/mouse.png" /></p>
       </a></div>
+      </div>
   </div>
   <!---home-->
   <!-- <div data-target="contact" id="contact" class="simpsona1"> -->
@@ -461,6 +512,7 @@
   </div>
 
   <!-- vertical nav -->
+  <div id="delayload3">
   <div style="cursor: none;" id="fp-nav" class="right">
         <p>MENU</p>
     <ul style="cursor: none;" class="menu">
@@ -494,6 +546,7 @@
         <div class="fp-tooltip right" style=" text-transform: capitalize;">Contact</div>
       </li>
     </ul>
+  </div>
   </div>
 </div>
 
