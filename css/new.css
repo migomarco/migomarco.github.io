@@ -28,7 +28,7 @@ body{ font-family: 'Avenir Next';}
 
 .banner-caption{ position:absolute; top:20%; text-align:left; left:5%; right:0;    margin-top: 10%;}
 .banner-caption h1{ font-size:120px; letter-spacing:38px;opacity:0.7;}
-#boxcentre{position: absolute;width: 100vw; height: 100vh; display: block;}
+#boxcentre{position: absolute; width: 100vw; height: 100vh; display: block;}
 /*#boxcentre source{height: 100vh; width: 100vw; display: block; position: relative;}*/
 
 
@@ -284,17 +284,17 @@ a:hover{
 }
 
 .button5:hover {
-  background-color: #718ab3; 
-  color: #8d744b; 
-  border: 2px solid #718ab3;
+  background-color: #025548; 
+  color: #f7a9b6; 
+  border: 2px solid #025548;
 
 }
 
 .button5 {
   padding: 11px 20px;
-  background-color: #8d744b;
-  color: #718ab3;
-  border: 2px solid #718ab3;
+  background-color: #f7a9b6;
+  color: #025548;
+  border: 2px solid #025548;
   border-radius:2px;
 }
 
@@ -340,6 +340,21 @@ a:hover{
   background-color: #FFFFFF;
   color: BLACK;
   border: 2px solid BLACK;
+  border-radius:2px;
+}
+
+.button9:hover {
+  background-color: #718ab3; 
+  color: #8d744b; 
+  border: 2px solid #718ab3;
+
+}
+
+.button9 {
+  padding: 11px 20px;
+  background-color: #8d744b;
+  color: #718ab3;
+  border: 2px solid #718ab3;
   border-radius:2px;
 }
 
@@ -462,7 +477,7 @@ body {padding-right:0px !important;margin-right:0px !important;}
 
 .contact-txt a{ color:#FFFFFF;}
 
-.uffya1{ background:#87abc3!important;}
+.uffya1{ background:#f7a9b6!important;}
 .cracoa1{ background:#ed7f4d!important;}
 .simpsona1{background:#ed1b24!important;}
 .funa1{ background:#8d744b;}
