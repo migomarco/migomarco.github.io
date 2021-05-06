@@ -300,14 +300,14 @@ a:hover{
 
 .button6:hover {
   background-color: #00ead5; 
-  color: #dd1021; 
+  color: #e23546; 
   border: 2px solid #00ead5;
 
 }
 
 .button6 {
   padding: 11px 20px;
-  background-color: #dd1021;
+  background-color: #d71a21;
   color: #00ead5;
   border: 2px solid #00ead5;
   border-radius:2px;
@@ -482,7 +482,7 @@ body {padding-right:0px !important;margin-right:0px !important;}
 .simpsona1{background:#ed1b24!important;}
 .funa1{ background:#8d744b;}
 .pana1{ background:#bcbcbc;}
-.agnostica1{ background:#dd1021;}
+.agnostica1{ background:#d71a21;}
 .agnostica2{ background:#FCC555;}
 .agnostica3{ background:#FFFFFF;}
 .contacta1{ background:#696969;}
