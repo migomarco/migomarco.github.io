@@ -299,17 +299,17 @@ a:hover{
 }
 
 .button6:hover {
-  background-color: #00ead5; 
-  color: #e23546; 
-  border: 2px solid #00ead5;
+  background-color: black; 
+  color: white; 
+  border: 2px solid black;
 
 }
 
 .button6 {
   padding: 11px 20px;
-  background-color: #d71a21;
-  color: #00ead5;
-  border: 2px solid #00ead5;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
   border-radius:2px;
 }
 
@@ -344,17 +344,17 @@ a:hover{
 }
 
 .button9:hover {
-  background-color: #718ab3; 
-  color: #8d744b; 
-  border: 2px solid #718ab3;
+  background-color: #0de2d7; 
+  color: #d71a21; 
+  border: 2px solid #0de2d7;
 
 }
 
 .button9 {
   padding: 11px 20px;
-  background-color: #8d744b;
-  color: #718ab3;
-  border: 2px solid #718ab3;
+  background-color: #d71a21;
+  color: #0de2d7;
+  border: 2px solid #0de2d7;
   border-radius:2px;
 }
 
@@ -480,9 +480,9 @@ body {padding-right:0px !important;margin-right:0px !important;}
 .uffya1{ background:#f7a9b6!important;}
 .cracoa1{ background:#ed7f4d!important;}
 .simpsona1{background:#ed1b24!important;}
-.funa1{ background:#8d744b;}
+.funa1{ background:#d71a21;}
 .pana1{ background:#bcbcbc;}
-.agnostica1{ background:#d71a21;}
+.agnostica1{ background: white;}
 .agnostica2{ background:#FCC555;}
 .agnostica3{ background:#FFFFFF;}
 .contacta1{ background:#696969;}
