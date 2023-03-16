@@ -254,17 +254,17 @@ a:hover{
 }
 
 .button3:hover {
-  background-color: #434343; 
-  color: #bcbcbc; 
-  border: 2px solid #434343;
+  background-color: #163971; 
+  color: #e5c68a; 
+  border: 2px solid #163971;
 
 }
 
 .button3 {
   padding: 11px 20px;
-  background-color: #bcbcbc;
-  color: #434343;
-  border: 2px solid #434343;
+  background-color: #e5c68a;
+  color: #163971;
+  border: 2px solid #163971;
   border-radius:2px;
 }
 
@@ -481,7 +481,7 @@ body {padding-right:0px !important;margin-right:0px !important;}
 .cracoa1{ background:#003173!important;}
 .simpsona1{background:#ed1b24!important;}
 .funa1{ background:#d71a21;}
-.pana1{ background:#bcbcbc;}
+.pana1{ background:#e5c68a;}
 .agnostica1{ background: white;}
 .agnostica2{ background:#FCC555;}
 .agnostica3{ background:#FFFFFF;}
