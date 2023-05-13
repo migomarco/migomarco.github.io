@@ -200,6 +200,9 @@ body{
   mix-blend-mode: difference;
 }
 
+#bottom-nav{
+  mix-blend-mode: difference;
+}
 
 
 a {
