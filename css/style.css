@@ -172,6 +172,25 @@ body {
   mix-blend-mode: difference;
 }
 
+.HomeMain {
+  position: fixed;
+  z-index: 2;
+  top: 40px;
+  height: 5%;
+  width: 90px;
+  min-width: 50px;
+  color: white;
+  mix-blend-mode: difference;
+}
+
+@media screen and (max-width: 600px) {
+
+  .HomeMain {
+  visibility: hidden;
+  }
+}
+
+
 .Load{
   position: fixed;
   min-height: 100vh;
@@ -186,6 +205,13 @@ body {
   transform: translate(-50%, -50%);
   background-color: black;
   }
+
+  @media screen and (max-width: 600px) {
+
+  .Load {
+  visibility: hidden;
+  }
+}
 
 
 
@@ -407,6 +433,7 @@ body {
 /*  min-width: 350px;*/
 /*  height: 100%;*/
   padding-left: 10%;
+  padding-right: 10%;
   top: 50%;
   transform: translate(0%, -50%);
   mix-blend-mode: difference;
@@ -438,6 +465,7 @@ body {
 /*  min-width: 350px;*/
 /*  height: 100%;*/
   padding-left: 10%;
+  padding-right: 10%;
   top: 50%;
   transform: translate(0%, -50%);
   mix-blend-mode: difference;
