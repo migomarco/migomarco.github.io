@@ -1,0 +1,635 @@
+html,
+body {
+  margin: 0px;
+  scroll-behavior: smooth;
+  background: black;
+}
+
+.background-video{
+  position: fixed;
+  min-height: 100vh;
+  min-width: 100vw;
+  z-index: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  }
+
+  @media screen and (max-width: 1100px) {
+    .background-video{
+      visibility: hidden;
+    }
+  }
+
+  .background-img{
+  position: fixed;
+  min-height: 100vh;
+  min-width: 100vw;
+  z-index: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  }
+
+  @media screen and (max-width: 1100px) {
+    .background-img{
+      visibility: visible;
+    }
+  }
+
+  .backgroundImg{
+  position: fixed;
+  min-height: 100vh;
+  min-width: 100vw;
+  z-index: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  }
+
+  
+
+  .backgroundImg img{
+  position: relative;
+  width: auto;
+  height: auto;
+  min-width: 100vw;
+  max-width: 150vw;
+  min-height: 100vh;
+  max-width: 150vh;
+  }
+
+
+.box1 {
+  position: relative;
+/*  background:black;*/
+  height:100vh;
+}
+
+.box2 {
+  position: relative;
+  background:#c17250;
+  height:100vh;
+}
+
+.box3 {
+  position: relative;
+  background:#e6c584;
+  height:100vh;
+}
+
+.box4 {
+  position: relative;
+  background:#003173;
+  height:100vh;
+}
+
+.box5 {
+  position: relative;
+  background:white;
+  height:100vh;
+}
+
+.box6 {
+  position: relative;
+  background:#f7a5b5;
+  height:100vh;
+}
+
+.box7 {
+  position: relative;
+  background:#d71a21;
+  height:100vh;
+}
+
+.box8 {
+  position: relative;
+  background:white;
+  height:100vh;
+}
+
+.box9 {
+  position: relative;
+  background:#ed1b24;
+  height:100vh;
+}
+
+.box10 {
+  position: relative;
+  background: #393939;
+  height:100vh;
+}
+
+
+.OuterHome{
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+
+.ArrowLeft{
+  position: fixed;
+  z-index: 2;
+  top: 52px;
+  margin-right: 150px;
+  min-width: 50px;
+  color: white;
+  mix-blend-mode: difference;
+}
+
+.ArrowRight{
+  position: fixed;
+  z-index: 2;
+  top: 52px;
+  margin-left: 180px;
+  min-width: 50px;
+  color: white;
+  mix-blend-mode: difference;
+}
+
+
+.Home {
+  position: fixed;
+  z-index: 2;
+  top: 40px;
+  height: 5%;
+  width: 90px;
+  min-width: 50px;
+  color: white;
+  mix-blend-mode: difference;
+}
+
+.Load{
+  position: fixed;
+  min-height: 100vh;
+  min-width: 100vw;
+  z-index: 10;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  }
+
+
+
+.Contact {
+  position: fixed;
+  z-index: 2;
+  font-family: Avenir Next;
+  font-size: 13pt;
+  left: 25%;
+  top: 53px;
+  color: white;
+  mix-blend-mode: difference;
+  text-decoration: none;
+  transition: all .35s ease;
+
+  &::before {
+        content: ""; 
+        position: absolute;
+        width: 100%;
+        height: 1.5px;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.2s ease-in-out 0s; 
+        transition: all 0.2s ease-in-out 0s; 
+    }   
+
+    &:hover {
+        color: white;
+
+        &::before {
+            visibility: visible;
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+        }   
+    }   
+}
+
+
+
+
+.Resume {
+  position: fixed;
+  z-index: 2;
+  font-family: Avenir Next;
+  font-size: 13pt;
+  right: 25%;
+  top: 53px;
+  color: white;
+  mix-blend-mode: difference;
+  text-decoration: none;
+  transition: all .35s ease;
+
+  &::before {
+        content: ""; 
+        position: absolute;
+        width: 100%;
+        height: 1.5px;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.2s ease-in-out 0s; 
+        transition: all 0.2s ease-in-out 0s; 
+    }   
+
+    &:hover {
+        color: white;
+
+        &::before {
+            visibility: visible;
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+        }   
+    }  
+}
+
+
+
+
+
+
+.RightMenuOuter{
+  z-index: 2;
+  padding: 0%;
+  margin: 0%;
+  right: 0%;
+  position: fixed;
+  width: 25%;
+  min-width: 200px;
+  max-width: 300px;
+  height: 100%;
+/*  background-color: red;*/
+  mix-blend-mode: difference;
+
+}
+
+/*for mobile*/
+@media screen and (max-width: 800px) {
+
+  .RightMenuOuter{
+  z-index: 2;
+  padding: 0%;
+  margin: 0%;
+  right: 0%;
+  position: fixed;
+  width: 25%;
+  min-width: 200px;
+  max-width: 300px;
+  height: 100%;
+/*  background-color: red;*/
+  mix-blend-mode: difference;
+  visibility: hidden;
+}
+
+}
+
+.RightMenu{
+  z-index: 2;
+  padding: 0%;
+  margin: 0%;
+  position: absolute;
+  font-family: Avenir Next;
+  text-align: left;
+  font-size: 13pt;
+  left: 10%;
+  top: 50%;
+  transform: translate(-10%, -50%);
+  list-style-type: none;
+
+}
+
+.RightList{
+  z-index: 2;
+  font-weight: normal;
+  text-decoration: none; 
+  list-style-type: none;
+  color: white;
+  transition: all .15s ease;
+}
+
+.RightList:hover{
+  z-index: 2;
+  font-weight: bold;
+  text-decoration: none; 
+  list-style-type: none;
+  color: white;
+  transition: all .15s ease;
+}
+
+
+.InfoArea {
+  position: absolute;
+  left: 10%;
+  bottom: 20%;
+  mix-blend-mode: difference;
+  
+}
+
+.TypeTitle {
+  font-family: Avenir Next;
+  font-weight: normal;
+  font-size: 16pt;
+  color: white;
+  text-decoration: none;
+}
+
+.ButtonHome {
+  font-family: Avenir Next;
+  font-weight: normal;
+  font-size: 16pt;
+  color: white;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  text-align: center;
+  padding: 16px 32px;
+  border: 2px solid white;
+  background-color: transparent;
+  left: 10%;
+  bottom: 20%;
+
+}
+
+.ButtonHome:hover {
+  color: black;
+  transition-duration: 0.4s;
+  text-align: center;
+  padding: 16px 32px;
+  border: 2px solid white;
+  background-color: white;
+  left: 10%;
+  bottom: 20%;
+
+}
+
+.ProjectLogoOuter{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ProjectLogoOuter img{
+    width: 30%;
+    min-width: 300px;
+    height: auto;
+}
+
+
+.AboutMeOuter {
+  position: absolute;
+  max-width: 800px;
+/*  min-width: 350px;*/
+/*  height: 100%;*/
+  padding-left: 10%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  mix-blend-mode: difference;
+  
+}
+.AboutMe h1 {
+  font-family: Avenir Next;
+  font-weight: bold;
+  font-size: 20pt;
+  color: white;
+  text-decoration: none;
+  
+}
+
+.AboutMe p, a {
+  font-family: Avenir Next;
+  font-weight: normal;
+  font-size: 12pt;
+  color: white;
+  text-decoration: none;
+  
+}
+
+
+.AboutMeHomeOuter {
+  position: fixed;
+  z-index: 0;
+  max-width: 350px;
+/*  min-width: 350px;*/
+/*  height: 100%;*/
+  padding-left: 10%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  mix-blend-mode: difference;
+  
+}
+.AboutMeHome h1 {
+  font-family: Avenir Next;
+  font-weight: bold;
+  font-size: 20pt;
+  color: white;
+  text-decoration: none;
+  
+}
+
+.AboutMeHome p, a {
+  font-family: Avenir Next;
+  font-weight: normal;
+  font-size: 12pt;
+  color: white;
+  text-decoration: none;
+  
+}
+
+
+.RationalOuter{
+  position: fixed;
+/*  background-color: red;*/
+  margin-top: 140px;
+  height: 100%;
+  width: 30%;
+}
+
+    @media screen and (max-width: 1000px) {
+
+    .RationalOuter{
+      visibility: hidden;
+    }
+}
+
+.Rational{
+  color: black;
+  text-decoration: none;
+  padding: 50px;
+}
+
+.Rational h1{
+  font-family: Avenir Next;
+  font-weight: bold;
+  font-size: 16pt;
+
+}
+
+.Rational p{
+  font-family: Avenir Next;
+  font-weight: normal;
+  font-size: 12pt;
+}
+
+
+.ContentOuter{
+  position: absolute;
+/*  background-color: blue;*/
+  margin-top: 140px;
+  height: 100%;
+  width: 70%;
+  right: 0%;
+}
+
+    @media screen and (max-width: 1000px) {
+
+    .ContentOuter{
+      width: 100%;
+    }
+}
+
+.Content{
+  color: black;
+  text-decoration: none;
+  padding: 50px;
+}
+
+.Content h1{
+  font-family: Avenir Next;
+  font-weight: normal;
+  font-size: 16pt;
+  text-align: center;
+  padding: 10%;
+}
+
+.Content p{
+  font-family: Avenir Next;
+  font-weight: normal;
+  font-size: 12pt;
+  text-align: center;
+  padding-left:10%;
+  padding-right:10%;
+}
+
+.Content img{
+  padding: 10%;
+  width: 80%;
+}
+
+.Content iframe{
+  padding: 10%;
+  width: 80%;
+  height: 50vh;
+}
+
+.LinkAlign a{
+  font-family: Avenir Next;
+  font-weight: normal;
+  font-size: 12pt;
+  padding-left:10%;
+  padding-right:10%;
+  color: white;
+  mix-blend-mode: difference;
+}
+
+.LinkAlign h1{
+  color: white;
+  mix-blend-mode: difference;
+}
+
+.LinkAlign{
+  background-color: #393939;
+  padding: 10%;
+  margin: 10%;
+  text-align: center;
+}
+
+.FormOuter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: Avenir Next;
+  font-weight: normal;
+  font-size: 12pt; 
+  color: black;
+/*  mix-blend-mode: difference;*/
+}
+
+.Form form{
+  background-color: white;
+  color: white;
+  padding: 100px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+  border: solid black 5px;
+}
+
+.Label{
+  mix-blend-mode: difference;
+}
+
+.Form a{
+color: white;
+text-decoration: underline;
+mix-blend-mode: difference
+}
+
+.PassInput{
+  width: 140px;
+  height: 30px;
+  margin-top: 10px;
+  text-align: center;
+  color: Black;
+  background-color: white;
+  mix-blend-mode: difference;
+  border-style: solid;
+}
+
+.PassButton{
+  width: 140px;
+  height: 30px;
+  color: Black;
+  background-color: white;
+  mix-blend-mode: difference;
+  border-style: solid;
+  border: none;
+}
+
+.PassButton:hover{
+  color: white;
+  background-color: black;
+  border: solid lightgrey 1.5px;
+}
+
+
