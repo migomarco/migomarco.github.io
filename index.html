@@ -1,706 +1,202 @@
-<!doctype html>
-<html>
-<head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Miguel Marcos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/M.png" />
+    <!-- <script type="text/javascript" src="index.js"></script> -->
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-<link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
-<link href="font-awesome-4.3.0/css/font-awesome.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<script src="js/jquery.js"></script>
-<link  href="css/style-2.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" type="text/css" href="css/jquery.singlefull.css">
-<link href="css/new.css" rel="stylesheet"  type="text/css">
-<title>Miguel Marcos</title>
-<link rel="shortcut icon" href="images/M.ico" />
-<!-- google ana -->
-<!-- Resource jQuery -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.singlefull.css">
 
+  </head>
+  <body>
 
 
+<!-- Background -->
 
-</head>
-
-<script type="text/javascript">
-	$(document).ready(function () {
-    setTimeout(function(){
-        $('#delayload').fadeIn(500);
-    }, 4500);
-});
-
-	$(document).ready(function () {
-    setTimeout(function(){
-        $('#delayload2').fadeIn(500);
-    }, 4500);
-});
-
-	$(document).ready(function () {
-    setTimeout(function(){
-        $('#delayload3').fadeIn(500);
-    }, 4500);
-});
-
-	$(document).ready(function () {
-    setTimeout(function(){
-        $('#delayload4').fadeIn(500);
-    }, 4500);
-});
-
-</script>
-
-<style type="text/css">
-@media screen and (min-width: 800px) {
-	#delayload {
-		display: none;
-	}
-
-	#delayload2 {
-		display: none;
-	}
-
-	#delayload3 {
-		display: none;
-	}
-
-	#delayload4 {
-		display: none;
-	}
-}
-</style>
-
-
-
-<body style="background-color: black;">
-<div id="single">
-  <div data-target="home" id="home" class="home">
-  <video id="boxcentre" autoplay="autoplay" loop muted>
-   <source src="images/ani.mp4" type="video/mp4">
+  <video class="background-video" autoplay loop muted>
+  <source src="images/HomeVid.mp4" type="video/mp4">
   </video>
-    <div class="banner-outer">
-      <div class="banner larg-banner">
-        <div class="cd-background-wrapper">
-         <!--  <figure class="cd-floating-background"> <img src="images/ani.mp4" alt="image-1" class="lg-img"> </figure> -->
-		
-        </div>
-      </div>
-      <div class="banner mob-banner"> 
-      	<img src="images/mob-banner.jpg"> 
-      	<!-- <video style=" margin-left: -50%; margin-top:30% ; " width="200%" height="auto" autoplay="autoplay" loop muted>
-  				<source src="images/ani.mp4" type="video/mp4">
-			</video>  -->
-      </div>
-      <div id="delayload" class="top-head">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 col-sm-6 col-xs-6">
-              <p class="t1"><a href="#"  data-anchor="contact5">Contact</a></p>
-            </div>
-            <div class="col-lg-6 col-sm-6 col-xs-6">
-              <p class="t2"> <a href="images/CV.pdf" target="_blank">Résumé</a></p>
-            </div>
-            <!--12-->
-          </div>
-          <!--row-->
-        </div>
-        <!--container-->
-      </div>
 
-      <div id="delayload2">
-	      <div class="banner-caption">
-	        <div><h2 style="font-weight: 550;">Miguel Marcos</h2></div>
-	        <div><a>Projects</a></div>
-	        <br>
-	        <br>
-          <div class="t3"><a href="#"  data-anchor="contact6"> Branding - Diriyah UNESCO </a></div>
-          <div class="t3"><a href="#"  data-anchor="contact3"> Advertising - Modelo Beer </a></div>
-	        <div class="t3"><a href="#"  data-anchor="examples"> Advertising - Volvo </a></div>
-          <div class="t3"><a href="#"  data-anchor="contact4"> Advertising - Asians in English </a></div>
-          <div class="t3"><a href="#"  data-anchor="about"> Advertising - Restylane Kysse </a></div>
-          <div class="t3"><a href="#"  data-anchor="contact2"> Advertising - Emirates Airlines </a></div>
-	        <div class="t3"><a href="#"  data-anchor="contact7"> Branding - JohnJohnLAB </a></div>
-	        <div class="t3"><a href="#"  data-anchor="contact"> Advertising - Frank's Red Hot </a></div>
-	        <br> <div class="t3"><a href="https://www.instagram.com/theadvertisingkid/" target="_blank"> The Other Ideas </a></div>
-	      </div>
-      </div>
-    </div>
-    <div id="delayload4">
-    <div class="icon-container"> <a href="#"  data-anchor="contact" class="cd-scroll-down">
-      <p class="morph"><img src="images/mouse.png" /></p>
-      </a></div>
-      </div>
+  <img class="background-img" src="images/NoLoad.jpg">
+  </img>
+
+<!-- OnLoad -->
+
+  <div id="video">
+    <video src="" class="Load" autoplay muted/>
   </div>
 
-<div data-target="contact6" id="examples" class="agnostica2">
-    <div class="content-resizer">
-      <div style="background-color: #C17250;" class="craco">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-sm-6 col-xs-12 cnt">
-              <div class="content-C">
-                <p style="color: #2c8bab;"><br><br><br> Branding | BSUR Agency </p><br>
-               <a  href="PasswordDiriyah.html" target="_blank" class="button7">view project</a>
-                <!--4-->
-              </div>
-              <!--row-->
-            </div>
-            <!--container-->
-          </div>
-          <div class="middle-img" style="top: 35%;"><img src="images/DiriyahLogo.gif"></div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <script type='text/javascript'>
 
-
-<div data-target="contact3" id="examples" class="pana1">
-    <div class="content-resizer">
-      <div style="background-color: #e5c68a;" class="craco">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-sm-6 col-xs-12 cnt">
-              <div class="content-C">
-                <p style="color: #163971;"><br><br><br> Advertising | Grey Group </p><br>
-               <a  href="Modelo.html" target="_blank" class="button3">view project</a>
-                <!--4-->
-              </div>
-              <!--row-->
-            </div>
-            <!--container-->
-          </div>
-          <div class="middle-img" style="top: 32%;"><img src="images/pan-web.gif"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div data-target="examples" id="examples" class="cracoa1">
-    <div class="content-resizer">
-      <div style="background-color: #003173;" class="craco">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-sm-6 col-xs-12 cnt">
-              <div class="content-C">
-                <p style="color: #fccd8a;"><br><br> <br> Advertising | Grey Group </p><br>
-               <a  href="Volvo.html" target="_blank" class="button2">view project</a>
-                <!--4-->
-              </div>
-              <!--row-->
-            </div>
-            <!--container-->
-          </div>
-          <div class="middle-img"><img src="images/volvo.gif"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div data-target="contact4" id="examples" class="agnostica1">
-    <div class="content-resizer">
-      <div style="background-color: white;" class="craco">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-sm-6 col-xs-12 cnt">
-              <div class="content-C">
-                <p style="color: black;"><br><br><br> Advertising | Grey Group </p><br>
-               <a  href="AntiAsian.html" target="_blank" class="button6">view project</a>
-                <!--4-->
-              </div>
-              <!--row-->
-            </div>
-            <!--container-->
-          </div>
-          <div class="middle-img" style="top: 42%;"><img src="images/AntiAsian.gif"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-
-<div data-target="about" id="examples" class="uffya1">
-    <div class="content-resizer">
-      <div style="background-color: #f7a9b6;" class="craco">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-sm-6 col-xs-12 cnt">
-              <div class="content-C">
-                <p style="color: #025548;"><br><br><br> Advertising | Grey Group </p><br>
-               <a  href="rest.html" target="_blank" class="button5">view project</a>
-                <!--4-->
-              </div>
-              <!--row-->
-            </div>
-            <!--container-->
-          </div>
-          <div class="middle-img" style="top: 42%;"><img src="images/rest.gif"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-    <div data-target="contact2" id="examples" class="funa1">
-    <div class="content-resizer">
-      <div style="background-color: #d71a21;" class="craco">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-sm-6 col-xs-12 cnt">
-              <div class="content-C">
-                <p style="color: #00ead5;"><br><br><br> Advertising | Concept </p><br>
-               <a  href="emirates.html" target="_blank" class="button9">view project</a>
-                <!--4-->
-              </div>
-              <!--row-->
-            </div>
-            <!--container-->
-          </div>
-          <div class="middle-img" style="top: 35%;"><img src="images/emirates.png"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-<div data-target="contact7" id="examples" class="agnostica3">
-    <div class="content-resizer">
-      <div style="background-color: #FFFFFF;" class="craco">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-sm-6 col-xs-12 cnt">
-              <div class="content-C">
-                <p style="color: black;"><br><br><br> Branding | Fashion </p><br>
-               <a  href="johnjohnlab.html" target="_blank" class="button8">view brand</a>
-                <!--4-->
-              </div>
-              <!--row-->
-            </div>
-            <!--container-->
-          </div>
-          <div class="middle-img" style="top: 35%;"><img src="images/JJLAB.png"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div data-target="contact" id="examples" class="simpsona1">
-    <div class="content-resizer">
-      <div style="background-color: #ed1b24;" class="craco">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-sm-6 col-xs-12 cnt">
-              <div class="content-C">
-                <p style="color: #00e0d2;"><br><br><br> Advertising | Concept </p><br>
-               <a  href="frank.html" target="_blank" class="button4">view concept</a>
-                <!--4-->
-              </div>
-              <!--row-->
-            </div>
-            <!--container-->
-          </div>
-          <div class="middle-img" style="top: 8.5%;"><img src="images/frank_img.png"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-  <div data-target="contact5" id="contact5" class="contacta1">
-    <div class="content-resizer">
-      <div class="contact-C">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <h2>Get in touch with me</h2>
-              <div class="contact-txt">
-                <p>As an Art Director, my profession lies in Advertising and Branding. My intentions are to translate past experiences in Fashion, Pharma, and Consumer to drive creative breakthroughs in new or dormant industries. Through my work experience in Dubai, Paris and New York City, I am grateful to have been exposed to people from all walks of life. Therefore, learning to communicate to different cultures through design. </p>
-                <h5>+1 (267) 323 8863 <span>/</span> +971 50 482 8254 <span>/</span> +33 7 82 89 82 42 <span>/</span> <a href="mailto:migueljackmarcos@gmail.com" style="font-size: 16px">MiguelJackMarcos@gmail.com</a></h5>
-              </div>
-            </div>
-            <!--12-->
-            <div class="col-lg-12">
-              <!-- <h3>Follow me -</h3> -->
-              <ul class="social-media">
-                <li><a target="_blank" href="https://www.facebook.com/SheikhMiguel"><img src="images/fb.png"></a></li>
-                <li><a target="_blank" href="https://www.linkedin.com/in/miguel-marcos"><img src="images/linke.png"></a></li>
-                <li><a target="_blank" href="https://www.instagram.com/theadvertisingkid/"><img src="images/insta.png"></a></li>
-                <!-- <li><a href="#"><img src="images/you-tube.png"></a></li> -->
-              </ul>
-            </div>
-            <!--12-->
-          </div>
-          <!--row-->	
-
-
-
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="copyright">
-                <p>Copyright © 2017 Miguel Marcos. All rights reserved.</p>
-                </a></div>
-            </div>
-            <!--row-->
-          </div>
-          <!--container-->
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-  <!-- vertical nav -->
-  <div id="delayload3">
-    <img id="bottom-nav" src="images/arrows.png" style="width: 30px; height: auto; position: fixed; float: left; top: 85%; left: 50%;">
-  <div id="fp-nav" class="right">        
-        <p>MENU</p>
-    <ul class="menu">
-      <li><a href="#" class="active" data-anchor="home"><span></span></a>
-        <div class="fp-tooltip right" style=" text-transform: capitalize;">Home</div>
-      </li>
-      <li><a href="#"  data-anchor="contact6"><span></span></a>
-        <div class="fp-tooltip right" style=" text-transform: capitalize;">Diriyah UNESCO</div>
-      </li>
-      <li><a href="#"  data-anchor="contact3"><span></span></a>
-        <div class="fp-tooltip right" style=" text-transform: capitalize;">Modelo Beer</div>
-      </li>
-      <li><a href="#"  data-anchor="examples"><span></span></a>
-        <div class="fp-tooltip right" style=" text-transform: capitalize;">Volvo</div>
-      </li>
-      <li><a href="#"  data-anchor="contact4"><span></span></a>
-        <div class="fp-tooltip right" style=" text-transform: capitalize;">Asians in English</div>
-      </li>
-      <li><a href="#"  data-anchor="about"><span></span></a>
-        <div class="fp-tooltip right" style=" text-transform: capitalize;">Restylane Kysse</div>
-      </li>
-      <li><a href="#"  data-anchor="contact2"><span></span></a>
-        <div class="fp-tooltip right" style=" text-transform: capitalize;">Emirates Airlines</div>
-      </li>
-      <li><a href="#"  data-anchor="contact7"><span></span></a>
-        <div class="fp-tooltip right" style=" text-transform: capitalize;">JohnJohnLAB</div>
-       </li>
-       <li><a href="#"  data-anchor="contact"><span></span></a>
-        <div class="fp-tooltip right" style=" text-transform: capitalize;">Frank's Red Hot</div>
-      </li>
-      <li><a href="#"  data-anchor="contact5"><span></span></a>
-        <div class="fp-tooltip right" style=" text-transform: capitalize;">Contact</div>
-      </li>
-    </ul><br>
-  </div>
-  </div>
-</div>
-
-<!-- Page loads faster -->
-<script src="js/jquery.easing.js"></script>
-<script src="js/jquery.singlefull.js"></script>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $("#single").singlefull({
-            speed: 1000,
-            loopScroll:true,
-            loopTop: false,
-            loopBottom:true
-        });
-        // Just a javascript alignment to the content
-        function alignContent() {
-            var windowHeight = $(window).height();
-
-            $('.content-resizer').each(function() {
-                contentHeight = $(this).height();
-                $(this).css('top', (windowHeight / 2) - (contentHeight / 2));
-            });
-
-            $('.alt-img').html($("#img-example").attr('src'));
-        }
-
-        // Execute the function
-        alignContent();
-
-        // Bind the function to the window.onresize
-        $(window).bind("resize", function() {
-            alignContent();
-        });
-
-    });
-    </script>
-
-<script>
-	$(function() {
-	  $('.top-head a[href*=#]:not([href=#])').click(function() {
-	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-
-	      var target = $(this.hash);
-	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-	      if (target.length) {
-	        $('html,body').animate({
-	          scrollTop: target.offset().top -1
-	        }, 1000);
-	        return false;
-	      }
-	    }
-	  });
-	});
-	</script>
-<script>
-	$(function() {
-	  $('.icon-container a[href*=#]:not([href=#])').click(function() {
-	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-
-	      var target = $(this.hash);
-	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-	      if (target.length) {
-	        $('html,body').animate({
-	          scrollTop: target.offset().top -1
-	        }, 1000);
-	        return false;
-	      }
-	    }
-	  });
-	});
-	</script>
-<link  href="css/style-2.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript"  src="js/main2.js"></script>
-
-
-<link rel="stylesheet" href="css/remodal.css">
-  <link rel="stylesheet" href="css/remodal-default-theme.css">
-  <style>
-    .remodal-bg.with-red-theme.remodal-is-opening,
-    .remodal-bg.with-red-theme.remodal-is-opened {
-      filter: none;
-    }
-
-    .remodal-overlay.with-red-theme {
-      background-color: #f44336;
-    }
-
-    .remodal.with-red-theme {
-      background: #fff;
-    }
-  </style>
-
-	
-
-
-
-
-	
-	
-	
-    <script>window.jQuery || document.write('<script src="../libs/jquery/dist/jquery.min.js"><\/script>')</script>
-<script src="js/remodal.js"></script>
-
-<!-- Events -->
-<script>
-  $(document).on('opening', '.remodal', function () {
-    console.log('opening');
+  $(function() {
+      $('.Load').delay(5000).show().fadeOut('slow');
   });
 
-  $(document).on('opened', '.remodal', function () {
-    console.log('opened');
+  $('.Load').each(function() {
+
+    var num = Math.floor(Math.random() * 6 + 1),
+      video = $(this);
+
+    video.attr('src', 'images/VideoTest' + num + '.mp4');
+
   });
 
-  $(document).on('closing', '.remodal', function (e) {
-    console.log('closing' + (e.reason ? ', reason: ' + e.reason : ''));
-  });
-
-  $(document).on('closed', '.remodal', function (e) {
-    console.log('closed' + (e.reason ? ', reason: ' + e.reason : ''));
-  });
-
-  $(document).on('confirmation', '.remodal', function () {
-    console.log('confirmation');
-  });
-
-  $(document).on('cancellation', '.remodal', function () {
-    console.log('cancellation');
-  });
-
-//  Usage:
-//  $(function() {
-//
-//    // In this case the initialization function returns the already created instance
-//    var inst = $('[data-remodal-id=modal]').remodal();
-//
-//    inst.open();
-//    inst.close();
-//    inst.getState();
-//    inst.destroy();
-//  });
-
-  //  The second way to initialize:
-  $('[data-remodal-id=modal2]').remodal({
-    modifier: 'with-red-theme'
-  });
-</script>
+  </script>
 
 
-<style>
-.remodal{ top:50px; left:0; right:0; position:absolute; margin:10px auto;}
-
-
-
-
-
-</style>
-
-<div class="remodal modal-cnt" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
-  <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+<!-- fixed menu -->
   <div>
-       <h2>UFFY</h2>
-    <div class="modal-txt">
-<p>This project is for a made up shoe company. it's aim is to advertise a product without showing the product itself.
-<br/>
-<br/>
-The company sells shoes that are fashionable without sacrificing comfort. The name UFFY is derived from the word comfy. I used a baby blue colour to represent comfort.
-<br/> 
-<br/> 
-I advertised a video series on instagram that was a comical ad making fun of fashionable shoe ads showing the painful reality behind the scenes to such an ad. </p>
-<br/> 
-<br/> 
-<a class="link" target="_blank" href="https://www.instagram.com/uffyshoes/"><h1>VIEW VIDEO ADS</h1></a>
 
-</div>
+    <!-- top bar -->
+      <a class="Contact" href="javascript: document.body.scrollIntoView(false)">Contact</a>
+      <div class="OuterHome"> <a class="Home" href="#top"> <img src="images/migoLogo.svg"> </a> </div>
+      <a class="Resume" href="images/CV.pdf" target="_blank">Résumé</a>
+
+    <!-- right bar -->
+      <div class="RightMenuOuter">
+      <ul class="RightMenu">
+        <li><p class="RightList" style="font-weight: bold;">PROJECTS</p></li>
+        <li><a class="RightList" href="#box2" id="back2">Diriyah UNESCO</a></li>
+        <li><a class="RightList" href="#box3" id="back3">Modelo Beer</a></li>
+        <li><a class="RightList" href="#box4" id="back4">Volvo</a></li>
+        <li><a class="RightList" href="#box5" id="back5">Asians in English</a></li>
+        <li><a class="RightList" href="#box6" id="back6">Restylane Kysse</a></li>
+        <li><a class="RightList" href="#box7" id="back7">Emirates</a></li>
+        <li><a class="RightList" href="#box8" id="back9">JohnJohnLAB</a></li>
+        <li><a class="RightList" href="#box9" id="back9">Frank's Red Hot</a></li>
+        <br>
+        <li><a class="RightList" href="https://www.instagram.com/migomarco" target="_blank">Instagram</a></li>
+        <li><a class="RightList" href="https://www.linkedin.com/in/miguel-marcos/" target="_blank">LinkedIn</a></li>
+      </ul>
+      </div>
+
   </div>
- 
-</div>
 
-
-<div class="remodal modal-cnt" data-remodal-id="modal2" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
-  <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
-  <div>
-       <h2>craco</h2>
-    <div class="modal-txt">
-<p>is a car rental company that represents low cost and bad quality cars. This campaign is targeted towards college students or the lower-income community who do not give a high priority to clean or nice cars and would rather pay less. It contains 4 forms of advertisements.</p>
-<br/> 
-<br/> 
-<a class="link" target="_blank" href="craco.html"><h1>VIEW CAMPAIGN</h1></a>
-
-</div>
+<!-- Home Page -->
+  <div id="box1"  class="box1" onclick="window.location.hash='back1'; ">
+    <div class="AboutMeHomeOuter">
+     <div class="AboutMeHome">
+        <h1>Miguel Marcos</h1>
+        <br>
+        <p>As an Art Director, my profession lies in Advertising and Branding. My intentions
+        are to translate past experiences in Fashion & Beauty, Pharma, Beer, Fast Food, Cars,
+        and Tourism & Hospitality to drive creative breakthroughs across industries. Through
+        my work experience in Dubai, Paris, New York City, and Amsterdam. I am grateful
+        to have been exposed to people from all walks of life. Leading me to creatively
+        compose ideas through different lenses.</p>
+        <br>
+        <a href="mailto:migueljackmarcos@gmail.com">MiguelJackMarcos@gmail.com</a>
+        <br><br>
+        <a>+31 6 48 555552</a>
+        <br>
+        <a>+971 50 482 8254</a>
+     </div>
+   </div>
   </div>
- 
-</div>
 
-<div class="remodal modal-cnt" data-remodal-id="modal3" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
-  <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
-  <div>
-       <h2>Simpsons</h2>
-    <div class="modal-txt">
-<p>I designed a book about a wikipedia page that talks about a list of all the recurring Simpsons characters, and I designed each character in a form a facebook profile, because people tend to have friends on Facebook that they have only met once or twice. I altered all the descriptions of each character to first person. I added posts or text messeages for different characters using real quotes and conversations they said to add personality.</p>
 
-<br/>
-<p>For the poster and billboard, I advertised the Universal Studios Simpsons Land. Its purpose was for people to interact and take a photo with it and share it for exposure.
-<br/> 
-<br/> 
-I made t-shirts with personality through the Simpsons charaters so people could gift or buy them based on their personalities.</p>
-<a class="link" target="_blank" href="simpsons.html"><h1>VIEW FULL PROJECT</h1></a>
-</div>
+
+<!-- Portolio work -->
+  <div id="box2" class="box2" onclick="window.location.hash='back2'; ">
+    <div class="InfoArea"> 
+        <h1 class="TypeTitle">Branding | BSUR Agency</h1><br> 
+        <a href="PasswordDiriyah.html"><button class="ButtonHome">View Project</button></a>
+    </div>
+    <div class="ProjectLogoOuter"> <img src="images/DiriyahLogo.gif"></div>
   </div>
- 
-</div>
 
 
-<div class="remodal modal-cnt" data-remodal-id="modal4" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
-  <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
-  <div>
-       <h2>fun_web</h2>
-    <div class="modal-txt">
-<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
-</div>
+  <div id="box3" class="box3" onclick="window.location.hash='back3'; ">
+    <div class="InfoArea"> 
+        <h1 class="TypeTitle">Advertising | Grey Group</h1><br> 
+        <a href="Modelo.html"><button class="ButtonHome">View Project</button></a>
+    </div> 
+    <div class="ProjectLogoOuter"> <img src="images/Modelo.gif"></div> 
   </div>
- 
-</div>
 
 
-
-
-<div class="remodal modal-cnt" data-remodal-id="modal5" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
-  <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
-  <div>
-       <h2>Blanc</h2>
-    <div class="modal-txt">
-<p>The french company BIOPHA and NATURE MOI asked for a complete rebrand and a change in strategy to shift their dormant skincare brand internationally. The design aspect of their brand needed a complete change and so did their strategy plan. I created a brand that combines the two sub-brands into one. I made a new company called Blanc to reach a wider international audience while keeping their values and commitments. They emphasised and cared about the preservation of water, the formulation of products are 100% natural, and that they have a minimal impact on the aquatic fauna and flora.</p>
-<br/>
-<br/>
-<a class="link" target="_blank" href="Blanc.html"><h1>VIEW FULL REBRAND</h1></a>
-</div>
+  <div id="box4" class="box4" onclick="window.location.hash='back4'; ">
+    <div class="InfoArea"> 
+        <h1 class="TypeTitle">Advertising | Grey Group</h1><br> 
+        <a href="Volvo.html"><button class="ButtonHome">View Project</button></a>
+    </div> 
+    <div class="ProjectLogoOuter"> <img style="width: 20%;" src="images/Volvo.gif"></div>  
   </div>
- 
-</div>
 
 
-<div class="remodal modal-cnt" data-remodal-id="modal6" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
-  <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
-  <div>
-       <h2>Photo</h2>
-    <div class="modal-txt">
-<p>French Accessory: <br/> This book’s aim is to document a prominent habit of Parisians, smoking. It is an obvious yet subtle accessory of their lives. Tabac signs are protruding out of buildings, cigarettes are resting in the mouths of every other adult, and are found scattered across the streets of Paris.</p>
-
-<br/>
-<br/>
-<p>Protest: <br/> Using only a disposable camera this project revolves around the concept of protest. It depict the small and subtle protests around Paris that are different and go against the mundane way of living. It revolves around the idea of oddity that is all around us but often unnoticed or overlooked. </p>
-
-<a class="link" target="_blank" href="French_Accessory.html"><h1>VIEW PROJECTS</h1></a>
-
-</div>
+  <div id="box5" class="box5" onclick="window.location.hash='back5'; ">
+    <div class="InfoArea"> 
+        <h1 class="TypeTitle">Advertising | Grey Group</h1><br> 
+        <a href="AntiAsian.html"><button class="ButtonHome">View Project</button></a>
+    </div>
+    <div class="ProjectLogoOuter"> <img style="width: 45%;" src="images/AntiAsian.gif"></div> 
   </div>
- 
-</div>
 
 
-<div class="remodal modal-cnt" data-remodal-id="modal7" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
-  <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
-  <div>
-       <h2>Intern</h2>
-    <div class="modal-txt">
-<p>Leo Burnett: <br/> McDonalds board games that comes with their kids meal for ages 3 to 8. They had one card board page on which print and cutouts marks could be done. They wanted games which could be played multiple times with another player. <br>(The Reversed English writing will be replaced with Arabic) </p>
-
-<a class="link" target="_blank" href="images/Games.pdf"><h1>VIEW GAMES</h1></a>
-<br/>
-<br/>
-<p>IMPACT BBDO: <br/> Etisalat is the largest mobile carrier in the UAE. Here is a new introduction/ending animation for their videos. They wanted an outro with a pattern that more represents the UAE culture.</p>
-
-<a class="link" target="_blank" href="https://youtu.be/j1qd3IPEPpo"><h1>VIEW ANIMATION</h1></a>
-
-</div>
+  <div id="box6" class="box6" onclick="window.location.hash='back6'; ">
+    <div class="InfoArea"> 
+        <h1 class="TypeTitle">Advertising | Grey Group</h1><br> 
+        <a href="rest.html"><button class="ButtonHome">View Project</button></a>
+    </div>
+    <div class="ProjectLogoOuter"> <img src="images/rest.gif"></div> 
   </div>
- 
-</div>
-
-<div class="backtotop"> <a href="#"  data-anchor="home" class="backtotop">
-      <p class="morph"><img src="images/backtotop.png" /></p>
-      </a><script type="text/javascript">
-var btn = $('.backtotop');
-
-$(window).scroll(function() {
-  if ($(window).scrollTop() > 300) {
-    btn.addClass('show');
-  } else {
-    btn.removeClass('show');
-  }
-});
-
-btn.on('click', function(e) {
-  e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '300');
-});
-</script></div>
-
-<div class="cursor">
-	<script type="text/javascript" src="js/pointer.js"></script>
-</div>
-
-<footer>
-  
-</footer>
 
 
-</body>
+  <div id="box7" class="box7" onclick="window.location.hash='back7'; ">
+    <div class="InfoArea"> 
+        <h1 class="TypeTitle">Advertising | Concept</h1><br> 
+        <a href="emirates.html"><button class="ButtonHome">View Project</button></a>
+    </div>
+    <div class="ProjectLogoOuter"> <img style="width: 20%;" src="images/emirates.png"></div> 
+  </div>
+
+
+  <div id="box8" class="box8" onclick="window.location.hash='back8'; ">
+    <div class="InfoArea"> 
+        <h1 class="TypeTitle">Branding | Restoque Fashion</h1><br> 
+        <a href="johnjohnlab.html"><button class="ButtonHome">View Project</button></a>
+    </div>
+     <div class="ProjectLogoOuter"> <img src="images/JJLAB.png"></div> 
+  </div>
+
+
+  <div id="box9" class="box9" onclick="window.location.hash='back9'; ">
+    <div class="InfoArea"> 
+        <h1 class="TypeTitle">Advertising | Concept</h1><br> 
+        <a href="frank.html"><button class="ButtonHome">View Project</button></a>
+    </div>
+    <div class="ProjectLogoOuter"> <img src="images/frank_img.png"></div> 
+  </div>
+
+<!-- About Me -->
+
+  <div id="box10" class="box10" onclick="window.location.hash='back10'; ">
+   <div class="AboutMeOuter">
+     <div class="AboutMe">
+        <h1>Miguel Marcos</h1>
+        <br>
+        <p>As an Art Director, my profession lies in Advertising and Branding. My intentions
+        are to translate past experiences in Fashion & Beauty, Pharma, Beer, Fast Food, Cars,
+        and Tourism & Hospitality to drive creative breakthroughs across industries. Through
+        my work experience in Dubai, Paris, New York City, and Amsterdam. I am grateful
+        to have been exposed to people from all walks of life. Leading me to creatively
+        compose ideas through different lenses.</p>
+        <br>
+        <a href="mailto:migueljackmarcos@gmail.com">MiguelJackMarcos@gmail.com</a>
+        <br><br>
+        <a>+31 6 48 555552</a>
+        <br>
+        <a>+971 50 482 8254</a>
+     </div>
+   </div>
+  </div>
+
+
+  </body>
 </html>
-
-
