@@ -218,7 +218,8 @@ body {
 .Contact {
   position: fixed;
   z-index: 2;
-  font-family: Avenir Next;
+  font-family: "Avenir Next", sans-serif;
+  line-height: 1.35;
   font-size: 13pt;
   left: 25%;
   top: 53px;
@@ -259,7 +260,8 @@ body {
 .Resume {
   position: fixed;
   z-index: 2;
-  font-family: Avenir Next;
+  font-family: "Avenir Next", sans-serif;
+  line-height: 1.35;
   font-size: 13pt;
   right: 25%;
   top: 53px;
@@ -339,7 +341,8 @@ body {
   padding: 0%;
   margin: 0%;
   position: absolute;
-  font-family: Avenir Next;
+  font-family: "Avenir Next", sans-serif;
+  line-height: 1.35;
   text-align: left;
   font-size: 13pt;
   left: 10%;
@@ -377,7 +380,8 @@ body {
 }
 
 .TypeTitle {
-  font-family: Avenir Next;
+  font-family: "Avenir Next", sans-serif;
+  line-height: 1.35;
   font-weight: normal;
   font-size: 16pt;
   color: white;
@@ -385,7 +389,8 @@ body {
 }
 
 .ButtonHome {
-  font-family: Avenir Next;
+  font-family: "Avenir Next", sans-serif;
+  line-height: 1.35;
   font-weight: normal;
   font-size: 16pt;
   color: white;
@@ -424,6 +429,8 @@ body {
     width: 30%;
     min-width: 300px;
     height: auto;
+    padding-bottom: 125px;
+
 }
 
 
@@ -440,7 +447,8 @@ body {
   
 }
 .AboutMe h1 {
-  font-family: Avenir Next;
+  font-family: "Avenir Next", sans-serif;
+  line-height: 1.35;
   font-weight: bold;
   font-size: 20pt;
   color: white;
@@ -449,7 +457,8 @@ body {
 }
 
 .AboutMe p, a {
-  font-family: Avenir Next;
+  font-family: "Avenir Next", sans-serif;
+  line-height: 1.35;
   font-weight: normal;
   font-size: 12pt;
   color: white;
@@ -464,15 +473,16 @@ body {
   max-width: 350px;
 /*  min-width: 350px;*/
 /*  height: 100%;*/
-  padding-left: 10%;
-  padding-right: 10%;
+  text-shadow: 0px 0px 6px black, 0px 0px 12px black, 0px 0px 18px black;
+  padding: 10%;
   top: 50%;
   transform: translate(0%, -50%);
-  mix-blend-mode: difference;
+/*  mix-blend-mode: difference;*/
   
 }
 .AboutMeHome h1 {
-  font-family: Avenir Next;
+  font-family: "Avenir Next", sans-serif;
+  line-height: 1.35;
   font-weight: bold;
   font-size: 20pt;
   color: white;
@@ -481,7 +491,8 @@ body {
 }
 
 .AboutMeHome p, a {
-  font-family: Avenir Next;
+  font-family: "Avenir Next", sans-serif;
+  line-height: 1.35;
   font-weight: normal;
   font-size: 12pt;
   color: white;
@@ -512,14 +523,16 @@ body {
 }
 
 .Rational h1{
-  font-family: Avenir Next;
+  font-family: "Avenir Next", sans-serif;
+  line-height: 1.35;
   font-weight: bold;
   font-size: 16pt;
 
 }
 
 .Rational p{
-  font-family: Avenir Next;
+  font-family: "Avenir Next", sans-serif;
+  line-height: 1.35;
   font-weight: normal;
   font-size: 12pt;
 }
@@ -544,11 +557,12 @@ body {
 .Content{
   color: black;
   text-decoration: none;
-  padding: 50px;
+  padding-bottom: 50px;
 }
 
 .Content h1{
-  font-family: Avenir Next;
+  font-family: "Avenir Next", sans-serif;
+  line-height: 1.35;
   font-weight: normal;
   font-size: 16pt;
   text-align: center;
@@ -556,7 +570,8 @@ body {
 }
 
 .Content p{
-  font-family: Avenir Next;
+  font-family: "Avenir Next", sans-serif;
+  line-height: 1.35;
   font-weight: normal;
   font-size: 12pt;
   text-align: center;
@@ -576,11 +591,10 @@ body {
 }
 
 .LinkAlign a{
-  font-family: Avenir Next;
+  font-family: "Avenir Next", sans-serif;
+  line-height: 1.35;
   font-weight: normal;
   font-size: 12pt;
-  padding-left:10%;
-  padding-right:10%;
   color: white;
   mix-blend-mode: difference;
 }
@@ -603,7 +617,8 @@ body {
   height: 100%;
   display: flex;
   justify-content: center;
-  font-family: Avenir Next;
+  font-family: "Avenir Next", sans-serif;
+  line-height: 1.35;
   font-weight: normal;
   font-size: 12pt; 
   color: black;
