@@ -417,6 +417,8 @@ body {
 
 }
 
+
+
 .ProjectLogoOuter{
     width: 100%;
     height: 100%;
@@ -502,11 +504,16 @@ body {
 
 
 .RationalOuter{
+
   position: fixed;
+  z-index: 0;
 /*  background-color: red;*/
   margin-top: 140px;
   height: 100%;
   width: 30%;
+/*  mix-blend-mode: difference;*/
+
+
 }
 
     @media screen and (max-width: 1000px) {
@@ -520,6 +527,7 @@ body {
   color: black;
   text-decoration: none;
   padding: 50px;
+
 }
 
 .Rational h1{
@@ -527,6 +535,7 @@ body {
   line-height: 1.35;
   font-weight: bold;
   font-size: 16pt;
+
 
 }
 
@@ -673,6 +682,16 @@ mix-blend-mode: difference
   color: white;
   background-color: black;
   border: solid lightgrey 1.5px;
+}
+
+
+.lift{
+  z-index: 1;
+  position: fixed;
+  width: 100vw;
+  bottom: 0%;
+  visibility: visible;
+  -webkit-transition: bottom 1.5s ease;
 }
 
 
