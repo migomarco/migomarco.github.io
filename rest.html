@@ -69,6 +69,45 @@
     </div>
   </div>
 
+<!-- Brand Logo -->
+
+  <div class="lift" id="lift">
+    <div id="box6" class="box6" onclick="window.location.hash='back6'; ">
+      <div class="InfoArea"> 
+          <h1 class="TypeTitle">Advertising | Grey Group</h1><br> 
+          <a href="rest.html"><button class="ButtonHome">View Project</button></a>
+      </div>
+      <div class="ProjectLogoOuter"> <img src="images/rest.gif"></div> 
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    // lifting effect
+    window.onload = function() {
+      // Get the previous page's URL
+      var referrer = document.referrer;
+
+      // Check if the referrer matches any of the expected URLs or patterns
+      if (
+        referrer === "https://migomarco.com/" ||                        // Base domain
+        /https:\/\/migomarco\.com\/#box\d+/.test(referrer) ||           // URLs ending with "#box§"
+        /https:\/\/migomarco\.com\/#back\d+/.test(referrer) ||          // URLs ending with "#back§"
+        referrer === "https://migomarco.com/index.html" ||               // Index page
+        /https:\/\/migomarco\.com\/index.html#box\d+/.test(referrer) ||  // Index page with "#box§"
+        /https:\/\/migomarco\.com\/index.html#back\d+/.test(referrer)   // Index page with "#back§"
+      ) {
+        // If the referrer matches, run your code
+        document.getElementById("lift").style.bottom = '100%';
+      } else {
+        // If the referrer doesn't match, hide the element
+        document.getElementById("lift").style.visibility = 'hidden';
+      }
+    };
+
+
+  </script>
+
+
 <!-- Content -->
 
   <div class="ContentOuter">
