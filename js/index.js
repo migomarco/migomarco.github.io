@@ -41,10 +41,13 @@
             // Get the current href attribute
             const currentHref = $(this).attr("href");
 
-            // Run the existing href by navigating to it
-            window.location.href = currentHref;
+            // Delay before moving to the existing href to allow it to execute (100 milliseconds)
+            setTimeout(() => {
+                // Run the existing href by navigating to it
+                window.location.replace(currentHref);
+            }, 100);
 
-            // Delay the navigation to the new URL to allow the existing href to execute
+            // Delay before moving to the new URL (800 milliseconds)
             setTimeout(() => {
                 // Get the current class name
                 const currentClassName = $(this).attr("class");
@@ -52,13 +55,11 @@
                 // Construct the new URL based on the class name
                 const newURL = currentClassName + ".html";
 
-                // Navigate to the new URL
-                window.location.href = newURL;
-            }, 800); // Adjust the delay time (in milliseconds) if needed
+                // Navigate to the new URL using replace to avoid adding to the history
+                window.location.replace(newURL);
+            }, 800);
         });
     });
-
-
 
 
 // Password code 
