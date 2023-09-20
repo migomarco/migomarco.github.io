@@ -148,6 +148,15 @@ body {
   min-width: 50px;
   color: white;
   mix-blend-mode: difference;
+  transition: all .35s ease;
+
+}
+
+.ArrowLeft:hover {
+
+  margin-right: 156px;
+  transition: all .35s ease;
+
 }
 
 .ArrowRight{
@@ -158,6 +167,33 @@ body {
   min-width: 50px;
   color: white;
   mix-blend-mode: difference;
+  transition: all .35s ease;
+}
+
+.ArrowRight:hover {
+
+  margin-left: 186px;
+  transition: all .35s ease;
+
+}
+
+.ArrowDown {
+  position: absolute;
+/*  z-index: 2;*/
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  min-width: 50px;
+  color: white;
+  mix-blend-mode: difference;
+  transition: all .35s ease;
+}
+
+.ArrowDown:hover {
+
+  bottom: 36px;
+  transition: all .35s ease;
+
 }
 
 
