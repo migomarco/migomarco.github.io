@@ -14,6 +14,33 @@
 
     <!-- <script type="text/javascript" src="js/bootstrap.js"></script> -->
     <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Get the previous page's URL
+            var referrer = document.referrer;
+
+            // Function to check if the referrer matches any of the expected URLs or patterns
+            function checkReferrer() {
+                if (
+                    referrer === "https://migomarco.com/" ||                        // Base domain
+                    /https:\/\/migomarco\.com\/#box\d+/.test(referrer) ||           // URLs ending with "#box§"
+                    /https:\/\/migomarco\.com\/#back\d+/.test(referrer) ||          // URLs ending with "#back§"
+                    referrer === "https://migomarco.com/index.html" ||               // Index page
+                    /https:\/\/migomarco\.com\/index.html#box\d+/.test(referrer) ||  // Index page with "#box§"
+                    /https:\/\/migomarco\.com\/index.html#back\d+/.test(referrer)   // Index page with "#back§"
+                ) {
+                    // If the referrer matches, run your code
+                    $("#lift").css("bottom", "100%");
+                } else {
+                    // If the referrer doesn't match, hide the element
+                    $("#lift").css("visibility", "hidden");
+                }
+            }
+
+            // Check the referrer when the DOM is ready
+            checkReferrer();
+        });
+    </script>
     <script src="js/index.js"></script>
     <link rel="stylesheet" type="text/css" href="css/jquery.singlefull.css">
 
@@ -84,32 +111,6 @@
       <div class="ProjectLogoOuter"> <img style="width: 20%;" src="images/Volvo.gif"></div>  
     </div>
   </div>
-
-  <script type="text/javascript">
-    // lifting effect
-    window.onload = function() {
-      // Get the previous page's URL
-      var referrer = document.referrer;
-
-      // Check if the referrer matches any of the expected URLs or patterns
-      if (
-        referrer === "https://migomarco.com/" ||                        // Base domain
-        /https:\/\/migomarco\.com\/#box\d+/.test(referrer) ||           // URLs ending with "#box§"
-        /https:\/\/migomarco\.com\/#back\d+/.test(referrer) ||          // URLs ending with "#back§"
-        referrer === "https://migomarco.com/index.html" ||               // Index page
-        /https:\/\/migomarco\.com\/index.html#box\d+/.test(referrer) ||  // Index page with "#box§"
-        /https:\/\/migomarco\.com\/index.html#back\d+/.test(referrer)   // Index page with "#back§"
-      ) {
-        // If the referrer matches, run your code
-        document.getElementById("lift").style.bottom = '100%';
-      } else {
-        // If the referrer doesn't match, hide the element
-        document.getElementById("lift").style.visibility = 'hidden';
-      }
-    };
-
-
-  </script>
 
 
 
