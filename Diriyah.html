@@ -14,6 +14,33 @@
 
     <!-- <script type="text/javascript" src="js/bootstrap.js"></script> -->
     <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Get the previous page's URL
+            var referrer = document.referrer;
+
+            // Function to check if the referrer matches any of the expected URLs or patterns
+            function checkReferrer() {
+                if (
+                    referrer === "https://migomarco.com/" ||                        // Base domain
+                    /https:\/\/migomarco\.com\/#box\d+/.test(referrer) ||           // URLs ending with "#box§"
+                    /https:\/\/migomarco\.com\/#back\d+/.test(referrer) ||          // URLs ending with "#back§"
+                    referrer === "https://migomarco.com/index.html" ||               // Index page
+                    /https:\/\/migomarco\.com\/index.html#box\d+/.test(referrer) ||  // Index page with "#box§"
+                    /https:\/\/migomarco\.com\/index.html#back\d+/.test(referrer)   // Index page with "#back§"
+                ) {
+                    // If the referrer matches, run your code
+                    $("#lift").css("bottom", "100%");
+                } else {
+                    // If the referrer doesn't match, hide the element
+                    $("#lift").css("visibility", "hidden");
+                }
+            }
+
+            // Check the referrer when the DOM is ready
+            checkReferrer();
+        });
+    </script>
     <script src="js/index.js"></script>
     <link rel="stylesheet" type="text/css" href="css/jquery.singlefull.css">
 
@@ -53,6 +80,19 @@
   <a class="Resume" href="images/CV.pdf" target="_blank">Résumé</a>
 
 
+<!-- Password -->
+      <div id="overlay" class="hidden">
+        <div class="overlay-content">
+          <div class="overlay-info">
+            <h2>ENTER PASSWORD</h2>
+            <input type="password" id="passwordInput" placeholder="Password"><br>
+            <div class="submitButtonOuter"><button id="submitButton">Submit</button></div><br>
+            <a href="#" id="accessBlurredVersion">Access blurred version</a>
+          </div>
+        </div>
+    </div>
+    
+
 <!-- Paragraph -->
 
   <div class="RationalOuter">
@@ -83,8 +123,21 @@
     </div>
   </div>
 
-<!-- Content -->
 
+<!-- Brand Logo -->
+
+  <div class="lift" id="lift">
+      <div id="box2" class="box2" onclick="window.location.hash='back2'; ">
+      <div class="InfoArea"> 
+          <h1 class="TypeTitle">Branding | BSUR Agency</h1><br> 
+          <a href="Diriyah.html"><button class="ButtonHome">View Project</button></a>
+      </div>
+      <div class="ProjectLogoOuter"> <img src="images/DiriyahLogo.gif"></div>
+    </div>
+  </div>
+
+<!-- Content -->
+  <div id="Blur" class="Blur">
   <div class="ContentOuter">
     <div class="Content">
       <h1>A PROJECT THAT HAS NEVER BEEN DONE BEFORE, REVIVING THE PAST IN AN UNPRECEDENTED SCALE </h1>
@@ -113,6 +166,7 @@
       <h1> HOW IT WORKS WILL REMAIN A SECRET <br> SORRY... </h1>
       <div id="box10" onclick="window.location.hash='back10'; ">
         <div class="LinkAlign">
+      </div>
            <!-- <h1>Miguel Marcos</h1> -->
         <br>
           <a href="mailto:migueljackmarcos@gmail.com">MiguelJackMarcos@gmail.com</a>
@@ -124,6 +178,7 @@
       </div>
         
       </div>
+
 
 
 
