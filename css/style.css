@@ -206,6 +206,7 @@ body {
   min-width: 50px;
   color: white;
   mix-blend-mode: difference;
+  transition: all .35s ease;
 }
 
 .HomeMain {
@@ -217,7 +218,17 @@ body {
   min-width: 50px;
   color: white;
   mix-blend-mode: difference;
+  transition: all .35s ease;
 }
+
+.Home:hover, .HomeMain:hover {
+
+  top: 39px;
+  width: 96px;
+  transition: all .35s ease;
+
+}
+
 
 @media screen and (max-width: 600px) {
 
@@ -398,11 +409,8 @@ body {
 }
 
 .RightList:hover{
-  z-index: 2;
+
   font-weight: bold;
-  text-decoration: none; 
-  list-style-type: none;
-  color: white;
   transition: all .15s ease;
 }
 
