@@ -620,71 +620,6 @@ body {
   text-align: center;
 }
 
-.FormOuter {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  font-family: "Avenir Next", sans-serif;
-  line-height: 1.35;
-  font-weight: normal;
-  font-size: 12pt; 
-  color: black;
-/*  mix-blend-mode: difference;*/
-}
-
-.Form form{
-  background-color: white;
-  color: white;
-  padding: 100px;
-  font-weight: bold;
-  text-align: center;
-  position: relative;
-  top: 50%;
-  left: 0%;
-  transform: translate(0%, -50%);
-  border: solid black 5px;
-}
-
-.Label{
-  mix-blend-mode: difference;
-}
-
-.Form a{
-color: white;
-text-decoration: underline;
-mix-blend-mode: difference
-}
-
-.PassInput{
-  width: 140px;
-  height: 30px;
-  margin-top: 10px;
-  text-align: center;
-  color: Black;
-  background-color: white;
-  mix-blend-mode: difference;
-  border-style: solid;
-}
-
-.PassButton{
-  width: 140px;
-  height: 30px;
-  color: Black;
-  background-color: white;
-  mix-blend-mode: difference;
-  border-style: solid;
-  border: none;
-}
-
-.PassButton:hover{
-  color: white;
-  background-color: black;
-  border: solid lightgrey 1.5px;
-}
-
-
 .lift{
   z-index: 1;
   position: fixed;
@@ -693,5 +628,106 @@ mix-blend-mode: difference
   visibility: visible;
   -webkit-transition: bottom 1.5s ease;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.overlay-content {
+    position: absolute;
+    width: 20%;
+    min-width: 200px;
+    height: 20%;
+    min-height: 200px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+    border: solid black 1.5px;
+    
+}
+
+.overlay-info {
+  position: relative;
+  left: 0%;
+  top: 50%;
+  transform: translate(0%, -50%);
+
+}
+
+.overlay-info a{
+  color: black;
+  font-size: 10pt;
+  text-decoration: underline;
+
+}
+
+.overlay-info h2{
+  font-family: "Avenir Next", sans-serif;
+  line-height: 1.35;
+  font-weight: normal;
+  font-size: 12pt; 
+  padding: 10px;
+}
+
+#passwordInput{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  color: black;
+  border: solid black 1.5px;
+
+}
+
+.submitButtonOuter{
+  width: 100%;
+  padding-top: 15px;
+}
+
+#submitButton{
+  font-family: "Avenir Next", sans-serif;
+  line-height: 1.35;
+  font-weight: normal;
+  font-size: 12pt; 
+  width: 140px;
+  height: 30px;
+  color: Black;
+  background-color: white;
+  border-style: solid;
+  border: solid black 1.5px;
+}
+
+#submitButton:hover{
+  color: white;
+  background-color: black;
+  border: solid black 1.5px;
+  transition: all .35s ease;
+}
+
+#Blur {
+    filter: blur(5px);
+    transition: filter 0.5s ease;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+
 
 
