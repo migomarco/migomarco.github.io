@@ -31,7 +31,7 @@
 
     $(document).ready(function() {
         // Select all the links with class names 
-        const links = $(".Diriyah, .Modelo, .Volvo, .AntiAsian, .rest, .emirates, .johnjohnlab, .frank");
+        const links = $(".Diriyah, .Modelo, .Specsavers, .Volvo, .AntiAsian, .rest, .emirates, .johnjohnlab, .frank");
 
         // Add a click event listener to each link
         links.click(function(event) {
