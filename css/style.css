@@ -133,6 +133,12 @@ body {
   height:100vh;
 }
 
+.box11 {
+  position: relative;
+  background:white;
+  height:100vh;
+}
+
 
 .OuterHome{
   width:100%;
