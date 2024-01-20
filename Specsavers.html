@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Restylane</title>
+    <meta name="description" content= "Miguel's work: Fillers are getting adopted by a new generation, and Restylane is here for it." >
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/M.png" />
+    <!-- <script type="text/javascript" src="index.js"></script> -->
+
+    <!-- <script type="text/javascript" src="js/bootstrap.js"></script> -->
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Get the previous page's URL
+            var referrer = document.referrer;
+
+            // Function to check if the referrer matches any of the expected URLs or patterns
+            function checkReferrer() {
+                if (
+                    referrer === "https://migomarco.com/" ||                        // Base domain
+                    /https:\/\/migomarco\.com\/#box\d+/.test(referrer) ||           // URLs ending with "#box§"
+                    /https:\/\/migomarco\.com\/#back\d+/.test(referrer) ||          // URLs ending with "#back§"
+                    referrer === "https://migomarco.com/index.html" ||               // Index page
+                    /https:\/\/migomarco\.com\/index.html#box\d+/.test(referrer) ||  // Index page with "#box§"
+                    /https:\/\/migomarco\.com\/index.html#back\d+/.test(referrer)   // Index page with "#back§"
+                ) {
+                    // If the referrer matches, run your code
+                    $("#lift").css("bottom", "100%");
+                } else {
+                    // If the referrer doesn't match, hide the element
+                    $("#lift").css("visibility", "hidden");
+                }
+            }
+
+            // Check the referrer when the DOM is ready
+            checkReferrer();
+        });
+    </script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.singlefull.css">
+
+  </head>
+  <body>
+
+
+
+  <style type="text/css">
+    html,
+    body {
+      margin: 0px;
+/*      scroll-behavior: smooth;*/
+      background: white;
+    }
+
+
+    @media screen and (max-width: 800px) {
+
+    .Resume{
+      visibility: hidden;
+    }
+    .Contact{
+      visibility: hidden;
+    }
+  </style>
+
+
+<!-- TopBar -->
+
+  <a class="Contact" href="#box10" id="back10">Contact</a>
+  
+  <div class="OuterHome"> 
+    <a class="ArrowLeft" style="visibility: hidden;" href=""> <img src="images/left.png"> </a>
+    <a class="Home" href="index.html"> <img src="images/migoLogo.svg"> </a> 
+    <a class="ArrowRight" href="Diriyah.html"> <img src="images/right.png"> </a>
+  </div>
+
+  <a class="Resume" href="images/CV.pdf" target="_blank">Résumé</a>
+
+
+<!-- Paragraph -->
+
+  <div class="RationalOuter">
+    <div class="Rational">
+      <h1>Specsavers Hearing</h1> 
+      <br>
+      <p>
+      (English Interpretation below the video)
+      <br><br>
+      Conventional hearing aid advertisements are typicially centered around depicting an older individual missing out on life. Lets face it, many resist acknowledging the need for additional assistance to avoid feeling old. Research suggests that despite being aware of their hearing limitations, many older adults are content with their current state and do not believe they require extra support. Interestingly, studies also reveal a rise in hearing issues among younger adults.
+      <br><br>
+      So we flipped the script not just once, but twice. We present a typical scene – A mother-daughter quality time preparing for a wedding, seemingly for the daughter. However, a surprising twist unfolds as we discover that it was the older mother who is getting marriage. This showcases her ability to create significant moments for herself. Another unexpected turn reveals that the daughter is the one in need of hearing aids to hear her mother say "I do."
+      <br><br>
+      This dual narrative serves two essential purposes: raising awareness among younger individuals to prioritize their hearing health and dispelling the notion that opting for hearing aids necessarily emphasizes one's incapability for older individuals.
+      </p>
+    </div>
+  </div>
+
+<!-- Brand Logo -->
+
+  <div class="lift" id="lift">
+    <div id="box6" class="box6" onclick="window.location.hash='back6'; ">
+      <div class="InfoArea"> 
+          <h1 class="TypeTitle">Advertising | Grey Group</h1><br> 
+          <a href="rest.html"><button class="ButtonHome">View Project</button></a>
+      </div>
+      <div class="ProjectLogoOuter"> <img src="images/rest.gif"></div> 
+    </div>
+  </div>
+
+
+<!-- Content -->
+
+  <div class="ContentOuter">
+    <div class="Content">
+      <iframe src="https://www.youtube.com/embed/72vt_5EoTYU?si=4RIhr_I55RVoAZPN" frameborder="0"allowfullscreen></iframe>
+      <h1>
+      VO: When everything has to be perfect...<br>
+      VO: Then you make sure you're in good hands.<br><br>
+      VO: All Specsavers hearing aids are tailor-made...<br>
+      Bride: Yes, I do!<br>
+      VO: to be adjusted to your personal life.<br><br>
+      VO: You are welcome at Specsavers </h1>
+      <div id="box10" onclick="window.location.hash='back10'; ">
+        <div class="LinkAlign">
+           <!-- <h1>Miguel Marcos</h1> -->
+        <br>
+          <a href="mailto:migueljackmarcos@gmail.com?subject=Looking%20to%20Connect">MiguelJackMarcos@gmail.com</a>
+          <br><br>
+          <a href="tel:+31648555552">+31 6 48 555552</a>
+          <br>
+          <a href="tel:+971504828254">+971 50 482 8254</a>
+        </div>
+      </div>
+        
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
