@@ -13,33 +13,6 @@
 
     <!-- <script type="text/javascript" src="js/bootstrap.js"></script> -->
     <script src="js/jquery.js"></script>
-    <script>
-        $(document).ready(function() {
-            // Get the previous page's URL
-            var referrer = document.referrer;
-
-            // Function to check if the referrer matches any of the expected URLs or patterns
-            function checkReferrer() {
-                if (
-                    referrer === "https://migomarco.com/" ||                        // Base domain
-                    /https:\/\/migomarco\.com\/#box\d+/.test(referrer) ||           // URLs ending with "#box§"
-                    /https:\/\/migomarco\.com\/#back\d+/.test(referrer) ||          // URLs ending with "#back§"
-                    referrer === "https://migomarco.com/index.html" ||               // Index page
-                    /https:\/\/migomarco\.com\/index.html#box\d+/.test(referrer) ||  // Index page with "#box§"
-                    /https:\/\/migomarco\.com\/index.html#back\d+/.test(referrer)   // Index page with "#back§"
-                ) {
-                    // If the referrer matches, run your code
-                    $("#lift").css("bottom", "100%");
-                } else {
-                    // If the referrer doesn't match, hide the element
-                    $("#lift").css("visibility", "hidden");
-                }
-            }
-
-            // Check the referrer when the DOM is ready
-            checkReferrer();
-        });
-    </script>
     <script src="js/index.js"></script>
     <link rel="stylesheet" type="text/css" href="css/jquery.singlefull.css">
 
@@ -97,19 +70,30 @@
 
 <!-- Brand Logo -->
 
-  <div class="lift" id="lift">
+  <!-- <div class="lift" id="lift"> -->
     <div id="box9" class="box9" onclick="window.location.hash='back9'; ">
-      <div class="InfoArea"> 
-          <h1 class="TypeTitle">Advertising | BSUR Agency</h1><br> 
-          <a class="BataviaStad" href="#box9"><button class="ButtonHome">View Project</button></a>
-      </div>
-      <div class="ProjectLogoOuter"> <img src="images/BataviaStad.gif"></div> 
+      <div class="ProjectLogoOuter">
+        <div class="RationalHome">
+          <div class="Rational">
+            <h1>BATAVIA STAD FASHION OUTLET</h1> 
+            <br>
+            <p>
+            VIA Outlets is Europe’s leading operator of outlet shopping experiences. Tasked to launch their first foray into online shopping, we needed to ensure the online service didn’t detract from the ‘real life’ outlet experience.
+            <br><br>
+            The ‘bricks’ wanted to add ‘clicks’, so we needed to make sure those bricks didn’t lose footfall to (the more accessible) clicks. Neither should take prominence, both should compliment the other to best serve the customer and deliver the ultimate brand experience.
+            <br><br>
+            Rather than solely creating a launch for the web store, the campaign brings people to both destinations equally. Featuring situations where people really can’t go anywhere - they can’t go to the outlet centre - so they go online.
+            </p>
+          </div>
+        </div>        
+      </div> 
+    <a href="#scroll-skip"><img class="ArrowDown" src="images/down.png"></a> 
     </div>
-  </div>
+  <!-- </div> -->
 
 
 <!-- Content -->
-
+<div id="scroll-skip">
   <div class="ContentOuter">
     <div class="Content">
       <h1> THE OUTLET IS NOW ONLINE TOO </h1>

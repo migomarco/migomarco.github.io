@@ -14,33 +14,6 @@
 
     <!-- <script type="text/javascript" src="js/bootstrap.js"></script> -->
     <script src="js/jquery.js"></script>
-    <script>
-        $(document).ready(function() {
-            // Get the previous page's URL
-            var referrer = document.referrer;
-
-            // Function to check if the referrer matches any of the expected URLs or patterns
-            function checkReferrer() {
-                if (
-                    referrer === "https://migomarco.com/" ||                        // Base domain
-                    /https:\/\/migomarco\.com\/#box\d+/.test(referrer) ||           // URLs ending with "#box§"
-                    /https:\/\/migomarco\.com\/#back\d+/.test(referrer) ||          // URLs ending with "#back§"
-                    referrer === "https://migomarco.com/index.html" ||               // Index page
-                    /https:\/\/migomarco\.com\/index.html#box\d+/.test(referrer) ||  // Index page with "#box§"
-                    /https:\/\/migomarco\.com\/index.html#back\d+/.test(referrer)   // Index page with "#back§"
-                ) {
-                    // If the referrer matches, run your code
-                    $("#lift").css("bottom", "100%");
-                } else {
-                    // If the referrer doesn't match, hide the element
-                    $("#lift").css("visibility", "hidden");
-                }
-            }
-
-            // Check the referrer when the DOM is ready
-            checkReferrer();
-        });
-    </script>
     <script src="js/index.js"></script>
     <link rel="stylesheet" type="text/css" href="css/jquery.singlefull.css">
 
@@ -96,19 +69,28 @@
 
 <!-- Brand Logo -->
 
-  <div class="lift" id="lift">
+  <!-- <div class="lift" id="lift"> -->
     <div id="box3" class="box3" onclick="window.location.hash='back3'; ">
-      <div class="InfoArea"> 
-          <h1 class="TypeTitle">Advertising | Grey Group</h1><br> 
-          <a href="Modelo.html"><button class="ButtonHome">View Project</button></a>
+      <div class="ProjectLogoOuter"> 
+        <div class="RationalHome">
+          <div class="Rational">
+            <h1>ALL IN SUMMER</h1> 
+            <br>
+            <p>
+            Winter burnout hits hard among Americans. With summer around the corner, all everyone can think of doing is laying back and taking a break. While it does seem nice to crack open a mexican beer and soak in the sun by the beach, we had other plans in mind to fight the burnout this summer.
+            <br><br>
+            This summer we suggest to go all in. We want to leave summer without missing out on any of it. That is how we fight the winter burnout. So, crack open your favourite Mexican beer and live your best life. Fully embrace it and make it a summer to remember.
+            </p>
+          </div>
+        </div>      
       </div> 
-    <div class="ProjectLogoOuter"> <img src="images/Modelo.gif"></div> 
+  <a href="#scroll-skip"><img class="ArrowDown" src="images/down.png"></a> 
   </div>
-  </div>
+  <!-- </div> -->
 
 
 <!-- Content -->
-
+<div id="scroll-skip">
   <div class="ContentOuter">
     <div class="Content">
       <h1>WINTER BURNOUT IS REAL, BUT THAT IS NO REASON TO CHILL IN SUMMER </h1>

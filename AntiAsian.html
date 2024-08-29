@@ -14,33 +14,6 @@
 
     <!-- <script type="text/javascript" src="js/bootstrap.js"></script> -->
     <script src="js/jquery.js"></script>
-    <script>
-        $(document).ready(function() {
-            // Get the previous page's URL
-            var referrer = document.referrer;
-
-            // Function to check if the referrer matches any of the expected URLs or patterns
-            function checkReferrer() {
-                if (
-                    referrer === "https://migomarco.com/" ||                        // Base domain
-                    /https:\/\/migomarco\.com\/#box\d+/.test(referrer) ||           // URLs ending with "#box§"
-                    /https:\/\/migomarco\.com\/#back\d+/.test(referrer) ||          // URLs ending with "#back§"
-                    referrer === "https://migomarco.com/index.html" ||               // Index page
-                    /https:\/\/migomarco\.com\/index.html#box\d+/.test(referrer) ||  // Index page with "#box§"
-                    /https:\/\/migomarco\.com\/index.html#back\d+/.test(referrer)   // Index page with "#back§"
-                ) {
-                    // If the referrer matches, run your code
-                    $("#lift").css("bottom", "100%");
-                } else {
-                    // If the referrer doesn't match, hide the element
-                    $("#lift").css("visibility", "hidden");
-                }
-            }
-
-            // Check the referrer when the DOM is ready
-            checkReferrer();
-        });
-    </script>
     <script src="js/index.js"></script>
     <link rel="stylesheet" type="text/css" href="css/jquery.singlefull.css">
 
@@ -102,19 +75,34 @@
 
 <!-- Brand Logo -->
 
-  <div class="lift" id="lift">
+  <!-- <div class="lift" id="lift"> -->
     <div id="box5" class="box5" onclick="window.location.hash='back5'; ">
-      <div class="InfoArea"> 
-          <h1 class="TypeTitle">Advertising | Grey Group</h1><br> 
-          <a href="AntiAsian.html"><button class="ButtonHome">View Project</button></a>
-      </div>
-      <div class="ProjectLogoOuter"> <img style="width: 45%;" src="images/AntiAsian.gif"></div> 
+      <div class="ProjectLogoOuter"> 
+        <div class="RationalHome">
+          <div class="Rational">
+            <h1>ASIANS IN ENGLISH</h1> 
+            <br>
+            <p>
+            Asia is the most diverse continent in the world; not just in cuisine and sports, but also in languages, history, inventions, and cultures. To stop Asian hate, we must first understand where this hate comes from. Americans do not recognize Asian cultures accurately and tend to highlight the worst in each of them. However, it is not without reason: Americans are bombarded with stigmas and news depicting Asians in a negative or incorrect light.
+            <br>
+            <br>
+            Americans tend apply a Chinese stigma to what they consider “Asian-looking” people. “Asian” has therefore become a term commonly used to describe an inaccurate Chinese depiction, disregarding all other Asian cultures. Often, Americans find it hard to even recognize their own biases—that’s where the problem starts.
+            <br>
+            <br>
+            We must educate Americans on who Asians truly are, and highlight the problem on how they are viewed in America. Using Google Images, the most widely used search engine, we can see
+            how Americans view Asians vs how Asians see themselves
+            and want to be recognized.
+            </p>
+          </div>
+        </div>
+      </div> 
+      <a href="#scroll-skip"><img class="ArrowDown" src="images/down.png"></a> 
     </div>
-  </div>
+  <!-- </div> -->
 
 
 <!-- Content -->
-
+<div id="scroll-skip">
   <div class="ContentOuter">
     <div class="Content">
       <h1>WHAT SHOWS UP WHEN YOU SEARCH THE WORD "ASIANS"? </h1>

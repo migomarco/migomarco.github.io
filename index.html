@@ -44,18 +44,41 @@
 
   <script type='text/javascript'>
 
-  $(function() {
-      $('.Load').delay(5000).show().fadeOut('slow');
-  });
+$(document).ready(function() {
+    // Get the current URL and fragment
+    var currentUrl = window.location.href;
 
-  $('.Load').each(function() {
+    // Define the patterns for the conditions to hide the .Load element
+    var shouldHidePatterns = [
+        /#back\d+/,       // Matches "#back" followed by any number
+        /\/index\.html/   // Matches "/index.html"
+    ];
 
-    var num = Math.floor(Math.random() * 6 + 1),
-      video = $(this);
+    // Function to check if the URL matches any of the hide patterns
+    function shouldHideElement(url) {
+        return shouldHidePatterns.some(function(pattern) {
+            return pattern.test(url);
+        });
+    }
 
-    video.attr('src', 'images/VideoTest' + num + '.mp4');
+    // Check if the current URL matches the patterns
+    if (shouldHideElement(currentUrl)) {
+        // Hide .Load element if the URL matches the hide patterns
+        $('.Load').hide();
+    } else {
+        // Show and animate .Load element if the URL does not match the hide patterns
+        $('.Load').delay(5000).show().fadeOut('slow');
+        
+        $('.Load').each(function() {
+            var num = Math.floor(Math.random() * 6 + 1),
+                video = $(this);
 
-  });
+            video.attr('src', 'images/VideoTest' + num + '.mp4');
+        });
+    }
+});
+
+
 
   </script>
 
@@ -95,12 +118,12 @@
      <div class="AboutMeHome">
         <h1>Miguel Marcos</h1>
         <br>
-        <p>As an Art Director, my profession lies in Advertising and Branding. My intentions
-        are to translate past experiences in Fashion & Beauty, Pharma, Beer, Fast Food, Cars,
-        and Tourism & Hospitality to drive creative breakthroughs across industries. Through
-        my work experience in Dubai, Paris, New York City, and Amsterdam. I am grateful
-        to have been exposed to people from all walks of life. Leading me to creatively
-        compose ideas through different lenses.</p>
+        <p>Creative and detail-oriented Senior Art Director with 6+ years of experience leading
+        the development of innovative campaigns for global brands. Skilled in translating
+        strategic briefs into impactful creative solutions, with a strong portfolio showcasing
+        high-level retail campaigns. Adept at balancing aesthetic and functional design
+        to elevate brand presence. Passionate about cultivating diverse perspectives and
+        creating work that resonates across cultures and markets.</p>
         <br>
         <a href="mailto:migueljackmarcos@gmail.com">MiguelJackMarcos@gmail.com</a>
         <br><br>
@@ -109,7 +132,7 @@
         <a>+971 50 482 8254</a>
      </div>
    </div>
-   <a href="#box2"><img class="ArrowDown" src="images/down.png"></a> 
+   <a href="#box11"><img class="ArrowDown" src="images/down.png"></a> 
   </div>
 
 
@@ -118,7 +141,7 @@
   <div id="box11" class="box11" onclick="window.location.hash='back2'; ">
     <div class="InfoArea"> 
         <h1 class="TypeTitle">Advertising | BSUR Agency</h1><br> 
-        <a class="Specsavers" href="#box11"><button class="ButtonHome">View Project</button></a>
+        <a class="smooth-scroll" href="Specsavers.html"><button class="ButtonHome">View Project</button></a>
     </div>
     <div class="ProjectLogoOuter"> <img src="images/Specsavers.gif"></div>
   </div>
@@ -127,7 +150,7 @@
   <div id="box2" class="box2" onclick="window.location.hash='back2'; ">
     <div class="InfoArea"> 
         <h1 class="TypeTitle">Branding | BSUR Agency</h1><br> 
-        <a class="Diriyah" href="#box2"><button class="ButtonHome">View Project</button></a>
+        <a class="smooth-scroll" href="Diriyah.html"><button class="ButtonHome">View Project</button></a>
     </div>
     <div class="ProjectLogoOuter"> <img src="images/DiriyahLogo1.gif"></div>
   </div>
@@ -135,7 +158,7 @@
   <div id="box9" class="box9" onclick="window.location.hash='back9'; ">
     <div class="InfoArea"> 
         <h1 class="TypeTitle">Advertising | BSUR Agency</h1><br> 
-        <a class="BataviaStad" href="#box9"><button class="ButtonHome">View Project</button></a>
+        <a class="smooth-scroll" href="BataviaStad.html"><button class="ButtonHome">View Project</button></a>
     </div>
     <div class="ProjectLogoOuter"> <img src="images/BataviaStad.gif"></div> 
   </div>
@@ -144,7 +167,7 @@
   <div id="box3" class="box3" onclick="window.location.hash='back3'; ">
     <div class="InfoArea"> 
         <h1 class="TypeTitle">Advertising | Grey Group</h1><br> 
-        <a class="Modelo" href="#box3"><button class="ButtonHome">View Project</button></a>
+        <a class="smooth-scroll" href="Modelo.html"><button class="ButtonHome">View Project</button></a>
     </div> 
     <div class="ProjectLogoOuter"> <img src="images/Modelo.gif"></div> 
   </div>
@@ -153,7 +176,7 @@
   <div id="box6" class="box6" onclick="window.location.hash='back6'; ">
     <div class="InfoArea"> 
         <h1 class="TypeTitle">Advertising | Grey Group</h1><br> 
-        <a class="rest" href="#box6"><button class="ButtonHome">View Project</button></a>
+        <a class="smooth-scroll" href="rest.html"><button class="ButtonHome">View Project</button></a>
     </div>
     <div class="ProjectLogoOuter"> <img src="images/rest.gif"></div> 
   </div>
@@ -162,7 +185,7 @@
   <div id="box4" class="box4" onclick="window.location.hash='back4'; ">
     <div class="InfoArea"> 
         <h1 class="TypeTitle">Advertising | Grey Group</h1><br> 
-        <a class="Volvo" href="#box4"><button class="ButtonHome">View Project</button></a>
+        <a class="smooth-scroll" href="Volvo.html"><button class="ButtonHome">View Project</button></a>
     </div> 
     <div class="ProjectLogoOuter"> <img style="width: 20%;" src="images/Volvo.gif"></div>  
   </div>
@@ -171,7 +194,7 @@
   <div id="box5" class="box5" onclick="window.location.hash='back5'; ">
     <div class="InfoArea"> 
         <h1 class="TypeTitle">Advertising | Grey Group</h1><br> 
-        <a class="AntiAsian" href="#box5"><button class="ButtonHome">View Project</button></a>
+        <a class="AntiAsian" href="AntiAsian.html"><button class="ButtonHome">View Project</button></a>
     </div>
     <div class="ProjectLogoOuter"> <img style="width: 45%;" src="images/AntiAsian.gif"></div> 
   </div>
@@ -180,7 +203,7 @@
   <div id="box7" class="box7" onclick="window.location.hash='back7'; ">
     <div class="InfoArea"> 
         <h1 class="TypeTitle">Advertising | Concept</h1><br> 
-        <a class="emirates" href="#box7"><button class="ButtonHome">View Project</button></a>
+        <a class="smooth-scroll" href="emirates.html"><button class="ButtonHome">View Project</button></a>
     </div>
     <div class="ProjectLogoOuter"> <img style="width: 20%;" src="images/emirates.png"></div> 
   </div>
@@ -189,7 +212,7 @@
   <div id="box8" class="box8" onclick="window.location.hash='back8'; ">
     <div class="InfoArea"> 
         <h1 class="TypeTitle">Branding | Restoque Fashion</h1><br> 
-        <a class="johnjohnlab" href="#box8"><button class="ButtonHome">View Project</button></a>
+        <a class="smooth-scroll" href="johnjohnlab.html"><button class="ButtonHome">View Project</button></a>
     </div>
      <div class="ProjectLogoOuter"> <img src="images/JJLAB.png"></div> 
   </div>

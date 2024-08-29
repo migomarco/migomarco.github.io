@@ -14,33 +14,6 @@
 
     <!-- <script type="text/javascript" src="js/bootstrap.js"></script> -->
     <script src="js/jquery.js"></script>
-    <script>
-        $(document).ready(function() {
-            // Get the previous page's URL
-            var referrer = document.referrer;
-
-            // Function to check if the referrer matches any of the expected URLs or patterns
-            function checkReferrer() {
-                if (
-                    referrer === "https://migomarco.com/" ||                        // Base domain
-                    /https:\/\/migomarco\.com\/#box\d+/.test(referrer) ||           // URLs ending with "#box§"
-                    /https:\/\/migomarco\.com\/#back\d+/.test(referrer) ||          // URLs ending with "#back§"
-                    referrer === "https://migomarco.com/index.html" ||               // Index page
-                    /https:\/\/migomarco\.com\/index.html#box\d+/.test(referrer) ||  // Index page with "#box§"
-                    /https:\/\/migomarco\.com\/index.html#back\d+/.test(referrer)   // Index page with "#back§"
-                ) {
-                    // If the referrer matches, run your code
-                    $("#lift").css("bottom", "100%");
-                } else {
-                    // If the referrer doesn't match, hide the element
-                    $("#lift").css("visibility", "hidden");
-                }
-            }
-
-            // Check the referrer when the DOM is ready
-            checkReferrer();
-        });
-    </script>
     <script src="js/index.js"></script>
     <link rel="stylesheet" type="text/css" href="css/jquery.singlefull.css">
 
@@ -102,20 +75,31 @@
 
 <!-- Brand Logo -->
 
-  <div class="lift" id="lift">
+  <!-- <div class="lift" id="lift"> -->
     <div id="box4" class="box4" onclick="window.location.hash='back4'; ">
-      <div class="InfoArea"> 
-        <h1 class="TypeTitle">Advertising | Grey Group</h1><br> 
-        <a href="Volvo.html"><button class="ButtonHome">View Project</button></a>
+      <div class="ProjectLogoOuter"> 
+        <div class="RationalHome">
+          <div class="Rational">
+            <h1>THE COST OF EMISSIONS</h1> 
+            <br>
+            <p>
+            With an all-electric fleet of vehicles, Volvo is helping drive a carbon neutral future. But how can we get more Volvo EVs on the road in high-emitting CO2 regions?
+            <br><br>
+            Volvo will develop a proprietary algorithm that inversely correlates real-time CO2 emissions data with the purchase price of an all-electric Volvo. The higher the emissions in a region,the lower the price for an XC40 Recharge. Helping get Volvo EVs in the regions where they’re needed most.
+            <br><br>
+            The Cost of Emissions Today = Zero Emissions Tomorrow.
+            </p>
+          </div>
+        </div>
       </div> 
-      <div class="ProjectLogoOuter"> <img style="width: 20%;" src="images/Volvo.gif"></div>  
+      <a href="#scroll-skip"><img class="ArrowDown" src="images/down.png"></a>        
     </div>
-  </div>
+  <!-- </div> -->
 
 
 
 <!-- Content -->
-
+<div id="scroll-skip">
   <div class="ContentOuter">
     <div class="Content">
       <h1>HOW DO WE GET ELECTRIC VEHICLES ON THE ROAD? <BR> CHANGE THE PRICE </h1>

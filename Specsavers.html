@@ -14,33 +14,6 @@
 
     <!-- <script type="text/javascript" src="js/bootstrap.js"></script> -->
     <script src="js/jquery.js"></script>
-    <script>
-        $(document).ready(function() {
-            // Get the previous page's URL
-            var referrer = document.referrer;
-
-            // Function to check if the referrer matches any of the expected URLs or patterns
-            function checkReferrer() {
-                if (
-                    referrer === "https://migomarco.com/" ||                        // Base domain
-                    /https:\/\/migomarco\.com\/#box\d+/.test(referrer) ||           // URLs ending with "#box§"
-                    /https:\/\/migomarco\.com\/#back\d+/.test(referrer) ||          // URLs ending with "#back§"
-                    referrer === "https://migomarco.com/index.html" ||               // Index page
-                    /https:\/\/migomarco\.com\/index.html#box\d+/.test(referrer) ||  // Index page with "#box§"
-                    /https:\/\/migomarco\.com\/index.html#back\d+/.test(referrer)   // Index page with "#back§"
-                ) {
-                    // If the referrer matches, run your code
-                    $("#lift").css("bottom", "100%");
-                } else {
-                    // If the referrer doesn't match, hide the element
-                    $("#lift").css("visibility", "hidden");
-                }
-            }
-
-            // Check the referrer when the DOM is ready
-            checkReferrer();
-        });
-    </script>
     <script src="js/index.js"></script>
     <link rel="stylesheet" type="text/css" href="css/jquery.singlefull.css">
 
@@ -100,19 +73,30 @@
 
 <!-- Brand Logo -->
 
-  <div class="lift" id="lift">
+  <!-- <div class="lift" id="lift"> -->
     <div id="box11" class="box11" onclick="window.location.hash='back6'; ">
-      <div class="InfoArea"> 
-          <h1 class="TypeTitle">Advertising | BSUR</h1><br> 
-          <a href="Specsavers.html"><button class="ButtonHome">View Project</button></a>
-      </div>
-      <div class="ProjectLogoOuter"> <img src="images/Specsavers.gif"></div> 
+      <div class="ProjectLogoOuter"> 
+        <div class="RationalHome">
+          <div class="Rational">
+            <h1>Specsavers Hearing</h1> 
+            <br>
+            <p>
+            Conventional hearing aid advertisements are typicially centered around depicting an older individual missing out on life. Lets face it, many resist acknowledging the need for additional assistance to avoid feeling old. Research suggests that despite being aware of their hearing limitations, many older adults are content with their current state and do not believe they require extra support. Interestingly, studies also reveal a rise in hearing issues among younger adults.
+            <br><br>
+            So we flipped the script not just once, but twice. We present a typical scene – A mother-daughter quality time preparing for a wedding, seemingly for the daughter. However, a surprising twist unfolds as we discover that it was the older mother who is getting marriage. This showcases her ability to create significant moments for herself. Another unexpected turn reveals that the daughter is the one in need of hearing aids to hear her mother say "I do."
+            <br><br>
+            This dual narrative serves two essential purposes: raising awareness among younger individuals to prioritize their hearing health and dispelling the notion that opting for hearing aids necessarily emphasizes one's incapability for older individuals.
+            </p>
+          </div>
+        </div>
+      </div> 
+      <a href="#scroll-skip"><img class="ArrowDown" src="images/down.png"></a> 
     </div>
-  </div>
+  <!-- </div> -->
 
 
 <!-- Content -->
-
+<div id="scroll-skip">
   <div class="ContentOuter">
     <div class="Content">
       <iframe src="https://www.youtube.com/embed/IobF55DpcHo?si=DtJQYdw_s5iro21S" frameborder="0"allowfullscreen></iframe>

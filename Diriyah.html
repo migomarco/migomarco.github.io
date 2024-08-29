@@ -14,33 +14,6 @@
 
     <!-- <script type="text/javascript" src="js/bootstrap.js"></script> -->
     <script src="js/jquery.js"></script>
-    <script>
-        $(document).ready(function() {
-            // Get the previous page's URL
-            var referrer = document.referrer;
-
-            // Function to check if the referrer matches any of the expected URLs or patterns
-            function checkReferrer() {
-                if (
-                    referrer === "https://migomarco.com/" ||                        // Base domain
-                    /https:\/\/migomarco\.com\/#box\d+/.test(referrer) ||           // URLs ending with "#box§"
-                    /https:\/\/migomarco\.com\/#back\d+/.test(referrer) ||          // URLs ending with "#back§"
-                    referrer === "https://migomarco.com/index.html" ||               // Index page
-                    /https:\/\/migomarco\.com\/index.html#box\d+/.test(referrer) ||  // Index page with "#box§"
-                    /https:\/\/migomarco\.com\/index.html#back\d+/.test(referrer)   // Index page with "#back§"
-                ) {
-                    // If the referrer matches, run your code
-                    $("#lift").css("bottom", "100%");
-                } else {
-                    // If the referrer doesn't match, hide the element
-                    $("#lift").css("visibility", "hidden");
-                }
-            }
-
-            // Check the referrer when the DOM is ready
-            checkReferrer();
-        });
-    </script>
     <script src="js/index.js"></script>
     <link rel="stylesheet" type="text/css" href="css/jquery.singlefull.css">
 
@@ -80,18 +53,6 @@
   <a class="Resume" href="images/CV.pdf" target="_blank">Résumé</a>
 
 
-<!-- Password --> <!-- Linked to CSS code "Blur" -->
-<!--       <div id="overlay" class="hidden">
-        <div class="overlay-content">
-          <div class="overlay-info">
-            <h2>ENTER PASSWORD</h2>
-            <input type="password" id="passwordInput" placeholder="Password"><br>
-            <div class="submitButtonOuter"><button id="submitButton">Submit</button></div><br>
-            <a href="#" id="accessBlurredVersion">Access blurred version</a>
-          </div>
-        </div>
-    </div>
-     -->
 
 
 <!-- Paragraph -->
@@ -127,18 +88,43 @@
 
 <!-- Brand Logo -->
 
-  <div class="lift" id="lift">
-      <div id="box2" class="box2" onclick="window.location.hash='back2'; ">
-      <div class="InfoArea"> 
-          <h1 class="TypeTitle">Branding | BSUR Agency</h1><br> 
-          <a href="Diriyah.html"><button class="ButtonHome">View Project</button></a>
+  <!-- <div class="lift" id="lift"> -->
+    <div id="box2" class="box2" onclick="window.location.hash='back2'; ">
+      <div class="ProjectLogoOuter"> 
+        <div class="RationalHome">
+          <div class="Rational">
+            <h1>DIRIYAH MASTERBRAND</h1> 
+            <br>
+            <p>
+            Diriyah is the birthplace of Al Saud nobility. A nobility that is uniquely down to earth, firmly connected and dedicated to the land, with principles guiding Saudi Arabia for 300 years. The most distinctive and ownable fact about Diriyah is that it will be the world’s largest mud-brick city. Diriyah is the city of earth. Diriyah is built in Najdi design, known for its purity and functional beauty. The entire city was developed around humans and their original way of life with walkability engulfing the whole city.
+            </p>
+            <br><br>
+            <h1 style="font-weight: normal;">AT-TURAIF UNESCO SITE</h1> 
+            <br>
+            <p>
+            At-Turaif is the Unesco heritage site that marks the start of Saudi Arabia. The At-Turaif brand exists within the Diriyah brand architecture. At-Turaif can be seen more as a tourist destination.
+            </p>
+            <br><br>
+            <h1 style="font-weight: normal;">DIRIYAH COMPANY</h1> 
+            <br>
+            <p>
+            Diriyah Company is the govermental development agency that is incharge of the Diriyah City, It is involved in the development, legal, and civil sectors of the city.
+            </p>
+            <br><br>
+            <h1 style="font-weight: normal;">JABAL AL QARIN DISTRICT</h1> 
+            <br>
+            <p>
+            Jabal Al Qarin is a working in progress. It is the Cultural district in Diriyah. It will include various Ministry of Culture Academies, Arts cinema, Digital Art Museum. Focusing on Culinary Arts, Theatre, Music, Film, Architecture, literature and Visual Arts.
+            </p>
+          </div>
+        </div>        
       </div>
-      <div class="ProjectLogoOuter"> <img src="images/DiriyahLogo1.gif"></div>
+      <a href="#scroll-skip"><img class="ArrowDown" src="images/down.png"></a> 
     </div>
-  </div>
+  <!-- </div> -->
 
 <!-- Content -->
-  <div id="Blur" class="Blur">
+<div id="scroll-skip">
   <div class="ContentOuter">
     <div class="Content">
       <h1>A PROJECT THAT HAS NEVER BEEN DONE BEFORE, REVIVING THE PAST IN AN UNPRECEDENTED SCALE </h1>

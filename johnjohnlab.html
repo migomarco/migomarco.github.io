@@ -14,33 +14,6 @@
 
     <!-- <script type="text/javascript" src="js/bootstrap.js"></script> -->
     <script src="js/jquery.js"></script>
-    <script>
-        $(document).ready(function() {
-            // Get the previous page's URL
-            var referrer = document.referrer;
-
-            // Function to check if the referrer matches any of the expected URLs or patterns
-            function checkReferrer() {
-                if (
-                    referrer === "https://migomarco.com/" ||                        // Base domain
-                    /https:\/\/migomarco\.com\/#box\d+/.test(referrer) ||           // URLs ending with "#box§"
-                    /https:\/\/migomarco\.com\/#back\d+/.test(referrer) ||          // URLs ending with "#back§"
-                    referrer === "https://migomarco.com/index.html" ||               // Index page
-                    /https:\/\/migomarco\.com\/index.html#box\d+/.test(referrer) ||  // Index page with "#box§"
-                    /https:\/\/migomarco\.com\/index.html#back\d+/.test(referrer)   // Index page with "#back§"
-                ) {
-                    // If the referrer matches, run your code
-                    $("#lift").css("bottom", "100%");
-                } else {
-                    // If the referrer doesn't match, hide the element
-                    $("#lift").css("visibility", "hidden");
-                }
-            }
-
-            // Check the referrer when the DOM is ready
-            checkReferrer();
-        });
-    </script>
     <script src="js/index.js"></script>
     <link rel="stylesheet" type="text/css" href="css/jquery.singlefull.css">
 
@@ -98,19 +71,30 @@
 
 <!-- Brand Logo -->
 
-  <div class="lift" id="lift">
+  <!-- <div class="lift" id="lift"> -->
     <div id="box8" class="box8" onclick="window.location.hash='back8'; ">
-      <div class="InfoArea"> 
-          <h1 class="TypeTitle">Branding | Restoque Fashion</h1><br> 
-          <a href="johnjohnlab.html"><button class="ButtonHome">View Project</button></a>
+     <div class="ProjectLogoOuter"> 
+      <div class="RationalHome">
+        <div class="Rational">
+          <h1>JohnJohnLAB</h1> 
+          <br>
+          <p>
+          As shown on the website I've designed, JohnJohnLAB is a denim label offering one of a kind pieces inspired by the lifestyle and modern architecture of downtown New York. The collection is designed and created in an innovative denim lab using local and imported fine fabrics. By blending traditional and modern washing techniques, the unique characteristics of the denim are exposed, resulting in a superior quality product and a unique interplay of shapes, fabrics, shadows and hues.
+          <br><br>
+          Creativity and minimalisim is what the brand identifies with. Aiming in bringing a classic to the modern world, JohnJohnLAB brings in the denim we all know and love to our modern street fashion.
+          <br><br>
+          This was a small team and I was largely responsible for the brand image. My other reposibilties consisted of: Store Design, Advertising, Package Design, Tag Design, Website Design, Instagram content, etc.
+          </p>
+        </div>
       </div>
-     <div class="ProjectLogoOuter"> <img src="images/JJLAB.png"></div> 
+     </div>
+     <a href="#scroll-skip"><img class="ArrowDown" src="images/down.png"></a>      
   </div>
-  </div>
+  <!-- </div> -->
 
 
 <!-- Content -->
-
+<div id="scroll-skip">
   <div class="ContentOuter">
     <div class="Content">
       <h1> BRAZILIAN DENIM BRAND REDESIGNED FOR THE US MARKET </h1>

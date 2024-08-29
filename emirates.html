@@ -13,33 +13,6 @@
 
     <!-- <script type="text/javascript" src="js/bootstrap.js"></script> -->
     <script src="js/jquery.js"></script>
-    <script>
-        $(document).ready(function() {
-            // Get the previous page's URL
-            var referrer = document.referrer;
-
-            // Function to check if the referrer matches any of the expected URLs or patterns
-            function checkReferrer() {
-                if (
-                    referrer === "https://migomarco.com/" ||                        // Base domain
-                    /https:\/\/migomarco\.com\/#box\d+/.test(referrer) ||           // URLs ending with "#box§"
-                    /https:\/\/migomarco\.com\/#back\d+/.test(referrer) ||          // URLs ending with "#back§"
-                    referrer === "https://migomarco.com/index.html" ||               // Index page
-                    /https:\/\/migomarco\.com\/index.html#box\d+/.test(referrer) ||  // Index page with "#box§"
-                    /https:\/\/migomarco\.com\/index.html#back\d+/.test(referrer)   // Index page with "#back§"
-                ) {
-                    // If the referrer matches, run your code
-                    $("#lift").css("bottom", "100%");
-                } else {
-                    // If the referrer doesn't match, hide the element
-                    $("#lift").css("visibility", "hidden");
-                }
-            }
-
-            // Check the referrer when the DOM is ready
-            checkReferrer();
-        });
-    </script>
     <script src="js/index.js"></script>
     <link rel="stylesheet" type="text/css" href="css/jquery.singlefull.css">
 
@@ -97,19 +70,30 @@
 
 <!-- Brand Logo -->
 
-  <div class="lift" id="lift">
+  <!-- <div class="lift" id="lift"> -->
     <div id="box7" class="box7" onclick="window.location.hash='back7'; ">
-      <div class="InfoArea"> 
-          <h1 class="TypeTitle">Advertising | Concept</h1><br> 
-          <a href="emirates.html"><button class="ButtonHome">View Project</button></a>
-      </div>
-      <div class="ProjectLogoOuter"> <img style="width: 20%;" src="images/emirates.png"></div> 
+      <div class="ProjectLogoOuter"> 
+          <div class="RationalHome">
+            <div class="Rational">
+              <h1>EMIRATES AIRLINES</h1> 
+              <br>
+              <p>
+              Countries are just starting to open up and the exapt population continues to rise. Multiple sources admit that tourism is not going back to pervious levels for at least a couple more years. However, people who live across the world from loved ones are craving to see them in person.
+              <br><br>
+              Emirates Airlines tends to promote tourism and business travel, so the general conensus is that it's not the time to take such a luxury. A lesser know fact about emirates is that they consistently serves expats and are one of the top airlines when it comes to serving the most countries.
+              <br><br>
+              With such global dominance, Emirates should target a new market of individuals trying to go visit their loved ones. Tourism and business is not coming back, but reconnecting people is in our nature.
+              </p>
+            </div>
+          </div>
+      </div> 
+    <a href="#scroll-skip"><img class="ArrowDown" src="images/down.png"></a> 
     </div>
-  </div>
+  <!-- </div> -->
 
 
 <!-- Content -->
-
+<div id="scroll-skip">
   <div class="ContentOuter">
     <div class="Content">
       <h1> COUNTRIES ARE FINALLY OPENING THEIR BORDERS, AND IT'S TIME TO LEAVE THE NEST </h1>

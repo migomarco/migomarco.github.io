@@ -14,33 +14,6 @@
 
     <!-- <script type="text/javascript" src="js/bootstrap.js"></script> -->
     <script src="js/jquery.js"></script>
-    <script>
-        $(document).ready(function() {
-            // Get the previous page's URL
-            var referrer = document.referrer;
-
-            // Function to check if the referrer matches any of the expected URLs or patterns
-            function checkReferrer() {
-                if (
-                    referrer === "https://migomarco.com/" ||                        // Base domain
-                    /https:\/\/migomarco\.com\/#box\d+/.test(referrer) ||           // URLs ending with "#box§"
-                    /https:\/\/migomarco\.com\/#back\d+/.test(referrer) ||          // URLs ending with "#back§"
-                    referrer === "https://migomarco.com/index.html" ||               // Index page
-                    /https:\/\/migomarco\.com\/index.html#box\d+/.test(referrer) ||  // Index page with "#box§"
-                    /https:\/\/migomarco\.com\/index.html#back\d+/.test(referrer)   // Index page with "#back§"
-                ) {
-                    // If the referrer matches, run your code
-                    $("#lift").css("bottom", "100%");
-                } else {
-                    // If the referrer doesn't match, hide the element
-                    $("#lift").css("visibility", "hidden");
-                }
-            }
-
-            // Check the referrer when the DOM is ready
-            checkReferrer();
-        });
-    </script>
     <script src="js/index.js"></script>
     <link rel="stylesheet" type="text/css" href="css/jquery.singlefull.css">
 
@@ -100,19 +73,30 @@
 
 <!-- Brand Logo -->
 
-  <div class="lift" id="lift">
+  <!-- <div class="lift" id="lift"> -->
     <div id="box6" class="box6" onclick="window.location.hash='back6'; ">
-      <div class="InfoArea"> 
-          <h1 class="TypeTitle">Advertising | Grey Group</h1><br> 
-          <a href="rest.html"><button class="ButtonHome">View Project</button></a>
-      </div>
-      <div class="ProjectLogoOuter"> <img src="images/rest.gif"></div> 
+      <div class="ProjectLogoOuter">
+        <div class="RationalHome">
+          <div class="Rational">
+            <h1>RESTYLANE KYSSE</h1> 
+            <br>
+            <p>
+            High stress levels are continuing to rise through the generations, and Gen-Zers/Millenials are getting hit the hardest. With countless brands being responsible for bringing down the generation's self-confidence, it is of utmost importance for filler brands to uplift self-assurance.
+            <br><br>
+            While the majority of beauty brands propogate the image of looking young, this campaign highlights self-worth and aims to raise one's presence. It ties the focus of lips to the words that come out of them. "Speak my mind!"
+            <br><br>
+            This is a new space for fillers, breaking from the traditional audience of older people seeking their youth. Fillers are getting adopted by the new generation, and Restylane is here for it.
+            </p>
+          </div>
+        </div>
+      </div> 
+      <a href="#scroll-skip"><img class="ArrowDown" src="images/down.png"></a>              
     </div>
-  </div>
+  <!-- </div> -->
 
 
 <!-- Content -->
-
+<div id="scroll-skip">
   <div class="ContentOuter">
     <div class="Content">
       <h1>A LIP FILLER TO GIVE THE NEW GENERATION A NEW FOUND CONFIDENCE </h1>
