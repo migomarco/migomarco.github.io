@@ -1,65 +1,46 @@
-
-// the code to jump to window viewer 
-
-  $(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
+$(document).ready(function () {
+  // Smooth scroll for same-page links
+  $("a[href^='#']").on('click', function (event) {
     if (this.hash !== "") {
-      // Prevent default anchor click behavior
       event.preventDefault();
-
-      // Store hash
       var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-          });
-        } // End if
-      });
-    });
+      // Smooth scroll to the target section
+      $('html, body').animate(
+        { scrollTop: $(hash).offset().top },
+        800,
+        function () {
+          window.location.hash = hash;
+        }
+      );
+    }
+  });
 
+  // Smooth scroll and hide elements for links with the single class 'smooth-scroll'
+  $(".smooth-scroll").on('click', function (event) {
+    event.preventDefault();
 
-// the code to readjust viewer then open url 
+    // Get the current href attribute (URL)
+    const currentHref = $(this).attr("href");
 
-    $(document).ready(function() {
-        // Select all the links with class names 
-        const links = $(".Diriyah, .Modelo, .Specsavers, .Volvo, .AntiAsian, .rest, .emirates, .johnjohnlab, .BataviaStad");
+    // Find the closest parent <div> (e.g., box11, box2, etc.)
+    const parentDiv = $(this).closest('div[id^="box"]');
+    const scrollToPosition = parentDiv.offset().top;
 
-        // Add a click event listener to each link
-        links.click(function(event) {
-            // Prevent the default link behavior (e.g., navigating to the href)
-            event.preventDefault();
+    // Add a class to trigger hiding of elements
+    parentDiv.addClass('hide-elements');
 
-            // Get the current href attribute
-            const currentHref = $(this).attr("href");
-
-            // Delay before moving to the existing href to allow it to execute (100 milliseconds)
-            setTimeout(() => {
-                // Run the existing href by navigating to it
-                window.location.replace(currentHref);
-            }, 100);
-
-            // Delay before moving to the new URL (800 milliseconds)
-            setTimeout(() => {
-                // Get the current class name
-                const currentClassName = $(this).attr("class");
-
-                // Construct the new URL based on the class name
-                const newURL = currentClassName + ".html";
-
-                // Navigate to the new URL using replace to avoid adding to the history
-                window.location.replace(newURL);
-            }, 800);
-        });
-    });
+    // Smooth scroll to the parent div before navigating
+    $('html, body').animate(
+      { scrollTop: scrollToPosition }, // Scroll to the position of the parent div
+      800, // Duration of animation
+      function () {
+        // Navigate to the href
+        window.location.href = currentHref;
+      }
+    );
+  });
+});
 
 
 // Password code 
