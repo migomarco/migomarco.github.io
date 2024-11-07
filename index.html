@@ -80,6 +80,29 @@ $(document).ready(function() {
 
 
 
+// gif ovrelay
+function hoverFunction(button) {
+  // Only apply the hover effect if the screen width is 768px or larger
+  if (window.innerWidth >= 768) {
+    // Find the HoverH within the same .box as the button
+    const box = button.closest(".box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box11");
+    const hoverH = box.querySelector(".HoverH");
+
+    if (hoverH.style.opacity === "0" || hoverH.style.opacity === "") {
+      // Show HoverH 
+      hoverH.style.opacity = "1";
+      hoverH.style.visibility = "visible";
+    } else {
+      // Hide HoverH 
+      hoverH.style.opacity = "0";
+      hoverH.style.visibility = "hidden";
+    }
+  }
+}
+
+
+
+
   </script>
 
 
@@ -141,51 +164,66 @@ $(document).ready(function() {
   <div id="box11" class="box11" onclick="window.location.hash='back2'; ">
     <div class="InfoArea"> 
         <h1 class="TypeTitle">Advertising | BSUR Agency</h1><br> 
-        <a class="smooth-scroll" href="Specsavers.html"><button class="ButtonHome">View Project</button></a>
+        <a class="smooth-scroll" href="Specsavers.html"><button onmouseover="hoverFunction(this)" onmouseleave="hoverFunction(this)" class="ButtonHome" class="ButtonHome">View Project</button></a>
     </div>
-    <div class="ProjectLogoOuter"> <img src="images/Specsavers.gif"></div>
+    <div class="ProjectLogoOuter"> 
+      <img src="images/Specsavers.gif">
+      <img class="HoverH" src="images/SpecsaversHome.jpg">
+    </div>
   </div>
 
 
   <div id="box2" class="box2" onclick="window.location.hash='back2'; ">
     <div class="InfoArea"> 
         <h1 class="TypeTitle">Branding | BSUR Agency</h1><br> 
-        <a class="smooth-scroll" href="Diriyah.html"><button class="ButtonHome">View Project</button></a>
+        <a class="smooth-scroll" href="Diriyah.html"><button onmouseover="hoverFunction(this)" onmouseleave="hoverFunction(this)" class="ButtonHome" class="ButtonHome">View Project</button></a>
     </div>
-    <div class="ProjectLogoOuter"> <img src="images/DiriyahLogo1.gif"></div>
+    <div class="ProjectLogoOuter"> 
+      <img src="images/DiriyahLogo1.gif">
+      <img class="HoverH" src="images/DiriyahHome.jpg">
+    </div>
   </div>
 
   <div id="box9" class="box9" onclick="window.location.hash='back9'; ">
     <div class="InfoArea"> 
         <h1 class="TypeTitle">Advertising | BSUR Agency</h1><br> 
-        <a class="smooth-scroll" href="BataviaStad.html"><button class="ButtonHome">View Project</button></a>
+        <a class="smooth-scroll" href="BataviaStad.html"><button onmouseover="hoverFunction(this)" onmouseleave="hoverFunction(this)" class="ButtonHome" class="ButtonHome">View Project</button></a>
     </div>
-    <div class="ProjectLogoOuter"> <img src="images/BataviaStad.gif"></div> 
+    <div class="ProjectLogoOuter"> 
+      <img src="images/BataviaStad.gif">
+      <img class="HoverH" src="images/BataviaHome.jpg">
+    </div> 
   </div>
 
 
   <div id="box3" class="box3" onclick="window.location.hash='back3'; ">
     <div class="InfoArea"> 
         <h1 class="TypeTitle">Advertising | Grey Group</h1><br> 
-        <a class="smooth-scroll" href="Modelo.html"><button class="ButtonHome">View Project</button></a>
+        <a class="smooth-scroll" href="Modelo.html"><button onmouseover="hoverFunction(this)" onmouseleave="hoverFunction(this)" class="ButtonHome" class="ButtonHome">View Project</button></a>
     </div> 
-    <div class="ProjectLogoOuter"> <img src="images/Modelo.gif"></div> 
+    <div class="ProjectLogoOuter">
+      <img src="images/Modelo.gif">
+      <img class="HoverH" src="images/ModeloHome.jpg">
+    </div> 
   </div>
 
   
   <div id="box6" class="box6" onclick="window.location.hash='back6'; ">
     <div class="InfoArea"> 
         <h1 class="TypeTitle">Advertising | Grey Group</h1><br> 
-        <a class="smooth-scroll" href="rest.html"><button class="ButtonHome">View Project</button></a>
+        <a class="smooth-scroll" href="rest.html"><button onmouseover="hoverFunction(this)" onmouseleave="hoverFunction(this)" class="ButtonHome" class="ButtonHome">View Project</button></a>
     </div>
-    <div class="ProjectLogoOuter"> <img src="images/rest.gif"></div> 
+    <div class="ProjectLogoOuter"> 
+      <img src="images/rest.gif">
+      <img class="HoverH" src="images/RestHome.jpg">
+    </div> 
   </div>
 
 
   <div id="box4" class="box4" onclick="window.location.hash='back4'; ">
     <div class="InfoArea"> 
         <h1 class="TypeTitle">Advertising | Grey Group</h1><br> 
-        <a class="smooth-scroll" href="Volvo.html"><button class="ButtonHome">View Project</button></a>
+        <a class="smooth-scroll" href="Volvo.html"><button onmouseover="hoverFunction(this)" onmouseleave="hoverFunction(this)" class="ButtonHome" class="ButtonHome">View Project</button></a>
     </div> 
     <div class="ProjectLogoOuter"> <img style="width: 20%;" src="images/Volvo.gif"></div>  
   </div>
@@ -194,7 +232,7 @@ $(document).ready(function() {
   <div id="box5" class="box5" onclick="window.location.hash='back5'; ">
     <div class="InfoArea"> 
         <h1 class="TypeTitle">Advertising | Grey Group</h1><br> 
-        <a class="smooth-scroll" href="AntiAsian.html"><button class="ButtonHome">View Project</button></a>
+        <a class="smooth-scroll" href="AntiAsian.html"><button onmouseover="hoverFunction(this)" onmouseleave="hoverFunction(this)" class="ButtonHome" class="ButtonHome">View Project</button></a>
     </div>
     <div class="ProjectLogoOuter"> <img style="width: 45%;" src="images/AntiAsian.gif"></div> 
   </div>
@@ -203,7 +241,7 @@ $(document).ready(function() {
   <div id="box7" class="box7" onclick="window.location.hash='back7'; ">
     <div class="InfoArea"> 
         <h1 class="TypeTitle">Advertising | Concept</h1><br> 
-        <a class="smooth-scroll" href="emirates.html"><button class="ButtonHome">View Project</button></a>
+        <a class="smooth-scroll" href="emirates.html"><button onmouseover="hoverFunction(this)" onmouseleave="hoverFunction(this)" class="ButtonHome" class="ButtonHome">View Project</button></a>
     </div>
     <div class="ProjectLogoOuter"> <img style="width: 20%;" src="images/emirates.png"></div> 
   </div>
@@ -212,7 +250,7 @@ $(document).ready(function() {
   <div id="box8" class="box8" onclick="window.location.hash='back8'; ">
     <div class="InfoArea"> 
         <h1 class="TypeTitle">Branding | Restoque Fashion</h1><br> 
-        <a class="smooth-scroll" href="johnjohnlab.html"><button class="ButtonHome">View Project</button></a>
+        <a class="smooth-scroll" href="johnjohnlab.html"><button onmouseover="hoverFunction(this)" onmouseleave="hoverFunction(this)" class="ButtonHome" class="ButtonHome">View Project</button></a>
     </div>
      <div class="ProjectLogoOuter"> <img src="images/JJLAB.png"></div> 
   </div>
