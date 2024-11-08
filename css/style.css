@@ -611,6 +611,8 @@ body {
   display: flex;
   flex-direction: row;
   mix-blend-mode: difference;
+  overflow: hidden;
+
 
   /* Initial state for animation */
   opacity: 0;
@@ -645,16 +647,30 @@ body {
     }
 }
 
+.RationalShort{
+  position: absolute;
+  color: white;
+  text-decoration: none;
+  padding: 50px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+/*  overflow-y: auto;*/ /*allows for scrolling*/
+
+}
+
 .Rational{
   color: white;
   text-decoration: none;
   padding: 50px;
   padding-bottom: 200px;
-  overflow-y: auto;
+  overflow-y: auto; /*allows for scrolling*/
 
 }
 
-.Rational h1{
+.Rational h1, .RationalShort h1{
   font-family: "Avenir Next", sans-serif;
   line-height: 1.35;
   font-weight: bold;
@@ -663,7 +679,7 @@ body {
 
 }
 
-.Rational p{
+.Rational p, .RationalShort p{
   font-family: "Avenir Next", sans-serif;
   line-height: 1.35;
   font-weight: normal;
