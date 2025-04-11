@@ -130,7 +130,7 @@ body {
 
 .box5 {
   position: relative;
-  background:white;
+  background:#5833a2;
   height:100vh;
   overflow: hidden;
 }
@@ -144,7 +144,7 @@ body {
 
 .box7 {
   position: relative;
-  background:#d71a21;
+  background:#ffcf06;
   height:100vh;
   overflow: hidden;
 }
