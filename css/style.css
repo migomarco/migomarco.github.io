@@ -178,6 +178,14 @@ body {
 }
 
 
+.box12 {
+  position: relative;
+  background:#18864a;
+  height:100vh;
+  overflow: hidden; 
+}
+
+
 
 .ArrowLeft{
   position: fixed;
